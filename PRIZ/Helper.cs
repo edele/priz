@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using System.Windows.Forms;
 namespace PRIZ
 {
     static class Helper
     {
+        static public void GreetMe()
+        {
+            MessageBox.Show("Greetings with this git work!");
+        }
         static public string MakeValidFileName(string name)
         {
             var builder = new StringBuilder();
