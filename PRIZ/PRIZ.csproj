@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9F8E0B0-8D8F-4DF8-8525-8E277470C430}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRIZ</RootNamespace>
+    <AssemblyName>PRIZ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Answer.cs" />
+    <Compile Include="FormAboutCreativeThinking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAboutCreativeThinking.Designer.cs">
+      <DependentUpon>FormAboutCreativeThinking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAboutEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAboutEducation.Designer.cs">
+      <DependentUpon>FormAboutEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAboutProgramm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAboutProgramm.Designer.cs">
+      <DependentUpon>FormAboutProgramm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAllIdeas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAllIdeas.Designer.cs">
+      <DependentUpon>FormAllIdeas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhenomenas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhenomenas.Designer.cs">
+      <DependentUpon>FormPhenomenas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTask.Designer.cs">
+      <DependentUpon>FormTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTasks.Designer.cs">
+      <DependentUpon>FormTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Exercise.cs" />
+    <Compile Include="FormMailSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMailSender.Designer.cs">
+      <DependentUpon>FormMailSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module.cs" />
+    <Compile Include="FormModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules.Designer.cs">
+      <DependentUpon>FormModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFormElement.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramInstance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="FormAboutCreativeThinking.resx">
+      <DependentUpon>FormAboutCreativeThinking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAboutEducation.resx">
+      <DependentUpon>FormAboutEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAboutProgramm.resx">
+      <DependentUpon>FormAboutProgramm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAllIdeas.resx">
+      <DependentUpon>FormAllIdeas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules.resx">
+      <DependentUpon>FormModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhenomenas.resx">
+      <DependentUpon>FormPhenomenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTask.resx">
+      <DependentUpon>FormTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTasks.resx">
+      <DependentUpon>FormTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMailSender.resx">
+      <DependentUpon>FormMailSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_creativethinker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_educationfornewera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_submitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_submitt_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_registration_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_creativethinker_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_educationfornewera_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_footer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modules01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mytasks01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writeus01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modules02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modules03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mytasks02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mytasks03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writeus02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writeus03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exModule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparentpixel70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ShKM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineUnderTheText.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skvazhina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnReg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSMK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ShKM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oq6iuZLOVbk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mW8D4oodfmQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Krug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration-underlay-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_ShKM_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_regis.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
