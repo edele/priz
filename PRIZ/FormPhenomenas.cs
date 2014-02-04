@@ -24,33 +24,15 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            Random rnd = new Random();
-            int res = rnd.Next(1,4);
-            switch (res)
-            {
-                case 1:
-                    tbHypo.LoadFile(@"content/textHypoAkus.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
-                    break;
-                case 2:
-                    tbHypo.LoadFile(@"content/textHypoChem.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
-                    break;
-                case 3:
-                    tbHypo.LoadFile(@"content/textHypoGeom.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
-                    break;
-                case 4:
-                    tbHypo.LoadFile(@"content/textHypoPhys.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
-                    break;
-                default:
-                    break;
-            }
-
             this.FormClosing += Program.ApplicationQuit;
+            this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
+            tbHypo.LoadFile(@"content/textSound.rtf");
+            tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
         }
-
+        private void tb_MouseWheel(object sender, EventArgs e)
+        {
+            tbHypo.Focus();
+        }
         private void btnPlusIdea_Click(object sender, EventArgs e)
         {
             if (tbIdea.Text != "")
@@ -88,7 +70,7 @@ namespace PRIZ
 
         private void btnModules_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены.\r\n Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Переход на другое окно", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
@@ -112,7 +94,7 @@ namespace PRIZ
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
-            tbHypo.Size = new Size(tbHypo.Size.Width, this.Size.Height - 220);
+            tbHypo.Size = new Size(tbHypo.Size.Width, this.Size.Height - 430);
         }
         
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
@@ -187,5 +169,68 @@ namespace PRIZ
             //this.Hide();
             Program.fAboutEducation.Show();
         }
+
+        private void btnLogoCreativeThinker_Click_1(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fAboutCreativeSchool);
+            //this.Hide();
+            Program.fAboutCreativeSchool.ShowDialog();
+        }
+
+        private void ClickToLabel(object sender, EventArgs e)
+        {
+            Label lbl = sender as Label;
+            switch (lbl.Name)
+            {
+                case "lblSound":
+                    tbHypo.LoadFile(@"content/textSound.rtf");
+                    break;
+                case "lblMagnetic":
+                    tbHypo.LoadFile(@"content/textMagnetic.rtf");
+                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    break;
+                case "lblElectrical":
+                    tbHypo.LoadFile(@"content/textElectrical.rtf");
+                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    break;
+                case "lblThermal":
+                    tbHypo.LoadFile(@"content/textThermal.rtf");
+                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    break;
+                case "lblMechanical":
+                    tbHypo.LoadFile(@"content/textMechanical.rtf");
+                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    break;
+                case "lblLight":
+                    tbHypo.LoadFile(@"content/textLight.rtf");
+                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    break;
+                default:
+                    break;
+            }
+            tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+        }
+
+        static string _elderText;
+        private void LabelGotFokus(object sender, EventArgs e)
+        {
+            Label lbl = sender as Label;
+            _elderText = lbl.Text;
+            lbl.Text = lbl.Text + " >";
+            lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(237)))), ((int)(((byte)(193)))));
+        }
+        private void LabelLostFokus(object sender, EventArgs e)
+        {
+            Label lbl = sender as Label;
+            lbl.Text = _elderText;
+            lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+        }
+
+        private void LabelGotFokus(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
+
+

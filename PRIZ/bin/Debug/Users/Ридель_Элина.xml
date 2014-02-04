@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <_name>Ридель</_name>
+  <_surname>Элина</_surname>
+  <_country>Германия</_country>
+  <_status>Ученик</_status>
+  <_password>11</_password>
+  <_about>Ученица МАОУ</_about>
+</User>

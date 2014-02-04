@@ -52,7 +52,10 @@ namespace PRIZ
 
         static public void ApplicationQuit(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Вы уверены, что хотите выйти?", "Выход из программы", MessageBoxButtons.YesNo) == DialogResult.OK)
+            {
+                Application.Exit();
+            }            
         }
 
         static public void LogoMouseEnter(object sender, EventArgs e)

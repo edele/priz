@@ -19,7 +19,7 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             //btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             //btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            this.FormClosing += Program.ApplicationQuit;
+            //this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
@@ -55,7 +55,7 @@ namespace PRIZ
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
-            tbForText.Size = new Size(tbForText.Size.Width, this.Size.Height - 300);
+            tbForText.Size = new Size(tbForText.Size.Width, this.Size.Height - 313);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

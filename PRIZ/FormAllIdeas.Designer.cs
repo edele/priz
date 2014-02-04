@@ -32,9 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lGiven = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lToFind = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbComment = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,6 +44,8 @@
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
+            this.lGiven = new System.Windows.Forms.TextBox();
+            this.lToFind = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,37 +84,17 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Дано:";
             // 
-            // lGiven
-            // 
-            this.lGiven.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lGiven.AutoSize = true;
-            this.lGiven.Location = new System.Drawing.Point(173, 164);
-            this.lGiven.Name = "lGiven";
-            this.lGiven.Size = new System.Drawing.Size(90, 13);
-            this.lGiven.TabIndex = 3;
-            this.lGiven.Text = "Что-то нам надо";
-            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label5.Location = new System.Drawing.Point(171, 282);
+            this.label5.Location = new System.Drawing.Point(170, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Найти:";
-            // 
-            // lToFind
-            // 
-            this.lToFind.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lToFind.AutoSize = true;
-            this.lToFind.Location = new System.Drawing.Point(173, 307);
-            this.lToFind.Name = "lToFind";
-            this.lToFind.Size = new System.Drawing.Size(99, 13);
-            this.lToFind.TabIndex = 5;
-            this.lToFind.Text = "Что-то надо найти";
             // 
             // label7
             // 
@@ -122,7 +102,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label7.Location = new System.Drawing.Point(171, 412);
+            this.label7.Location = new System.Drawing.Point(171, 417);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(186, 25);
             this.label7.TabIndex = 6;
@@ -131,11 +111,11 @@
             // tbComment
             // 
             this.tbComment.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbComment.Location = new System.Drawing.Point(176, 440);
+            this.tbComment.Location = new System.Drawing.Point(176, 445);
             this.tbComment.Multiline = true;
             this.tbComment.Name = "tbComment";
             this.tbComment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbComment.Size = new System.Drawing.Size(344, 112);
+            this.tbComment.Size = new System.Drawing.Size(345, 107);
             this.tbComment.TabIndex = 7;
             // 
             // label8
@@ -302,12 +282,34 @@
             this.btnLogoEducationEra.UseVisualStyleBackColor = true;
             this.btnLogoEducationEra.Click += new System.EventHandler(this.btnLogoEducationEra_Click);
             // 
+            // lGiven
+            // 
+            this.lGiven.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lGiven.Location = new System.Drawing.Point(175, 164);
+            this.lGiven.Multiline = true;
+            this.lGiven.Name = "lGiven";
+            this.lGiven.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.lGiven.Size = new System.Drawing.Size(345, 89);
+            this.lGiven.TabIndex = 28;
+            // 
+            // lToFind
+            // 
+            this.lToFind.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lToFind.Location = new System.Drawing.Point(176, 307);
+            this.lToFind.Multiline = true;
+            this.lToFind.Name = "lToFind";
+            this.lToFind.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.lToFind.Size = new System.Drawing.Size(345, 89);
+            this.lToFind.TabIndex = 29;
+            // 
             // FormAllIdeas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.lToFind);
+            this.Controls.Add(this.lGiven);
             this.Controls.Add(this.btnLogoEducationEra);
             this.Controls.Add(this.btnWriteToUs);
             this.Controls.Add(this.btnAbout);
@@ -319,9 +321,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbComment);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lToFind);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lGiven);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -340,9 +340,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lGiven;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lToFind;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbComment;
         private System.Windows.Forms.Label label8;
@@ -354,5 +352,7 @@
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnLogoEducationEra;
+        private System.Windows.Forms.TextBox lGiven;
+        private System.Windows.Forms.TextBox lToFind;
     }
 }

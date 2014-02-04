@@ -43,6 +43,12 @@
             this.btnLogoCreativeThinker = new System.Windows.Forms.Button();
             this.tbHypo = new System.Windows.Forms.RichTextBox();
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
+            this.lblSound = new System.Windows.Forms.Label();
+            this.lblMagnetic = new System.Windows.Forms.Label();
+            this.lblThermal = new System.Windows.Forms.Label();
+            this.lblElectrical = new System.Windows.Forms.Label();
+            this.lblMechanical = new System.Windows.Forms.Label();
+            this.lblLight = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +61,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(164, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 38);
+            this.label1.Size = new System.Drawing.Size(271, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -242,17 +248,18 @@
             this.btnLogoCreativeThinker.Size = new System.Drawing.Size(114, 93);
             this.btnLogoCreativeThinker.TabIndex = 21;
             this.btnLogoCreativeThinker.UseVisualStyleBackColor = false;
+            this.btnLogoCreativeThinker.Click += new System.EventHandler(this.btnLogoCreativeThinker_Click_1);
             // 
             // tbHypo
             // 
             this.tbHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbHypo.BackColor = System.Drawing.Color.White;
             this.tbHypo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHypo.Location = new System.Drawing.Point(171, 145);
+            this.tbHypo.Location = new System.Drawing.Point(317, 150);
             this.tbHypo.Name = "tbHypo";
             this.tbHypo.ReadOnly = true;
             this.tbHypo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbHypo.Size = new System.Drawing.Size(790, 393);
+            this.tbHypo.Size = new System.Drawing.Size(644, 379);
             this.tbHypo.TabIndex = 0;
             this.tbHypo.Text = "";
             // 
@@ -274,12 +281,114 @@
             this.btnLogoEducationEra.UseVisualStyleBackColor = true;
             this.btnLogoEducationEra.Click += new System.EventHandler(this.btnLogoEducationEra_Click);
             // 
+            // lblSound
+            // 
+            this.lblSound.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblSound.AutoSize = true;
+            this.lblSound.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSound.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblSound.Location = new System.Drawing.Point(168, 150);
+            this.lblSound.Name = "lblSound";
+            this.lblSound.Size = new System.Drawing.Size(71, 14);
+            this.lblSound.TabIndex = 22;
+            this.lblSound.Text = "Звуковые ";
+            this.lblSound.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblSound.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblSound.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
+            // lblMagnetic
+            // 
+            this.lblMagnetic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblMagnetic.AutoSize = true;
+            this.lblMagnetic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblMagnetic.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblMagnetic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblMagnetic.Location = new System.Drawing.Point(168, 175);
+            this.lblMagnetic.Name = "lblMagnetic";
+            this.lblMagnetic.Size = new System.Drawing.Size(79, 14);
+            this.lblMagnetic.TabIndex = 23;
+            this.lblMagnetic.Text = "Магнитные";
+            this.lblMagnetic.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblMagnetic.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblMagnetic.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
+            // lblThermal
+            // 
+            this.lblThermal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblThermal.AutoSize = true;
+            this.lblThermal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblThermal.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblThermal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblThermal.Location = new System.Drawing.Point(170, 230);
+            this.lblThermal.Name = "lblThermal";
+            this.lblThermal.Size = new System.Drawing.Size(69, 14);
+            this.lblThermal.TabIndex = 24;
+            this.lblThermal.Text = "Тепловые";
+            this.lblThermal.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblThermal.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblThermal.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
+            // lblElectrical
+            // 
+            this.lblElectrical.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblElectrical.AutoSize = true;
+            this.lblElectrical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblElectrical.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblElectrical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblElectrical.Location = new System.Drawing.Point(168, 202);
+            this.lblElectrical.Name = "lblElectrical";
+            this.lblElectrical.Size = new System.Drawing.Size(106, 14);
+            this.lblElectrical.TabIndex = 25;
+            this.lblElectrical.Text = "Электрические";
+            this.lblElectrical.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblElectrical.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblElectrical.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
+            // lblMechanical
+            // 
+            this.lblMechanical.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblMechanical.AutoSize = true;
+            this.lblMechanical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblMechanical.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblMechanical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblMechanical.Location = new System.Drawing.Point(171, 257);
+            this.lblMechanical.Name = "lblMechanical";
+            this.lblMechanical.Size = new System.Drawing.Size(101, 14);
+            this.lblMechanical.TabIndex = 26;
+            this.lblMechanical.Text = "Механические";
+            this.lblMechanical.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblMechanical.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblMechanical.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
+            // lblLight
+            // 
+            this.lblLight.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblLight.AutoSize = true;
+            this.lblLight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblLight.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblLight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblLight.Location = new System.Drawing.Point(171, 284);
+            this.lblLight.Name = "lblLight";
+            this.lblLight.Size = new System.Drawing.Size(70, 14);
+            this.lblLight.TabIndex = 27;
+            this.lblLight.Text = "Световые";
+            this.lblLight.Click += new System.EventHandler(this.ClickToLabel);
+            this.lblLight.Enter += new System.EventHandler(this.LabelGotFokus);
+            this.lblLight.Leave += new System.EventHandler(this.LabelLostFokus);
+            // 
             // FormPhenomenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.lblLight);
+            this.Controls.Add(this.lblMechanical);
+            this.Controls.Add(this.lblElectrical);
+            this.Controls.Add(this.lblThermal);
+            this.Controls.Add(this.lblMagnetic);
+            this.Controls.Add(this.lblSound);
             this.Controls.Add(this.btnLogoEducationEra);
             this.Controls.Add(this.btnLogoCreativeThinker);
             this.Controls.Add(this.btnWriteToUs);
@@ -296,6 +405,7 @@
             this.Text = "ПРИЗ";
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
             this.Click += new System.EventHandler(this.tbForText_SizeChanged);
+            this.Leave += new System.EventHandler(this.LabelLostFokus);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -320,5 +430,11 @@
         private System.Windows.Forms.RichTextBox tbHypo;
         private System.Windows.Forms.Button btnPlusIdea;
         private System.Windows.Forms.Button btnLogoEducationEra;
+        private System.Windows.Forms.Label lblSound;
+        private System.Windows.Forms.Label lblMagnetic;
+        private System.Windows.Forms.Label lblThermal;
+        private System.Windows.Forms.Label lblElectrical;
+        private System.Windows.Forms.Label lblMechanical;
+        private System.Windows.Forms.Label lblLight;
     }
 }
