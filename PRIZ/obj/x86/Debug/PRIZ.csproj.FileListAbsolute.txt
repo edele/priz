@@ -102,3 +102,7 @@ D:\Users\SadoMazoCat\Downloads\PRIZ_04_02v1\PRIZ\obj\x86\Debug\PRIZ.FormMailSend
 D:\Users\SadoMazoCat\Downloads\PRIZ_04_02v1\PRIZ\obj\x86\Debug\PRIZ.Properties.Resources.resources
 D:\Users\SadoMazoCat\Downloads\PRIZ_04_02v1\PRIZ\obj\x86\Debug\PRIZ.FormRegistration.resources
 D:\Users\SadoMazoCat\Downloads\PRIZ_04_02v1\PRIZ\obj\x86\Debug\PRIZ.csproj.GenerateResource.Cache
+D:\GitHub\Priz\priz\PRIZ\bin\Debug\PRIZ.exe.config
+D:\GitHub\Priz\priz\PRIZ\obj\x86\Debug\PRIZ.csproj.ResolveComReference.cache
+D:\GitHub\Priz\priz\PRIZ\obj\x86\Debug\PRIZ.exe
+D:\GitHub\Priz\priz\PRIZ\obj\x86\Debug\PRIZ.pdb
