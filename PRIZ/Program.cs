@@ -43,7 +43,6 @@ namespace PRIZ
         [STAThread]
         static void Main()
         {
-            Helper.GreetMe();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             p = new ProgramInstance();
