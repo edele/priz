@@ -150,5 +150,21 @@ namespace PRIZ
             //this.Hide();
             Program.fAboutEducation.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Program.fLogin.tbLogin.Text = "Фамилия и имя";
+                Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+                Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                Program.fLogin.tbPassword.Text = "Пароль";
+                Program.fLogin.tbPassword.PasswordChar = '\0';
+                Program.fLogin.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+                Program.fLogin.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                Program.fLogin.Show();
+                this.Hide();
+            }
+        }
     }
 }

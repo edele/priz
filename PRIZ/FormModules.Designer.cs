@@ -37,6 +37,7 @@
             this.btnLogoCreativeThinker = new System.Windows.Forms.Button();
             this.lName = new System.Windows.Forms.Label();
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnWriteToUs
@@ -181,6 +182,18 @@
             this.btnLogoEducationEra.UseVisualStyleBackColor = true;
             this.btnLogoEducationEra.Click += new System.EventHandler(this.btnLogoEducationEra_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(88, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,6 +201,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogoEducationEra);
             this.Controls.Add(this.panelForElements);
             this.Controls.Add(this.btnLogoCreativeThinker);
@@ -217,6 +231,7 @@
         private System.Windows.Forms.Button btnLogoCreativeThinker;
         private System.Windows.Forms.Label lName;
         private System.Windows.Forms.Button btnLogoEducationEra;
+        private System.Windows.Forms.Button button1;
 
 
     }

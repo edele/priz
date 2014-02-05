@@ -274,8 +274,6 @@
         private System.Windows.Forms.Button btnLogoCreativeThinker;
         private System.Windows.Forms.Button btnLogoEducationEra;
         private System.Windows.Forms.Button btnRegistration;
-        private System.Windows.Forms.TextBox tbLogin;
-        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -284,6 +282,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        public System.Windows.Forms.TextBox tbLogin;
+        public System.Windows.Forms.TextBox tbPassword;
     }
 }
 
