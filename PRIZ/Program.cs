@@ -40,11 +40,19 @@ namespace PRIZ
         static public FormRegistration fReg;
         static public FormAboutProgramm fAboutProgramm;
         static public FormMailSender fMailSender;
+        private static DateTime endProgram = Convert.ToDateTime("11/02/2014");
         [STAThread]
         static void Main()
         {
+            if (DateTime.Today > endProgram)
+            {
+                MessageBox.Show("Пробный период истек, обратитесь к разработчикам за поддержкой.");
+                return;
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+
             p = new ProgramInstance();
             fLogin = new FormLogin();
             Application.Run(fLogin);
