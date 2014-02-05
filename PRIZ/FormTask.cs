@@ -133,7 +133,7 @@ namespace PRIZ
         private void btnBack_Click(object sender, EventArgs e)
         {
 
-            if (MessageBox.Show("Вы уверены, что хотите перейти в задачи? Данные не будут сохранены.\r\n Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Вы уверены, что хотите перейти в задачи? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 this.Hide();
                 Program.fTasks.Show();
@@ -150,7 +150,7 @@ namespace PRIZ
 
         private void btnModules_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены.\r\n Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
@@ -199,6 +199,22 @@ namespace PRIZ
             Program.InitWindow(Forms.fAboutEducation);
             //this.Hide();
             Program.fAboutEducation.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Program.fLogin.tbLogin.Text = "Фамилия и имя";
+                Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+                Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                Program.fLogin.tbPassword.Text = "Пароль";
+                Program.fLogin.tbPassword.PasswordChar = '\0';
+                Program.fLogin.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+                Program.fLogin.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                Program.fLogin.Show();
+                this.Hide();
+            }
         }
 
        
