@@ -24,6 +24,8 @@ namespace PRIZ
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
             this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
+            this.Size = Program.currentSize;
+            this.Location = Program.currentLocation;
         }
         private void tb_MouseWheel(object sender, EventArgs e)
         {

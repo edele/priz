@@ -43,7 +43,6 @@ namespace PRIZ
         [STAThread]
         static void Main()
         {
-            Helper.GreetMe();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             p = new ProgramInstance();
@@ -51,9 +50,10 @@ namespace PRIZ
             Application.Run(fLogin);
         }
 
+        static bool quitOnce = false;
         static public void ApplicationQuit(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
+        {                       
+               Application.Exit();            
         }
 
         static public void LogoMouseEnter(object sender, EventArgs e)
