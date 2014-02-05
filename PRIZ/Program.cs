@@ -43,7 +43,6 @@ namespace PRIZ
         [STAThread]
         static void Main()
         {
-            Helper.GreetMe();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             p = new ProgramInstance();
@@ -51,12 +50,10 @@ namespace PRIZ
             Application.Run(fLogin);
         }
 
+        static bool quitOnce = false;
         static public void ApplicationQuit(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Вы уверены, что хотите выйти?", "Выход из программы", MessageBoxButtons.YesNo) == DialogResult.OK)
-            {
-                Application.Exit();
-            }            
+        {                       
+               Application.Exit();            
         }
 
         static public void LogoMouseEnter(object sender, EventArgs e)

@@ -7,10 +7,6 @@ namespace PRIZ
 {
     static class Helper
     {
-        static public void GreetMe()
-        {
-            MessageBox.Show("Greetings with this git work!");
-        }
         static public string MakeValidFileName(string name)
         {
             var builder = new StringBuilder();
