@@ -50,9 +50,10 @@ namespace PRIZ
             Application.Run(fLogin);
         }
 
+        static bool quitOnce = false;
         static public void ApplicationQuit(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
+        {                       
+               Application.Exit();            
         }
 
         static public void LogoMouseEnter(object sender, EventArgs e)

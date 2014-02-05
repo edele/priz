@@ -18,7 +18,7 @@ namespace PRIZ
             //btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            this.FormClosing += Program.ApplicationQuit;
+            //this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;

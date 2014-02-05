@@ -145,6 +145,7 @@
             this.tbAbout.Location = new System.Drawing.Point(3, 32);
             this.tbAbout.Multiline = true;
             this.tbAbout.Name = "tbAbout";
+            this.tbAbout.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbAbout.Size = new System.Drawing.Size(403, 115);
             this.tbAbout.TabIndex = 0;
             this.tbAbout.Text = "О себе";

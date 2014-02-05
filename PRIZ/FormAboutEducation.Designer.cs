@@ -128,10 +128,10 @@
             this.tbForText.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbForText.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
             this.tbForText.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.tbForText.Location = new System.Drawing.Point(84, 261);
+            this.tbForText.Location = new System.Drawing.Point(84, 279);
             this.tbForText.Name = "tbForText";
             this.tbForText.ReadOnly = true;
-            this.tbForText.Size = new System.Drawing.Size(881, 449);
+            this.tbForText.Size = new System.Drawing.Size(881, 415);
             this.tbForText.TabIndex = 17;
             this.tbForText.Text = "";
             this.tbForText.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
@@ -163,7 +163,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 14F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label3.Location = new System.Drawing.Point(79, 233);
+            this.label3.Location = new System.Drawing.Point(79, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(355, 25);
             this.label3.TabIndex = 20;
