@@ -1,0 +1,21 @@
+obj
+*.ncb
+*.vcproj*
+*.suo
+*.user
+*.sln.cache
+*.manifest
+*.CodeAnalysisLog.xml
+*.lastcodeanalysissucceeded
+_ReSharper.*/
+
+# binaries
+mods/*/*.dll
+mods/*/*.mdb
+/*.dll
+/*.dll.config
+/*.so
+/*.dylib
+/*.pdb
+/*.mdb
+/*.exe
