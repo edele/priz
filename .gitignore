@@ -10,12 +10,10 @@ PRIZ/obj
 _ReSharper.*/
 
 # binaries
-mods/*/*.dll
-mods/*/*.mdb
-/*.dll
-/*.dll.config
-/*.so
-/*.dylib
-/*.pdb
-/*.mdb
-/*.exe
+*.dll
+*.dll.config
+*.so
+*.dylib
+*.pdb
+*.mdb
+*.exe
