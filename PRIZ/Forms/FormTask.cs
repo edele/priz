@@ -127,7 +127,7 @@ namespace PRIZ
                 Program.fPhenomenas.Show();
                 this.Hide();
             }
-            else MessageBox.Show("Заполните дано и найти своими словами для продолжения работы");
+            else MessageBox.Show("Заполните «Дано» и «Найти» своими словами для продолжения работы");
             
         }
         private void btnBack_Click(object sender, EventArgs e)

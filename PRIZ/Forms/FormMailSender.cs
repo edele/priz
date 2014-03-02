@@ -62,10 +62,9 @@ namespace PRIZ
                     txtMessage.Clear();
                     this.Close();
                 }
-
-                    else if (txtMessage.Text != "") MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail.", "Ошибка");
-                    else if (txtFrom.Text != "example@mail.com") MessageBox.Show("Пожалуйста, введите сообщение.", "Ошибка");
-                    else MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail и сообщение.", "Ошибка");
+                else if (txtMessage.Text != "") MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail.", "Ошибка");
+                else if (txtFrom.Text != "example@mail.com") MessageBox.Show("Пожалуйста, введите сообщение.", "Ошибка");
+                else MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail и сообщение.", "Ошибка");
             }
         }
 
