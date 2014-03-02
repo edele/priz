@@ -22,7 +22,7 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            this.FormClosing += Program.ApplicationQuit;
+            //this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
@@ -48,12 +48,24 @@ namespace PRIZ
                         "Вопросы пользователей программы ПРИЗ",
                         txtMessage.Text + Environment.NewLine + "Мой контактный e-mail: " + txtFrom.Text + "." + Environment.NewLine + "С уважением, " + user.Text + "."
                     );
-                    client.Send(message);
+                    try
+                    {
+                        client.Send(message);
+                    }
+                    catch (System.Net.Mail.SmtpException)
+                    {
+                        MessageBox.Show("Проблемы с интернет-подключением.", "Ошибка");
+                        return;
+                    }
                     MessageBox.Show("Спасибо за письмо. Мы обязательно с Вами свяжемся", "Письмо отправлено", MessageBoxButtons.OK);
                     txtFrom.Clear();
                     txtMessage.Clear();
+                    this.Close();
                 }
-                else MessageBox.Show("Пожалуйста, введи Ваш контактный e-mail и сообщение.");
+
+                    else if (txtMessage.Text != "") MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail.", "Ошибка");
+                    else if (txtFrom.Text != "example@mail.com") MessageBox.Show("Пожалуйста, введите сообщение.", "Ошибка");
+                    else MessageBox.Show("Пожалуйста, введите Ваш контактный e-mail и сообщение.", "Ошибка");
             }
         }
 
