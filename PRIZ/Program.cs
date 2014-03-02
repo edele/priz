@@ -46,8 +46,8 @@ namespace PRIZ
         {
             if (DateTime.Today > endProgram)
             {
-                MessageBox.Show("Пробный период истек, обратитесь к разработчикам за поддержкой.");
-                return;
+                /*MessageBox.Show("Пробный период истек, обратитесь к разработчикам за поддержкой.");
+                return;*/
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

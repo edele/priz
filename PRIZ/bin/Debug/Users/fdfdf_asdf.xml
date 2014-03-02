@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <_name>fdfdf</_name>
+  <_surname>asdf</_surname>
+  <_country>Страна</_country>
+  <_status />
+  <_password>123</_password>
+  <_about>О себе</_about>
+</User>

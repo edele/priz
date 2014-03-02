@@ -66,8 +66,16 @@ namespace PRIZ
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (tbSurename.Text != "" && tbSurename.Text != "Фамилия" && tbName.Text != "" && tbName.Text != "Имя" && tbPassword.Text != "" && tbPassword.Text != "Фамилия" && tbPassword2.Text != ""
-                && tbPassword2.Text != "Имя" && tbCountry.Text != "Страна" && tbCountry.Text != "" && tbStatus.Text != "Статус" && tbStatus.Text != "" && tbAbout.Text != "О себе" && tbAbout.Text != "")
+            if (
+                   tbSurename.Text != "" 
+                && tbSurename.Text != "Фамилия *" 
+                && tbName.Text != "" 
+                && tbName.Text != "Имя *" 
+                && tbPassword.Text != "" 
+                && tbPassword.Text != "Пароль *" 
+                && tbPassword2.Text != ""
+                && tbPassword2.Text != "Подтвердите пароль *" 
+                )
             {
                 User user = Program.p.AddNewUser(
                 tbName.Text,
@@ -89,7 +97,7 @@ namespace PRIZ
                 else MessageBox.Show("Введенный пароль и его подтверждение не совпадают.");
                 
             }
-            else MessageBox.Show("Заполните все поля для продолжения работы");
+            else MessageBox.Show("Заполните все обязательные поля");
             
         }
 

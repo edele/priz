@@ -76,7 +76,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(172, 20);
             this.tbPassword.TabIndex = 0;
-            this.tbPassword.Text = "Пароль";
+            this.tbPassword.Text = "Пароль *";
             this.tbPassword.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbPassword.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -90,7 +90,7 @@
             this.tbPassword2.Name = "tbPassword2";
             this.tbPassword2.Size = new System.Drawing.Size(172, 20);
             this.tbPassword2.TabIndex = 0;
-            this.tbPassword2.Text = "Подтвердите пароль";
+            this.tbPassword2.Text = "Подтвердите пароль *";
             this.tbPassword2.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbPassword2.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -104,7 +104,7 @@
             this.tbSurename.Name = "tbSurename";
             this.tbSurename.Size = new System.Drawing.Size(172, 20);
             this.tbSurename.TabIndex = 0;
-            this.tbSurename.Text = "Фамилия";
+            this.tbSurename.Text = "Фамилия *";
             this.tbSurename.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbSurename.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -132,7 +132,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(172, 20);
             this.tbName.TabIndex = 0;
-            this.tbName.Text = "Имя";
+            this.tbName.Text = "Имя *";
             this.tbName.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbName.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -259,7 +259,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(154, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -290,7 +290,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(239, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 3;
             this.label1.Text = "ПРИЗ для умных";
             // 
