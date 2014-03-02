@@ -48,67 +48,67 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
-    <Compile Include="FormAboutCreativeThinking.cs">
+    <Compile Include="Forms\FormAboutCreativeThinking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAboutCreativeThinking.Designer.cs">
+    <Compile Include="Forms\FormAboutCreativeThinking.Designer.cs">
       <DependentUpon>FormAboutCreativeThinking.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAboutEducation.cs">
+    <Compile Include="Forms\FormAboutEducation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAboutEducation.Designer.cs">
+    <Compile Include="Forms\FormAboutEducation.Designer.cs">
       <DependentUpon>FormAboutEducation.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAboutProgramm.cs">
+    <Compile Include="Forms\FormAboutProgramm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAboutProgramm.Designer.cs">
+    <Compile Include="Forms\FormAboutProgramm.Designer.cs">
       <DependentUpon>FormAboutProgramm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAllIdeas.cs">
+    <Compile Include="Forms\FormAllIdeas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAllIdeas.Designer.cs">
+    <Compile Include="Forms\FormAllIdeas.Designer.cs">
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPhenomenas.cs">
+    <Compile Include="Forms\FormPhenomenas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPhenomenas.Designer.cs">
+    <Compile Include="Forms\FormPhenomenas.Designer.cs">
       <DependentUpon>FormPhenomenas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTask.cs">
+    <Compile Include="Forms\FormTask.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTask.Designer.cs">
+    <Compile Include="Forms\FormTask.Designer.cs">
       <DependentUpon>FormTask.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTasks.cs">
+    <Compile Include="Forms\FormTasks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTasks.Designer.cs">
+    <Compile Include="Forms\FormTasks.Designer.cs">
       <DependentUpon>FormTasks.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Exercise.cs" />
-    <Compile Include="FormMailSender.cs">
+    <Compile Include="Forms\FormMailSender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMailSender.Designer.cs">
+    <Compile Include="Forms\FormMailSender.Designer.cs">
       <DependentUpon>FormMailSender.cs</DependentUpon>
     </Compile>
     <Compile Include="Module.cs" />
-    <Compile Include="FormModules.cs">
+    <Compile Include="Forms\FormModules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormModules.Designer.cs">
+    <Compile Include="Forms\FormModules.Designer.cs">
       <DependentUpon>FormModules.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuleFormElement.cs" />
@@ -116,43 +116,43 @@
     <Compile Include="Program.cs" />
     <Compile Include="ProgramInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormRegistration.cs">
+    <Compile Include="Forms\FormRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistration.Designer.cs">
+    <Compile Include="Forms\FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Report.cs" />
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="FormAboutCreativeThinking.resx">
+    <EmbeddedResource Include="Forms\FormAboutCreativeThinking.resx">
       <DependentUpon>FormAboutCreativeThinking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAboutEducation.resx">
+    <EmbeddedResource Include="Forms\FormAboutEducation.resx">
       <DependentUpon>FormAboutEducation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAboutProgramm.resx">
+    <EmbeddedResource Include="Forms\FormAboutProgramm.resx">
       <DependentUpon>FormAboutProgramm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAllIdeas.resx">
+    <EmbeddedResource Include="Forms\FormAllIdeas.resx">
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormModules.resx">
+    <EmbeddedResource Include="Forms\FormModules.resx">
       <DependentUpon>FormModules.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPhenomenas.resx">
+    <EmbeddedResource Include="Forms\FormPhenomenas.resx">
       <DependentUpon>FormPhenomenas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTask.resx">
+    <EmbeddedResource Include="Forms\FormTask.resx">
       <DependentUpon>FormTask.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTasks.resx">
+    <EmbeddedResource Include="Forms\FormTasks.resx">
       <DependentUpon>FormTasks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMailSender.resx">
+    <EmbeddedResource Include="Forms\FormMailSender.resx">
       <DependentUpon>FormMailSender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -165,7 +165,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FormRegistration.resx">
+    <EmbeddedResource Include="Forms\FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
