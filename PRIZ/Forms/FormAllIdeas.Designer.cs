@@ -105,7 +105,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label7.Location = new System.Drawing.Point(171, 417);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(186, 25);
+            this.label7.Size = new System.Drawing.Size(187, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Комментарии к отчету";
             // 
@@ -311,7 +311,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 30;
-            this.button1.Text = "Exit";
+            this.button1.Text = "Выход";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 

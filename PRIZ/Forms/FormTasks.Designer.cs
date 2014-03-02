@@ -217,7 +217,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 29;
-            this.button1.Text = "Exit";
+            this.button1.Text = "Выход";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnModules);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 765);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormTasks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";

@@ -109,7 +109,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(165, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 38);
+            this.label2.Size = new System.Drawing.Size(110, 38);
             this.label2.TabIndex = 12;
             this.label2.Text = "Модули";
             // 
@@ -186,11 +186,12 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.button1.Location = new System.Drawing.Point(88, 22);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Exit";
+            this.button1.Text = "Выход";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -211,7 +212,7 @@
             this.Controls.Add(this.btnWriteToUs);
             this.Controls.Add(this.btnModules);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 765);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";
