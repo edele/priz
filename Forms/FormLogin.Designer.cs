@@ -169,6 +169,7 @@
             this.tbLogin.TabIndex = 1;
             this.tbLogin.Text = "Фамилия и имя";
             this.tbLogin.Enter += new System.EventHandler(this.TextBox_GotFocus);
+            this.tbLogin.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyUp);
             this.tbLogin.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // btnRegistration

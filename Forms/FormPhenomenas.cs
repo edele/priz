@@ -44,6 +44,7 @@ namespace PRIZ
         }
         private void btnPlusIdea_Click(object sender, EventArgs e)
         {
+            tbIdea.Focus();
             if (tbIdea.Text != "")
             {
                 answer._hypothesises.Add(tbIdea.Text);
@@ -63,8 +64,7 @@ namespace PRIZ
             }
             else
             {
-                MessageBox.Show(answer._hypothesises.Count.ToString());
-                MessageBox.Show("Введите идею!");
+                MessageBox.Show("Введите хотя бы одну идею, прежде чем продолжить.");
             }
             
         }

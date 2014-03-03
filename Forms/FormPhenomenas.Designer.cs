@@ -287,11 +287,11 @@
             this.lblSound.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSound.AutoSize = true;
             this.lblSound.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSound.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSound.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblSound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.lblSound.Location = new System.Drawing.Point(168, 150);
             this.lblSound.Name = "lblSound";
-            this.lblSound.Size = new System.Drawing.Size(71, 14);
+            this.lblSound.Size = new System.Drawing.Size(78, 14);
             this.lblSound.TabIndex = 22;
             this.lblSound.Text = "Звуковые ";
             this.lblSound.Click += new System.EventHandler(this.ClickToLabel);

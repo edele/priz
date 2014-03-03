@@ -171,23 +171,6 @@ namespace PRIZ
             //this.Hide();
             Program.fMailSender.Show();
         }
-        static string _earlierText;
-        private void TextBox_LostFocus(object sender, EventArgs e)
-        {
-            if ((sender as TextBox).Text == "")
-            {
-                (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-                (sender as TextBox).Text = _earlierText;
-            }
-
-        }
-
-        private void TextBox_GotFocus(object sender, EventArgs e)
-        {
-            _earlierText = (sender as TextBox).Text;
-            (sender as TextBox).Text = "";
-            (sender as TextBox).ForeColor = Color.Black;
-        }
 
         private void FormTask_SizeChanged(object sender, EventArgs e)
         {

@@ -127,13 +127,6 @@ namespace PRIZ
             f = new FormRegistration();
             f.Show();
         }
-        private void tbPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnSubmit_Click((object)sender, (EventArgs)e);
-            }
-        }
 
         private void btnLogoCreativeThinker_MouseEnter_1(object sender, EventArgs e)
         {
@@ -148,6 +141,14 @@ namespace PRIZ
         private void FormLogin_LocationChanged(object sender, EventArgs e)
         {
             Program.currentLocation = this.Location;
+        }
+
+        private void FormLogin_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSubmit_Click((object)sender, (EventArgs)e);
+            }
         }
     }
 }

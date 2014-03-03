@@ -94,8 +94,6 @@
             this.tbToFind.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbToFind.Size = new System.Drawing.Size(430, 109);
             this.tbToFind.TabIndex = 3;
-            this.tbToFind.Enter += new System.EventHandler(this.TextBox_GotFocus);
-            this.tbToFind.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // lName
             // 
