@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistration));
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.tbPassword2 = new System.Windows.Forms.TextBox();
             this.tbSurename = new System.Windows.Forms.TextBox();
             this.tbCountry = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
@@ -50,8 +48,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
@@ -60,50 +56,20 @@
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbPassword.Location = new System.Drawing.Point(16, 12);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(172, 20);
-            this.tbPassword.TabIndex = 0;
-            this.tbPassword.Text = "Пароль *";
-            this.tbPassword.Enter += new System.EventHandler(this.TextBox_GotFocus);
-            this.tbPassword.Leave += new System.EventHandler(this.TextBox_LostFocus);
-            // 
-            // tbPassword2
-            // 
-            this.tbPassword2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbPassword2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPassword2.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.tbPassword2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbPassword2.Location = new System.Drawing.Point(16, 13);
-            this.tbPassword2.Name = "tbPassword2";
-            this.tbPassword2.Size = new System.Drawing.Size(172, 20);
-            this.tbPassword2.TabIndex = 0;
-            this.tbPassword2.Text = "Подтвердите пароль *";
-            this.tbPassword2.Enter += new System.EventHandler(this.TextBox_GotFocus);
-            this.tbPassword2.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // tbSurename
             // 
             this.tbSurename.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbSurename.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSurename.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.tbSurename.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tbSurename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbSurename.Location = new System.Drawing.Point(16, 12);
+            this.tbSurename.Location = new System.Drawing.Point(15, 12);
             this.tbSurename.Name = "tbSurename";
             this.tbSurename.Size = new System.Drawing.Size(172, 20);
-            this.tbSurename.TabIndex = 0;
+            this.tbSurename.TabIndex = 1;
             this.tbSurename.Text = "Фамилия *";
             this.tbSurename.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbSurename.Leave += new System.EventHandler(this.TextBox_LostFocus);
@@ -112,12 +78,12 @@
             // 
             this.tbCountry.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbCountry.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbCountry.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.tbCountry.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tbCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbCountry.Location = new System.Drawing.Point(13, 13);
+            this.tbCountry.Location = new System.Drawing.Point(13, 12);
             this.tbCountry.Name = "tbCountry";
             this.tbCountry.Size = new System.Drawing.Size(172, 20);
-            this.tbCountry.TabIndex = 0;
+            this.tbCountry.TabIndex = 1;
             this.tbCountry.Text = "Страна";
             this.tbCountry.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbCountry.Leave += new System.EventHandler(this.TextBox_LostFocus);
@@ -126,12 +92,12 @@
             // 
             this.tbName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbName.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.tbName.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbName.Location = new System.Drawing.Point(16, 12);
+            this.tbName.Location = new System.Drawing.Point(15, 12);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(172, 20);
-            this.tbName.TabIndex = 0;
+            this.tbName.TabIndex = 1;
             this.tbName.Text = "Имя *";
             this.tbName.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbName.Leave += new System.EventHandler(this.TextBox_LostFocus);
@@ -140,14 +106,14 @@
             // 
             this.tbAbout.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbAbout.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbAbout.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.tbAbout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.tbAbout.Location = new System.Drawing.Point(3, 32);
             this.tbAbout.Multiline = true;
             this.tbAbout.Name = "tbAbout";
             this.tbAbout.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbAbout.Size = new System.Drawing.Size(403, 115);
-            this.tbAbout.TabIndex = 0;
+            this.tbAbout.TabIndex = 1;
             this.tbAbout.Text = "О себе";
             this.tbAbout.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbAbout.Leave += new System.EventHandler(this.TextBox_LostFocus);
@@ -188,7 +154,7 @@
             this.button1.Location = new System.Drawing.Point(180, 449);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 30);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Зарегестрироваться";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
@@ -204,7 +170,7 @@
             "Другое"});
             this.tbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tbStatus.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.tbStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.tbStatus.FormattingEnabled = true;
             this.tbStatus.Items.AddRange(new object[] {
@@ -214,7 +180,7 @@
             "Другое"});
             this.tbStatus.Location = new System.Drawing.Point(10, 9);
             this.tbStatus.Name = "tbStatus";
-            this.tbStatus.Size = new System.Drawing.Size(185, 27);
+            this.tbStatus.Size = new System.Drawing.Size(185, 28);
             this.tbStatus.TabIndex = 1;
             this.tbStatus.SelectedValueChanged += new System.EventHandler(this.tbStatus_SelectedValueChanged);
             this.tbStatus.Click += new System.EventHandler(this.label4_Click);
@@ -307,8 +273,6 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Location = new System.Drawing.Point(227, 164);
             this.panel1.Name = "panel1";
@@ -333,7 +297,7 @@
             this.panel3.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.Controls.Add(this.tbSurename);
-            this.panel3.Location = new System.Drawing.Point(58, 142);
+            this.panel3.Location = new System.Drawing.Point(57, 172);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 42);
             this.panel3.TabIndex = 3;
@@ -344,7 +308,7 @@
             this.panel2.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel2.Controls.Add(this.tbName);
-            this.panel2.Location = new System.Drawing.Point(58, 194);
+            this.panel2.Location = new System.Drawing.Point(57, 224);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 42);
             this.panel2.TabIndex = 4;
@@ -355,7 +319,7 @@
             this.panel5.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel5.Controls.Add(this.tbCountry);
-            this.panel5.Location = new System.Drawing.Point(58, 244);
+            this.panel5.Location = new System.Drawing.Point(273, 224);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 42);
             this.panel5.TabIndex = 5;
@@ -367,7 +331,7 @@
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.tbStatus);
-            this.panel6.Location = new System.Drawing.Point(273, 142);
+            this.panel6.Location = new System.Drawing.Point(273, 172);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 42);
             this.panel6.TabIndex = 6;
@@ -375,7 +339,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.label4.Location = new System.Drawing.Point(12, 12);
             this.label4.Name = "label4";
@@ -384,35 +348,13 @@
             this.label4.Text = "Выберите статус";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel7.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel7.Controls.Add(this.tbPassword);
-            this.panel7.Location = new System.Drawing.Point(273, 194);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 42);
-            this.panel7.TabIndex = 7;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel8.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel8.Controls.Add(this.tbPassword2);
-            this.panel8.Location = new System.Drawing.Point(273, 244);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 42);
-            this.panel8.TabIndex = 8;
-            // 
             // panel9
             // 
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackgroundImage = global::PRIZ.Properties.Resources.registration_underlay_big;
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel9.Controls.Add(this.tbAbout);
-            this.panel9.Location = new System.Drawing.Point(61, 276);
+            this.panel9.Location = new System.Drawing.Point(61, 253);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(409, 177);
             this.panel9.TabIndex = 9;
@@ -453,10 +395,6 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -467,8 +405,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.TextBox tbPassword2;
         private System.Windows.Forms.TextBox tbSurename;
         private System.Windows.Forms.TextBox tbCountry;
         private System.Windows.Forms.TextBox tbName;
@@ -486,8 +422,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnLogoCreativeThinker;
         private System.Windows.Forms.Button btnLogoEducationEra;

@@ -60,23 +60,6 @@ namespace PRIZ
         {
             btnModules.Image = Properties.Resources.modules02;
         }
-        /* private void btnMyTasks_MouseDown(object sender, MouseEventArgs e)
-         {
-             btnMyTasks.Image = Properties.Resources.mytasks03;
-         }
-         private void btnMyTasks_MouseEnter(object sender, EventArgs e)
-         {
-             btnMyTasks.Image = Properties.Resources.mytasks02;
-         }
-         private void btnMyTasks_MouseLeave(object sender, EventArgs e)
-         {
-             btnMyTasks.Image = Properties.Resources.mytasks01;
-         }
-         private void btnMyTasks_MouseUp(object sender, MouseEventArgs e)
-         {
-             btnMyTasks.Image = Properties.Resources.mytasks02;
-         }
-         */
         private void btnAbout_MouseDown(object sender, MouseEventArgs e)
         {
             btnAbout.Image = Properties.Resources.about03;
@@ -158,10 +141,6 @@ namespace PRIZ
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
                 Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-                Program.fLogin.tbPassword.Text = "Пароль";
-                Program.fLogin.tbPassword.PasswordChar = '\0';
-                Program.fLogin.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-                Program.fLogin.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
                 Program.fLogin.Show();
                 this.Hide();
             }

@@ -50,7 +50,6 @@ namespace PRIZ
             string username,
             string about,
             string country,
-            string password,
             string status,
             string surname
             )
@@ -59,7 +58,6 @@ namespace PRIZ
             user._name = username;
             user._about = about;
             user._country = country;
-            user._password = password;
             user._status = status;
             user._surname = surname;
             user.SaveToFile();

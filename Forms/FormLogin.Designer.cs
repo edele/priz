@@ -38,15 +38,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbLogin = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.btnRegistration = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -70,7 +67,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -141,7 +138,6 @@
             this.panel1.BackgroundImage = global::PRIZ.Properties.Resources.Skvazhina;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnRegistration);
             this.panel1.Location = new System.Drawing.Point(290, 131);
             this.panel1.Name = "panel1";
@@ -152,8 +148,9 @@
             // 
             this.panel2.BackgroundImage = global::PRIZ.Properties.Resources.tbLogin;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Controls.Add(this.btnSubmit);
             this.panel2.Controls.Add(this.tbLogin);
-            this.panel2.Location = new System.Drawing.Point(122, 362);
+            this.panel2.Location = new System.Drawing.Point(122, 399);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 42);
             this.panel2.TabIndex = 4;
@@ -173,50 +170,6 @@
             this.tbLogin.Text = "Фамилия и имя";
             this.tbLogin.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbLogin.Leave += new System.EventHandler(this.TextBox_LostFocus);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BackgroundImage = global::PRIZ.Properties.Resources.tbPass;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Controls.Add(this.tbPassword);
-            this.panel3.Controls.Add(this.btnSubmit);
-            this.panel3.Location = new System.Drawing.Point(122, 410);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 42);
-            this.panel3.TabIndex = 5;
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.tbPassword.Location = new System.Drawing.Point(18, 13);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(140, 20);
-            this.tbPassword.TabIndex = 2;
-            this.tbPassword.Text = "Пароль";
-            this.tbPassword.Enter += new System.EventHandler(this.tbPassword_Enter);
-            this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
-            this.tbPassword.Leave += new System.EventHandler(this.tbPassword_Leave);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.BackgroundImage = global::PRIZ.Properties.Resources.btn_submitt;
-            this.btnSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSubmit.FlatAppearance.BorderSize = 0;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Verdana", 8.75F);
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(165, 8);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(29, 28);
-            this.btnSubmit.TabIndex = 3;
-            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnRegistration
             // 
@@ -238,6 +191,24 @@
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnRegistration.UseVisualStyleBackColor = true;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.Transparent;
+            this.btnSubmit.BackgroundImage = global::PRIZ.Properties.Resources.btn_submitt;
+            this.btnSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(165, 8);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(29, 28);
+            this.btnSubmit.TabIndex = 3;
+            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // FormLogin
             // 
@@ -262,8 +233,6 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,16 +243,14 @@
         private System.Windows.Forms.Button btnLogoCreativeThinker;
         private System.Windows.Forms.Button btnLogoEducationEra;
         private System.Windows.Forms.Button btnRegistration;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.TextBox tbLogin;
-        public System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 

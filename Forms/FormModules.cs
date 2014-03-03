@@ -219,10 +219,6 @@ namespace PRIZ
             Program.fLogin.tbLogin.Text = "Фамилия и имя";
             Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
             Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            Program.fLogin.tbPassword.Text = "Пароль";
-            Program.fLogin.tbPassword.PasswordChar = '\0';
-            Program.fLogin.tbPassword.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            Program.fLogin.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             Program.fLogin.Show();
             this.Hide();
         }

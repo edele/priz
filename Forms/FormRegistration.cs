@@ -71,31 +71,20 @@ namespace PRIZ
                 && tbSurename.Text != "Фамилия *" 
                 && tbName.Text != "" 
                 && tbName.Text != "Имя *" 
-                && tbPassword.Text != "" 
-                && tbPassword.Text != "Пароль *" 
-                && tbPassword2.Text != ""
-                && tbPassword2.Text != "Подтвердите пароль *" 
                 )
             {
                 User user = Program.p.AddNewUser(
                 tbName.Text,
                 tbAbout.Text,
                 tbCountry.Text,
-                tbPassword.Text,
                 tbStatus.Text,
                 tbSurename.Text
                 );
-
-                if (tbPassword2.Text == tbPassword.Text)
-                {
-                    Program.fLogin.RefreshUserList();
-                    Program.p.RefreshUsers();
-                    MessageBox.Show("Спасибо за регистрацию, " + user._surname + " " + user._name);
-                    this.Hide();
-                    Program.fLogin.Show();
-                }
-                else MessageBox.Show("Введенный пароль и его подтверждение не совпадают.");
-                
+                Program.fLogin.RefreshUserList();
+                Program.p.RefreshUsers();
+                MessageBox.Show("Спасибо за регистрацию, " + user._surname + " " + user._name);
+                this.Hide();
+                Program.fLogin.Show();
             }
             else MessageBox.Show("Заполните все обязательные поля");
             

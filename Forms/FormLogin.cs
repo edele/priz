@@ -88,24 +88,6 @@ namespace PRIZ
             (sender as TextBox).ForeColor = Color.Black;
         }
 
-        private void tbPassword_Enter(object sender, EventArgs e)
-        {
-            if (tbPassword.Text == "Пароль")
-            {
-                tbPassword.ForeColor = Color.Black;
-                tbPassword.PasswordChar = '•';
-                tbPassword.Text = "";
-            }
-        }
-        private void tbPassword_Leave(object sender, EventArgs e)
-        {
-            if (tbPassword.Text == "")
-            {
-                tbPassword.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-                tbPassword.Text = "Пароль";
-                tbPassword.PasswordChar = ' ';
-            }
-        }
         #endregion TextBoxes' focus effects
 
        
@@ -127,11 +109,7 @@ namespace PRIZ
 
             for (int i = 0; i < users.Count; i++)
             {
-                if (
-                    (users[i]._surname.ToLower() + " " + users[i]._name.ToLower()) == tbLogin.Text.ToLower()
-                    &&
-                    users[i]._password == tbPassword.Text
-                    )
+                if ((users[i]._surname.ToLower() + " " + users[i]._name.ToLower()) == tbLogin.Text.ToLower())
                 {
                     Program.p._currentUser = i;
                     Program.InitWindow(Forms.fModules);

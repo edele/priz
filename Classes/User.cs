@@ -13,7 +13,6 @@ namespace PRIZ
         public string _surname;
         public string _country;
         public string _status;
-        public string _password;
         public string _about;
         public List<Answer> answers;
 
