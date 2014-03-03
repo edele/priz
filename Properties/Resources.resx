@@ -121,9 +121,6 @@
   <data name="about01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\about01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exModule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_creativethinker_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_creativethinker_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,9 +145,6 @@
   <data name="mytasks01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mytasks01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_educationfornewera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_educationfornewera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,17 +166,8 @@
   <data name="modules02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modules02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_creativethinker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_creativethinker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back_registration" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back_registration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back_footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back_footer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mytasks03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mytasks03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Answer.cs" />
+    <Compile Include="Classes\Answer.cs" />
     <Compile Include="Forms\FormAboutCreativeThinking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,25 +96,25 @@
     <Compile Include="Forms\FormTasks.Designer.cs">
       <DependentUpon>FormTasks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helper.cs" />
-    <Compile Include="Exercise.cs" />
+    <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\Exercise.cs" />
     <Compile Include="Forms\FormMailSender.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormMailSender.Designer.cs">
       <DependentUpon>FormMailSender.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module.cs" />
+    <Compile Include="Classes\Module.cs" />
     <Compile Include="Forms\FormModules.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormModules.Designer.cs">
       <DependentUpon>FormModules.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModuleFormElement.cs" />
-    <Compile Include="Task.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="ProgramInstance.cs" />
+    <Compile Include="Classes\ModuleFormElement.cs" />
+    <Compile Include="Classes\Task.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Classes\ProgramInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\FormRegistration.cs">
       <SubType>Form</SubType>
@@ -122,8 +122,8 @@
     <Compile Include="Forms\FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Classes\Report.cs" />
+    <Compile Include="Classes\User.cs" />
     <EmbeddedResource Include="Forms\FormAboutCreativeThinking.resx">
       <DependentUpon>FormAboutCreativeThinking.cs</DependentUpon>
     </EmbeddedResource>
