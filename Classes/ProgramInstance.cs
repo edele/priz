@@ -75,9 +75,10 @@ namespace PRIZ
             report = "===================================\r\n";
             report += Program.p.currentTask._name.ToUpper() + "\r\n";
             report += "===================================\r\n";
-            report += "Решал(а): ";
-            report += Program.p.CurrentFullName + ", " + u._status + " ("+u._country+")" + "\r\n";
-            report += u._about;
+            report += "Решал(а): " + Program.p.CurrentFullName + "\r\n";
+            report += "Страна: " + u._country + "\r\n";
+            report += "Статус: " + u._status + "\r\n";
+            report += "О себе: " + u._about + "\r\n";
             report += "\r\n\r\n";
             report += "Дано:\r\n";
             report += a._givenByUser + "\r\n\r\n";

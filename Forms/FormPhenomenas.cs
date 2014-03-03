@@ -13,6 +13,7 @@ namespace PRIZ
     public partial class FormPhenomenas : Form
     {
         Answer answer = Program.p.answer;
+        List<Label> phenomenaLabels;
         public FormPhenomenas()
         {
             InitializeComponent();
@@ -28,6 +29,14 @@ namespace PRIZ
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             tbHypo.LoadFile(@"content/textSound.rtf");
             tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+
+            phenomenaLabels = new List<Label>();
+            phenomenaLabels.Add(lblSound);
+            phenomenaLabels.Add(lblMagnetic);
+            phenomenaLabels.Add(lblElectrical);
+            phenomenaLabels.Add(lblThermal);
+            phenomenaLabels.Add(lblMechanical);
+            phenomenaLabels.Add(lblLight);
         }
         private void tb_MouseWheel(object sender, EventArgs e)
         {
@@ -179,7 +188,12 @@ namespace PRIZ
 
         private void ClickToLabel(object sender, EventArgs e)
         {
+            foreach (Label phenomenaLabel in phenomenaLabels)
+            {
+                phenomenaLabel.Font = new System.Drawing.Font("Verdana", 9F, FontStyle.Regular);
+            }
             Label lbl = sender as Label;
+            lbl.Font = new System.Drawing.Font("Verdana", 9F, FontStyle.Bold);
             switch (lbl.Name)
             {
                 case "lblSound":

@@ -305,7 +305,7 @@
             this.lblMagnetic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMagnetic.Font = new System.Drawing.Font("Verdana", 9F);
             this.lblMagnetic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblMagnetic.Location = new System.Drawing.Point(168, 175);
+            this.lblMagnetic.Location = new System.Drawing.Point(168, 176);
             this.lblMagnetic.Name = "lblMagnetic";
             this.lblMagnetic.Size = new System.Drawing.Size(79, 14);
             this.lblMagnetic.TabIndex = 23;
@@ -321,7 +321,7 @@
             this.lblThermal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblThermal.Font = new System.Drawing.Font("Verdana", 9F);
             this.lblThermal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblThermal.Location = new System.Drawing.Point(170, 230);
+            this.lblThermal.Location = new System.Drawing.Point(168, 228);
             this.lblThermal.Name = "lblThermal";
             this.lblThermal.Size = new System.Drawing.Size(69, 14);
             this.lblThermal.TabIndex = 24;
@@ -353,7 +353,7 @@
             this.lblMechanical.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMechanical.Font = new System.Drawing.Font("Verdana", 9F);
             this.lblMechanical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblMechanical.Location = new System.Drawing.Point(171, 257);
+            this.lblMechanical.Location = new System.Drawing.Point(168, 254);
             this.lblMechanical.Name = "lblMechanical";
             this.lblMechanical.Size = new System.Drawing.Size(101, 14);
             this.lblMechanical.TabIndex = 26;
@@ -369,7 +369,7 @@
             this.lblLight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLight.Font = new System.Drawing.Font("Verdana", 9F);
             this.lblLight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblLight.Location = new System.Drawing.Point(171, 284);
+            this.lblLight.Location = new System.Drawing.Point(168, 280);
             this.lblLight.Name = "lblLight";
             this.lblLight.Size = new System.Drawing.Size(70, 14);
             this.lblLight.TabIndex = 27;
