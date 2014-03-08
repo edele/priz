@@ -118,15 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnToTheNextForm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAIAAADZrBkAAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACcSURBVDhPzZAhDsUgEER7Wy7ABTgAHo+vRmOxWCwS
-        i6STdpvyQxaSip8+N2QfLLOJV3xESylZaykMsJr3vrXmnKP8y2xJODDhU+5Y/A17wgwhUL5ZV2KMqbXG
-        GCmfPBpunYOSaLTXsM/OgNeA1ppGl0tKKXPOpRSlFB2dzDSMQgCQ6eiG1a4m8J/RAayGRzgHsFpfwMii
-        Eo5/akIcTNrGrjgXjcgAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnWriteToUs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAoCAYAAAC4h3lxAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH

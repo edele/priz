@@ -373,9 +373,9 @@ namespace PRIZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap registration_arrow {
+        internal static System.Drawing.Bitmap reg_arrow {
             get {
-                object obj = ResourceManager.GetObject("registration_arrow", resourceCulture);
+                object obj = ResourceManager.GetObject("reg_arrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

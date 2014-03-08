@@ -202,7 +202,7 @@
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = global::PRIZ.Properties.Resources.writeus01;
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWriteToUs.Location = new System.Drawing.Point(22, 320);
+            this.btnWriteToUs.Location = new System.Drawing.Point(12, 324);
             this.btnWriteToUs.Name = "btnWriteToUs";
             this.btnWriteToUs.Size = new System.Drawing.Size(111, 68);
             this.btnWriteToUs.TabIndex = 26;
@@ -227,7 +227,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = global::PRIZ.Properties.Resources.about01;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbout.Location = new System.Drawing.Point(22, 235);
+            this.btnAbout.Location = new System.Drawing.Point(12, 244);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(111, 68);
             this.btnAbout.TabIndex = 25;
@@ -252,7 +252,7 @@
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModules.Location = new System.Drawing.Point(22, 150);
+            this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(111, 68);
             this.btnModules.TabIndex = 24;

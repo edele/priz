@@ -256,6 +256,11 @@ namespace PRIZ
                 this.Hide();
             }
         }
+
+        private void showTaskCond_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Program.p.currentTask._name  + "\r\n\r\n" + Program.p.currentTask._given + "\r\n\r\n" + Program.p.currentTask._toFind);
+        }
     }
 }
 

@@ -119,12 +119,13 @@
             // 
             this.btnToTheNextForm.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnToTheNextForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnToTheNextForm.BackgroundImage = global::PRIZ.Properties.Resources.reg_arrow;
+            this.btnToTheNextForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnToTheNextForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToTheNextForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnToTheNextForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToTheNextForm.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnToTheNextForm.ForeColor = System.Drawing.Color.White;
-            this.btnToTheNextForm.Image = ((System.Drawing.Image)(resources.GetObject("btnToTheNextForm.Image")));
             this.btnToTheNextForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToTheNextForm.Location = new System.Drawing.Point(634, 421);
             this.btnToTheNextForm.Name = "btnToTheNextForm";
@@ -147,7 +148,7 @@
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteToUs.Image")));
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWriteToUs.Location = new System.Drawing.Point(19, 335);
+            this.btnWriteToUs.Location = new System.Drawing.Point(12, 324);
             this.btnWriteToUs.Name = "btnWriteToUs";
             this.btnWriteToUs.Size = new System.Drawing.Size(111, 68);
             this.btnWriteToUs.TabIndex = 10;
@@ -172,7 +173,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbout.Location = new System.Drawing.Point(19, 261);
+            this.btnAbout.Location = new System.Drawing.Point(12, 244);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(111, 68);
             this.btnAbout.TabIndex = 9;
@@ -195,7 +196,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(61, 113);
+            this.btnBack.Location = new System.Drawing.Point(51, 103);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 36);
             this.btnBack.TabIndex = 7;
@@ -218,7 +219,7 @@
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = ((System.Drawing.Image)(resources.GetObject("btnModules.Image")));
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModules.Location = new System.Drawing.Point(19, 187);
+            this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(111, 68);
             this.btnModules.TabIndex = 8;
@@ -290,7 +291,6 @@
             // btnLogoEducationEra
             // 
             this.btnLogoEducationEra.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLogoEducationEra.BackgroundImage = global::PRIZ.Properties.Resources.logo_educationfornewera;
             this.btnLogoEducationEra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogoEducationEra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogoEducationEra.FlatAppearance.BorderColor = System.Drawing.Color.White;

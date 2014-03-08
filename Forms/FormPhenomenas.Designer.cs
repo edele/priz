@@ -50,6 +50,7 @@
             this.lblMechanical = new System.Windows.Forms.Label();
             this.lblLight = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.showTaskCond = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -169,7 +170,7 @@
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = global::PRIZ.Properties.Resources.writeus01;
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWriteToUs.Location = new System.Drawing.Point(22, 320);
+            this.btnWriteToUs.Location = new System.Drawing.Point(12, 324);
             this.btnWriteToUs.Name = "btnWriteToUs";
             this.btnWriteToUs.Size = new System.Drawing.Size(111, 68);
             this.btnWriteToUs.TabIndex = 20;
@@ -194,7 +195,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = global::PRIZ.Properties.Resources.about01;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbout.Location = new System.Drawing.Point(22, 235);
+            this.btnAbout.Location = new System.Drawing.Point(12, 244);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(111, 68);
             this.btnAbout.TabIndex = 19;
@@ -219,7 +220,7 @@
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModules.Location = new System.Drawing.Point(22, 150);
+            this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(111, 68);
             this.btnModules.TabIndex = 18;
@@ -256,7 +257,7 @@
             this.tbHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbHypo.BackColor = System.Drawing.Color.White;
             this.tbHypo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHypo.Location = new System.Drawing.Point(317, 150);
+            this.tbHypo.Location = new System.Drawing.Point(317, 140);
             this.tbHypo.Name = "tbHypo";
             this.tbHypo.ReadOnly = true;
             this.tbHypo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -390,12 +391,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // showTaskCond
+            // 
+            this.showTaskCond.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.showTaskCond.AutoSize = true;
+            this.showTaskCond.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showTaskCond.Font = new System.Drawing.Font("Verdana", 9F);
+            this.showTaskCond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.showTaskCond.Location = new System.Drawing.Point(169, 522);
+            this.showTaskCond.Name = "showTaskCond";
+            this.showTaskCond.Size = new System.Drawing.Size(196, 14);
+            this.showTaskCond.TabIndex = 29;
+            this.showTaskCond.Text = "Просмотреть условие задачи";
+            this.showTaskCond.Click += new System.EventHandler(this.showTaskCond_Click);
+            // 
             // FormPhenomenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.showTaskCond);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblLight);
             this.Controls.Add(this.lblMechanical);
@@ -451,5 +467,6 @@
         private System.Windows.Forms.Label lblMechanical;
         private System.Windows.Forms.Label lblLight;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label showTaskCond;
     }
 }

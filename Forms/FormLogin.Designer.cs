@@ -37,9 +37,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.btnRegistration = new System.Windows.Forms.Button();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -155,6 +155,24 @@
             this.panel2.Size = new System.Drawing.Size(200, 42);
             this.panel2.TabIndex = 4;
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(124)))), ((int)(((byte)(124)))));
+            this.btnSubmit.BackgroundImage = global::PRIZ.Properties.Resources.btn_submitt;
+            this.btnSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(165, 8);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(29, 28);
+            this.btnSubmit.TabIndex = 3;
+            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
             // tbLogin
             // 
             this.tbLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -192,24 +210,6 @@
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnRegistration.UseVisualStyleBackColor = true;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.BackgroundImage = global::PRIZ.Properties.Resources.btn_submitt;
-            this.btnSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSubmit.FlatAppearance.BorderSize = 0;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Verdana", 8.75F);
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(165, 8);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(29, 28);
-            this.btnSubmit.TabIndex = 3;
-            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // FormLogin
             // 
