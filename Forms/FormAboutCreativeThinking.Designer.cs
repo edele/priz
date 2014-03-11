@@ -35,7 +35,7 @@
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbForText = new System.Windows.Forms.RichTextBox();
+            this.tbForText = new ReadOnlyRichTextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
