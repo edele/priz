@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lIdeas = new System.Windows.Forms.Label();
             this.btnPlusIdea = new System.Windows.Forms.Button();
             this.btnSendToTheNextForm = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,7 +52,6 @@
             this.lblLight = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.showTaskCond = new System.Windows.Forms.Label();
-            this.lIdeas = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(164, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 38);
+            this.label1.Size = new System.Drawing.Size(269, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -92,6 +92,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1009, 185);
             this.panel2.TabIndex = 0;
+            // 
+            // lIdeas
+            // 
+            this.lIdeas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lIdeas.AutoSize = true;
+            this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lIdeas.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lIdeas.Location = new System.Drawing.Point(673, 123);
+            this.lIdeas.Name = "lIdeas";
+            this.lIdeas.Size = new System.Drawing.Size(185, 14);
+            this.lIdeas.TabIndex = 30;
+            this.lIdeas.Text = "Вы не ввели ни одной идеи";
+            this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
             // 
             // btnPlusIdea
             // 
@@ -395,7 +409,7 @@
             // 
             // showTaskCond
             // 
-            this.showTaskCond.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.showTaskCond.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.showTaskCond.AutoSize = true;
             this.showTaskCond.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showTaskCond.Font = new System.Drawing.Font("Verdana", 9F);
@@ -406,20 +420,6 @@
             this.showTaskCond.TabIndex = 29;
             this.showTaskCond.Text = "Просмотреть условие задачи";
             this.showTaskCond.Click += new System.EventHandler(this.showTaskCond_Click);
-            // 
-            // lIdeas
-            // 
-            this.lIdeas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lIdeas.AutoSize = true;
-            this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lIdeas.Font = new System.Drawing.Font("Verdana", 9F);
-            this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lIdeas.Location = new System.Drawing.Point(673, 123);
-            this.lIdeas.Name = "lIdeas";
-            this.lIdeas.Size = new System.Drawing.Size(185, 14);
-            this.lIdeas.TabIndex = 30;
-            this.lIdeas.Text = "Вы не ввели ни одной идеи";
-            this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
             // 
             // FormPhenomenas
             // 

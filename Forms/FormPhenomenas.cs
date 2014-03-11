@@ -274,7 +274,7 @@ namespace PRIZ
                     h +=answer._hypothesises[i];
                     h += "\n\n";
                 }
-                MessageBox.Show(h);
+                MessageBox.Show(h, "Гипотезы");
             }
         }
     }
