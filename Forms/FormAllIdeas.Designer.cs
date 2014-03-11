@@ -36,7 +36,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbComment = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tbAllHypo = new System.Windows.Forms.TextBox();
             this.btnSentToMail = new System.Windows.Forms.Button();
             this.lbUserName = new System.Windows.Forms.Label();
             this.btnLogoCreativeThinker = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.lGiven = new System.Windows.Forms.TextBox();
             this.lToFind = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lAllHypo = new UserSortableListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +105,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label7.Location = new System.Drawing.Point(171, 417);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 25);
+            this.label7.Size = new System.Drawing.Size(186, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Комментарии к отчету";
             // 
@@ -130,16 +130,6 @@
             this.label8.Size = new System.Drawing.Size(90, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Мои идеи";
-            // 
-            // tbAllHypo
-            // 
-            this.tbAllHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbAllHypo.Location = new System.Drawing.Point(572, 164);
-            this.tbAllHypo.Multiline = true;
-            this.tbAllHypo.Name = "tbAllHypo";
-            this.tbAllHypo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbAllHypo.Size = new System.Drawing.Size(424, 388);
-            this.tbAllHypo.TabIndex = 9;
             // 
             // btnSentToMail
             // 
@@ -315,12 +305,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // lAllHypo
+            // 
+            this.lAllHypo.FormattingEnabled = true;
+            this.lAllHypo.Location = new System.Drawing.Point(572, 164);
+            this.lAllHypo.Name = "lAllHypo";
+            this.lAllHypo.Size = new System.Drawing.Size(399, 394);
+            this.lAllHypo.TabIndex = 31;
+            // 
             // FormAllIdeas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.lAllHypo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lToFind);
             this.Controls.Add(this.lGiven);
@@ -331,7 +330,6 @@
             this.Controls.Add(this.btnLogoCreativeThinker);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.btnSentToMail);
-            this.Controls.Add(this.tbAllHypo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbComment);
             this.Controls.Add(this.label7);
@@ -344,6 +342,7 @@
             this.Name = "FormAllIdeas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";
+            this.Load += new System.EventHandler(this.FormAllIdeas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,7 +357,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbComment;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbAllHypo;
         private System.Windows.Forms.Button btnSentToMail;
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Button btnLogoCreativeThinker;
@@ -369,5 +367,6 @@
         private System.Windows.Forms.TextBox lGiven;
         private System.Windows.Forms.TextBox lToFind;
         private System.Windows.Forms.Button button1;
+        private UserSortableListBox lAllHypo;
     }
 }
