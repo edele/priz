@@ -9,6 +9,7 @@
 obj/
 bin/Debug
 bin/Release
+bin/Release/PRIZ.exe
 bin/Release/PRIZ.exe.config
 bin/Release/PRIZ.pdb
 bin/Release/PRIZ.vshost.exe
