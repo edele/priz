@@ -51,6 +51,7 @@
             this.lblLight = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.showTaskCond = new System.Windows.Forms.Label();
+            this.lIdeas = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(164, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 38);
+            this.label1.Size = new System.Drawing.Size(271, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -83,6 +84,7 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.panel2.Controls.Add(this.lIdeas);
             this.panel2.Controls.Add(this.btnPlusIdea);
             this.panel2.Controls.Add(this.btnSendToTheNextForm);
             this.panel2.Controls.Add(this.panel1);
@@ -405,6 +407,20 @@
             this.showTaskCond.Text = "Просмотреть условие задачи";
             this.showTaskCond.Click += new System.EventHandler(this.showTaskCond_Click);
             // 
+            // lIdeas
+            // 
+            this.lIdeas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lIdeas.AutoSize = true;
+            this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lIdeas.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lIdeas.Location = new System.Drawing.Point(673, 123);
+            this.lIdeas.Name = "lIdeas";
+            this.lIdeas.Size = new System.Drawing.Size(185, 14);
+            this.lIdeas.TabIndex = 30;
+            this.lIdeas.Text = "Вы не ввели ни одной идеи";
+            this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
+            // 
             // FormPhenomenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,6 +453,7 @@
             this.Click += new System.EventHandler(this.tbForText_SizeChanged);
             this.Leave += new System.EventHandler(this.LabelLostFokus);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -468,5 +485,6 @@
         private System.Windows.Forms.Label lblLight;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label showTaskCond;
+        private System.Windows.Forms.Label lIdeas;
     }
 }

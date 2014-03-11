@@ -49,6 +49,7 @@ namespace PRIZ
             {
                 answer._hypothesises.Add(tbIdea.Text);
                 tbIdea.Clear();
+                lIdeas.Text = "Количество идей: "+answer._hypothesises.Count;
             }
         }
 
@@ -260,6 +261,21 @@ namespace PRIZ
         private void showTaskCond_Click(object sender, EventArgs e)
         {
             MessageBox.Show(Program.p.currentTask._name  + "\r\n\r\n" + Program.p.currentTask._given + "\r\n\r\n" + Program.p.currentTask._toFind);
+        }
+
+        private void lIdeas_Click(object sender, EventArgs e)
+        {
+            //вывод всех идей
+            string h="Гипотезы:\n\n";
+            if (answer._hypothesises.Count>0)
+            {
+                for (int i = 0; i < answer._hypothesises.Count; i++)
+                {
+                    h +=answer._hypothesises[i];
+                    h += "\n\n";
+                }
+                MessageBox.Show(h);
+            }
         }
     }
 }
