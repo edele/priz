@@ -50,8 +50,9 @@
             this.lblElectrical = new System.Windows.Forms.Label();
             this.lblMechanical = new System.Windows.Forms.Label();
             this.lblLight = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.showTaskCond = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 21F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label1.Location = new System.Drawing.Point(164, 60);
+            this.label1.Location = new System.Drawing.Point(147, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 38);
             this.label1.TabIndex = 0;
@@ -74,7 +75,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 14F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label2.Location = new System.Drawing.Point(167, 106);
+            this.label2.Location = new System.Drawing.Point(150, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 1;
@@ -98,11 +99,11 @@
             this.lIdeas.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lIdeas.AutoSize = true;
             this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lIdeas.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lIdeas.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lIdeas.Location = new System.Drawing.Point(673, 123);
+            this.lIdeas.Location = new System.Drawing.Point(656, 120);
             this.lIdeas.Name = "lIdeas";
-            this.lIdeas.Size = new System.Drawing.Size(185, 14);
+            this.lIdeas.Size = new System.Drawing.Size(203, 20);
             this.lIdeas.TabIndex = 30;
             this.lIdeas.Text = "Вы не ввели ни одной идеи";
             this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
@@ -116,7 +117,7 @@
             this.btnPlusIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlusIdea.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnPlusIdea.ForeColor = System.Drawing.Color.White;
-            this.btnPlusIdea.Location = new System.Drawing.Point(676, 24);
+            this.btnPlusIdea.Location = new System.Drawing.Point(659, 24);
             this.btnPlusIdea.Name = "btnPlusIdea";
             this.btnPlusIdea.Size = new System.Drawing.Size(148, 32);
             this.btnPlusIdea.TabIndex = 4;
@@ -133,7 +134,7 @@
             this.btnSendToTheNextForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSendToTheNextForm.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnSendToTheNextForm.ForeColor = System.Drawing.Color.White;
-            this.btnSendToTheNextForm.Location = new System.Drawing.Point(852, 24);
+            this.btnSendToTheNextForm.Location = new System.Drawing.Point(835, 24);
             this.btnSendToTheNextForm.Name = "btnSendToTheNextForm";
             this.btnSendToTheNextForm.Size = new System.Drawing.Size(109, 32);
             this.btnSendToTheNextForm.TabIndex = 1;
@@ -146,7 +147,7 @@
             this.panel1.BackgroundImage = global::PRIZ.Properties.Resources.registration_underlay_big;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.tbIdea);
-            this.panel1.Location = new System.Drawing.Point(174, 24);
+            this.panel1.Location = new System.Drawing.Point(155, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(481, 116);
             this.panel1.TabIndex = 3;
@@ -168,7 +169,7 @@
             this.lbUserName.BackColor = System.Drawing.Color.Transparent;
             this.lbUserName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lbUserName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbUserName.Location = new System.Drawing.Point(169, 28);
+            this.lbUserName.Location = new System.Drawing.Point(151, 28);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(100, 20);
             this.lbUserName.TabIndex = 16;
@@ -182,7 +183,7 @@
             this.btnWriteToUs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWriteToUs.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnWriteToUs.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = global::PRIZ.Properties.Resources.writeus01;
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -207,7 +208,7 @@
             this.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnAbout.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = global::PRIZ.Properties.Resources.about01;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -232,7 +233,7 @@
             this.btnModules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModules.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnModules.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -273,11 +274,11 @@
             this.tbHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbHypo.BackColor = System.Drawing.Color.White;
             this.tbHypo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHypo.Location = new System.Drawing.Point(317, 140);
+            this.tbHypo.Location = new System.Drawing.Point(304, 155);
             this.tbHypo.Name = "tbHypo";
             this.tbHypo.ReadOnly = true;
             this.tbHypo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbHypo.Size = new System.Drawing.Size(644, 379);
+            this.tbHypo.Size = new System.Drawing.Size(644, 327);
             this.tbHypo.TabIndex = 0;
             this.tbHypo.Text = "";
             // 
@@ -304,11 +305,11 @@
             this.lblSound.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSound.AutoSize = true;
             this.lblSound.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSound.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblSound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblSound.Location = new System.Drawing.Point(168, 150);
+            this.lblSound.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblSound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(179)))), ((int)(((byte)(151)))));
+            this.lblSound.Location = new System.Drawing.Point(151, 163);
             this.lblSound.Name = "lblSound";
-            this.lblSound.Size = new System.Drawing.Size(78, 14);
+            this.lblSound.Size = new System.Drawing.Size(84, 20);
             this.lblSound.TabIndex = 22;
             this.lblSound.Text = "Звуковые ";
             this.lblSound.Click += new System.EventHandler(this.ClickToLabel);
@@ -320,11 +321,11 @@
             this.lblMagnetic.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMagnetic.AutoSize = true;
             this.lblMagnetic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMagnetic.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblMagnetic.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblMagnetic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblMagnetic.Location = new System.Drawing.Point(168, 176);
+            this.lblMagnetic.Location = new System.Drawing.Point(151, 191);
             this.lblMagnetic.Name = "lblMagnetic";
-            this.lblMagnetic.Size = new System.Drawing.Size(79, 14);
+            this.lblMagnetic.Size = new System.Drawing.Size(88, 20);
             this.lblMagnetic.TabIndex = 23;
             this.lblMagnetic.Text = "Магнитные";
             this.lblMagnetic.Click += new System.EventHandler(this.ClickToLabel);
@@ -336,11 +337,11 @@
             this.lblThermal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblThermal.AutoSize = true;
             this.lblThermal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblThermal.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblThermal.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblThermal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblThermal.Location = new System.Drawing.Point(168, 228);
+            this.lblThermal.Location = new System.Drawing.Point(151, 247);
             this.lblThermal.Name = "lblThermal";
-            this.lblThermal.Size = new System.Drawing.Size(69, 14);
+            this.lblThermal.Size = new System.Drawing.Size(78, 20);
             this.lblThermal.TabIndex = 24;
             this.lblThermal.Text = "Тепловые";
             this.lblThermal.Click += new System.EventHandler(this.ClickToLabel);
@@ -352,11 +353,11 @@
             this.lblElectrical.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblElectrical.AutoSize = true;
             this.lblElectrical.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblElectrical.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblElectrical.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblElectrical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblElectrical.Location = new System.Drawing.Point(168, 202);
+            this.lblElectrical.Location = new System.Drawing.Point(151, 219);
             this.lblElectrical.Name = "lblElectrical";
-            this.lblElectrical.Size = new System.Drawing.Size(106, 14);
+            this.lblElectrical.Size = new System.Drawing.Size(112, 20);
             this.lblElectrical.TabIndex = 25;
             this.lblElectrical.Text = "Электрические";
             this.lblElectrical.Click += new System.EventHandler(this.ClickToLabel);
@@ -368,11 +369,11 @@
             this.lblMechanical.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMechanical.AutoSize = true;
             this.lblMechanical.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMechanical.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblMechanical.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblMechanical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblMechanical.Location = new System.Drawing.Point(168, 254);
+            this.lblMechanical.Location = new System.Drawing.Point(151, 275);
             this.lblMechanical.Name = "lblMechanical";
-            this.lblMechanical.Size = new System.Drawing.Size(101, 14);
+            this.lblMechanical.Size = new System.Drawing.Size(110, 20);
             this.lblMechanical.TabIndex = 26;
             this.lblMechanical.Text = "Механические";
             this.lblMechanical.Click += new System.EventHandler(this.ClickToLabel);
@@ -384,42 +385,61 @@
             this.lblLight.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLight.AutoSize = true;
             this.lblLight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblLight.Font = new System.Drawing.Font("Verdana", 9F);
+            this.lblLight.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblLight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lblLight.Location = new System.Drawing.Point(168, 280);
+            this.lblLight.Location = new System.Drawing.Point(151, 303);
             this.lblLight.Name = "lblLight";
-            this.lblLight.Size = new System.Drawing.Size(70, 14);
+            this.lblLight.Size = new System.Drawing.Size(76, 20);
             this.lblLight.TabIndex = 27;
             this.lblLight.Text = "Световые";
             this.lblLight.Click += new System.EventHandler(this.ClickToLabel);
             this.lblLight.Enter += new System.EventHandler(this.LabelGotFokus);
             this.lblLight.Leave += new System.EventHandler(this.LabelLostFokus);
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(88, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Выход";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // showTaskCond
             // 
             this.showTaskCond.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.showTaskCond.AutoSize = true;
             this.showTaskCond.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showTaskCond.Font = new System.Drawing.Font("Verdana", 9F);
+            this.showTaskCond.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.showTaskCond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.showTaskCond.Location = new System.Drawing.Point(169, 522);
+            this.showTaskCond.Location = new System.Drawing.Point(151, 514);
             this.showTaskCond.Name = "showTaskCond";
-            this.showTaskCond.Size = new System.Drawing.Size(196, 14);
+            this.showTaskCond.Size = new System.Drawing.Size(214, 20);
             this.showTaskCond.TabIndex = 29;
             this.showTaskCond.Text = "Просмотреть условие задачи";
             this.showTaskCond.Click += new System.EventHandler(this.showTaskCond_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Underline);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.label3.Location = new System.Drawing.Point(44, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Выход";
+            this.label3.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(51, 103);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(36, 36);
+            this.btnBack.TabIndex = 31;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FormPhenomenas
             // 
@@ -427,8 +447,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.showTaskCond);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblLight);
             this.Controls.Add(this.lblMechanical);
             this.Controls.Add(this.lblElectrical);
@@ -483,8 +504,9 @@
         private System.Windows.Forms.Label lblElectrical;
         private System.Windows.Forms.Label lblMechanical;
         private System.Windows.Forms.Label lblLight;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label showTaskCond;
         private System.Windows.Forms.Label lIdeas;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBack;
     }
 }

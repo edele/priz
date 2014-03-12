@@ -38,7 +38,7 @@
             this.lblTitleModule = new System.Windows.Forms.Label();
             this.btnLogoCreativeThinker = new System.Windows.Forms.Button();
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -70,7 +70,7 @@
             this.btnModules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModules.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnModules.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -95,7 +95,7 @@
             this.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnAbout.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = global::PRIZ.Properties.Resources.about01;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -120,7 +120,7 @@
             this.btnWriteToUs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWriteToUs.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnWriteToUs.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = global::PRIZ.Properties.Resources.writeus01;
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -142,7 +142,7 @@
             this.panelForElements.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelForElements.AutoScroll = true;
             this.panelForElements.BackColor = System.Drawing.Color.Transparent;
-            this.panelForElements.Location = new System.Drawing.Point(173, 113);
+            this.panelForElements.Location = new System.Drawing.Point(154, 114);
             this.panelForElements.Name = "panelForElements";
             this.panelForElements.Size = new System.Drawing.Size(802, 604);
             this.panelForElements.TabIndex = 7;
@@ -154,7 +154,7 @@
             this.lName.BackColor = System.Drawing.Color.Transparent;
             this.lName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lName.Location = new System.Drawing.Point(169, 28);
+            this.lName.Location = new System.Drawing.Point(150, 29);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(100, 20);
             this.lName.TabIndex = 8;
@@ -166,7 +166,8 @@
             this.lblTitleModule.AutoSize = true;
             this.lblTitleModule.BackColor = System.Drawing.Color.Transparent;
             this.lblTitleModule.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitleModule.Location = new System.Drawing.Point(166, 59);
+            this.lblTitleModule.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTitleModule.Location = new System.Drawing.Point(147, 60);
             this.lblTitleModule.Name = "lblTitleModule";
             this.lblTitleModule.Size = new System.Drawing.Size(190, 30);
             this.lblTitleModule.TabIndex = 10;
@@ -209,17 +210,19 @@
             this.btnLogoEducationEra.UseVisualStyleBackColor = true;
             this.btnLogoEducationEra.Click += new System.EventHandler(this.btnLogoEducationEra_Click);
             // 
-            // button1
+            // label3
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(88, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Выход";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Underline);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.label3.Location = new System.Drawing.Point(44, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Выход";
+            this.label3.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormTasks
             // 
@@ -228,7 +231,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1008, 727);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLogoEducationEra);
             this.Controls.Add(this.btnLogoCreativeThinker);
             this.Controls.Add(this.lblTitleModule);
@@ -260,7 +263,7 @@
         private System.Windows.Forms.Label lblTitleModule;
         private System.Windows.Forms.Button btnLogoCreativeThinker;
         private System.Windows.Forms.Button btnLogoEducationEra;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
 
     }
 }

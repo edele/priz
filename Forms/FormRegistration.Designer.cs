@@ -70,7 +70,7 @@
             this.tbSurename.Name = "tbSurename";
             this.tbSurename.Size = new System.Drawing.Size(172, 20);
             this.tbSurename.TabIndex = 1;
-            this.tbSurename.Text = "Фамилия *";
+            this.tbSurename.Text = "Фамилия";
             this.tbSurename.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbSurename.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -98,7 +98,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(172, 20);
             this.tbName.TabIndex = 1;
-            this.tbName.Text = "Имя *";
+            this.tbName.Text = "Имя";
             this.tbName.Enter += new System.EventHandler(this.TextBox_GotFocus);
             this.tbName.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
@@ -127,7 +127,7 @@
             this.btnModules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModules.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModules.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnModules.ForeColor = System.Drawing.Color.White;
             this.btnModules.Image = global::PRIZ.Properties.Resources.login;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -155,7 +155,6 @@
             this.button1.Size = new System.Drawing.Size(177, 30);
             this.button1.TabIndex = 1;
             this.button1.Text = "Зарегестрироваться";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

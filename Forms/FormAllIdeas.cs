@@ -93,7 +93,6 @@ namespace PRIZ
         private void button1_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
-            //this.Hide();
             Program.fAboutCreativeSchool.Show();
         }
 
@@ -113,21 +112,18 @@ namespace PRIZ
         private void btnAbout_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutProgramm);
-            //this.Hide();
             Program.fAboutProgramm.ShowDialog();
         }
 
         private void btnWriteToUs_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fMailSender);
-            //this.Hide();
             Program.fMailSender.Show();
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
-            //this.Hide();
             Program.fAboutEducation.Show();
         }
 
@@ -152,8 +148,13 @@ namespace PRIZ
                 lAllHypo.Items.Add(answer._hypothesises[i]);
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.fPhenomenas.Show();
+        }
     }
-    //______________________________________________________________________________
 
     public class UserSortableListBox : ListBox
     {
@@ -170,7 +171,7 @@ namespace PRIZ
         public delegate void ReorderHandler(object sender, ReorderEventArgs e);
         public event ReorderHandler Reorder;
 
-        //AllowDrop must be set to true in order to make drag'n'drop working
+        // AllowDrop must be set to true in order to make drag'n'drop working
         [Browsable(false)]
         new public bool AllowDrop
         {
@@ -198,25 +199,25 @@ namespace PRIZ
         {
             base.OnDragDrop(e);
             Point point = PointToClient(new Point(e.X, e.Y));
-            int index = IndexFromPoint(point); //destination index
-            //allow DataSource, i.e. BindingList
+            int index = IndexFromPoint(point); // destination index
+            // allow DataSource, i.e. BindingList
             IList items = DataSource != null ? DataSource as IList : Items;
             if (index < 0) index = items.Count - 1;
             if (index != sourceIndex)
             {
-                if (index > sourceIndex) //destination is below source
+                if (index > sourceIndex) // destination is below source
                 {
                     items.Insert(index + 1, items[sourceIndex]);
                     items.RemoveAt(sourceIndex);
                 }
-                else //destination is above source
+                else // destination is above source
                 {
                     items.Insert(index, items[sourceIndex]);
                     items.RemoveAt(sourceIndex + 1);
                 }
                 if (null != Reorder) Reorder(this, new ReorderEventArgs() { index1 = sourceIndex, index2 = index });
             }
-            //selectedIndex was lost during reorder
+            // selectedIndex was lost during reorder
             SelectedIndex = index;
         }
 
@@ -234,7 +235,7 @@ namespace PRIZ
                 return;
             }
             sourceIndex = SelectedIndex;
-            //OnSelectedIndexChanged is not launched while using MouseDown :(
+            // OnSelectedIndexChanged is not launched while using MouseDown :(
             OnSelectedIndexChanged(e);
             DoDragDrop(SelectedItem, DragDropEffects.Move);
         }

@@ -45,7 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTask)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             // 
             this.pbTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbTask.BackColor = System.Drawing.Color.Transparent;
-            this.pbTask.Location = new System.Drawing.Point(173, 113);
+            this.pbTask.Location = new System.Drawing.Point(154, 113);
             this.pbTask.Name = "pbTask";
             this.pbTask.Size = new System.Drawing.Size(430, 270);
             this.pbTask.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label1.Location = new System.Drawing.Point(169, 396);
+            this.label1.Location = new System.Drawing.Point(150, 396);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(311, 21);
             this.label1.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.tbGiven.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbGiven.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.tbGiven.ForeColor = System.Drawing.Color.Black;
-            this.tbGiven.Location = new System.Drawing.Point(173, 456);
+            this.tbGiven.Location = new System.Drawing.Point(154, 456);
             this.tbGiven.Multiline = true;
             this.tbGiven.Name = "tbGiven";
             this.tbGiven.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -88,7 +88,7 @@
             this.tbToFind.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbToFind.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.tbToFind.ForeColor = System.Drawing.Color.Black;
-            this.tbToFind.Location = new System.Drawing.Point(173, 592);
+            this.tbToFind.Location = new System.Drawing.Point(154, 592);
             this.tbToFind.Multiline = true;
             this.tbToFind.Name = "tbToFind";
             this.tbToFind.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -99,7 +99,7 @@
             // 
             this.lName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lName.AutoSize = true;
-            this.lName.Location = new System.Drawing.Point(627, 113);
+            this.lName.Location = new System.Drawing.Point(608, 113);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(95, 13);
             this.lName.TabIndex = 4;
@@ -109,7 +109,7 @@
             // 
             this.lDescription.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lDescription.AutoSize = true;
-            this.lDescription.Location = new System.Drawing.Point(627, 160);
+            this.lDescription.Location = new System.Drawing.Point(608, 160);
             this.lDescription.Name = "lDescription";
             this.lDescription.Size = new System.Drawing.Size(95, 13);
             this.lDescription.TabIndex = 5;
@@ -127,7 +127,7 @@
             this.btnToTheNextForm.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnToTheNextForm.ForeColor = System.Drawing.Color.White;
             this.btnToTheNextForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToTheNextForm.Location = new System.Drawing.Point(634, 421);
+            this.btnToTheNextForm.Location = new System.Drawing.Point(611, 456);
             this.btnToTheNextForm.Name = "btnToTheNextForm";
             this.btnToTheNextForm.Size = new System.Drawing.Size(98, 34);
             this.btnToTheNextForm.TabIndex = 6;
@@ -144,7 +144,7 @@
             this.btnWriteToUs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnWriteToUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWriteToUs.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnWriteToUs.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteToUs.Image")));
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -169,7 +169,7 @@
             this.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnAbout.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -215,7 +215,7 @@
             this.btnModules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModules.Font = new System.Drawing.Font("Verdana", 8.75F);
+            this.btnModules.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = ((System.Drawing.Image)(resources.GetObject("btnModules.Image")));
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -258,7 +258,7 @@
             this.lbUserName.BackColor = System.Drawing.Color.Transparent;
             this.lbUserName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lbUserName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbUserName.Location = new System.Drawing.Point(169, 28);
+            this.lbUserName.Location = new System.Drawing.Point(150, 28);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(100, 20);
             this.lbUserName.TabIndex = 15;
@@ -270,7 +270,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label2.Location = new System.Drawing.Point(169, 430);
+            this.label2.Location = new System.Drawing.Point(150, 430);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 19);
             this.label2.TabIndex = 17;
@@ -282,7 +282,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label3.Location = new System.Drawing.Point(171, 567);
+            this.label3.Location = new System.Drawing.Point(150, 570);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 19);
             this.label3.TabIndex = 18;
@@ -298,24 +298,26 @@
             this.btnLogoEducationEra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoEducationEra.Location = new System.Drawing.Point(778, 12);
+            this.btnLogoEducationEra.Location = new System.Drawing.Point(779, 12);
             this.btnLogoEducationEra.Name = "btnLogoEducationEra";
             this.btnLogoEducationEra.Size = new System.Drawing.Size(121, 99);
             this.btnLogoEducationEra.TabIndex = 19;
             this.btnLogoEducationEra.UseVisualStyleBackColor = true;
             this.btnLogoEducationEra.Click += new System.EventHandler(this.btnLogoEducationEra_Click);
             // 
-            // button1
+            // label4
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(88, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Выход";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Underline);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.label4.Location = new System.Drawing.Point(44, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Выход";
+            this.label4.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormTask
             // 
@@ -323,7 +325,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 727);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnLogoEducationEra);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -370,7 +372,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogoEducationEra;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -35,9 +35,9 @@
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbForText = new ReadOnlyRichTextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbForText = new PRIZ.ReadOnlyRichTextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -106,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -120,22 +120,6 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // tbForText
-            // 
-            this.tbForText.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbForText.BackColor = System.Drawing.Color.White;
-            this.tbForText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbForText.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tbForText.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
-            this.tbForText.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.tbForText.Location = new System.Drawing.Point(84, 279);
-            this.tbForText.Name = "tbForText";
-            this.tbForText.ReadOnly = true;
-            this.tbForText.Size = new System.Drawing.Size(881, 415);
-            this.tbForText.TabIndex = 16;
-            this.tbForText.Text = "";
-            this.tbForText.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
-            // 
             // btnBack
             // 
             this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -146,7 +130,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(84, 194);
+            this.btnBack.Location = new System.Drawing.Point(51, 194);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 36);
             this.btnBack.TabIndex = 17;
@@ -163,11 +147,26 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 14F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label3.Location = new System.Drawing.Point(79, 251);
+            this.label3.Location = new System.Drawing.Point(151, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 25);
+            this.label3.Size = new System.Drawing.Size(371, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "О проекте «Школа креативного мышления»";
+            // 
+            // tbForText
+            // 
+            this.tbForText.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbForText.BackColor = System.Drawing.Color.White;
+            this.tbForText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbForText.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tbForText.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
+            this.tbForText.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.tbForText.Location = new System.Drawing.Point(156, 257);
+            this.tbForText.Name = "tbForText";
+            this.tbForText.Size = new System.Drawing.Size(786, 415);
+            this.tbForText.TabIndex = 16;
+            this.tbForText.Text = "";
+            this.tbForText.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
             // 
             // FormAboutCreativeThinking
             // 
@@ -202,9 +201,9 @@
         private System.Windows.Forms.Button btnLogoEducationEra;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RichTextBox tbForText;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label3;
+        private ReadOnlyRichTextBox tbForText;
 
     }
 }

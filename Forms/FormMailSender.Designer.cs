@@ -135,7 +135,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(84, 194);
+            this.btnBack.Location = new System.Drawing.Point(51, 194);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 36);
             this.btnBack.TabIndex = 20;
@@ -149,7 +149,7 @@
             // txtMessage
             // 
             this.txtMessage.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtMessage.Location = new System.Drawing.Point(222, 267);
+            this.txtMessage.Location = new System.Drawing.Point(151, 270);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -160,7 +160,7 @@
             // 
             this.txtFrom.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtFrom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFrom.Location = new System.Drawing.Point(257, 197);
+            this.txtFrom.Location = new System.Drawing.Point(186, 200);
             this.txtFrom.Multiline = true;
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(531, 28);
@@ -173,7 +173,7 @@
             this.message.AutoSize = true;
             this.message.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.message.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.message.Location = new System.Drawing.Point(218, 241);
+            this.message.Location = new System.Drawing.Point(147, 244);
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(62, 20);
             this.message.TabIndex = 23;
@@ -185,7 +185,7 @@
             this.from.AutoSize = true;
             this.from.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.from.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.from.Location = new System.Drawing.Point(218, 200);
+            this.from.Location = new System.Drawing.Point(147, 203);
             this.from.Name = "from";
             this.from.Size = new System.Drawing.Size(33, 20);
             this.from.TabIndex = 21;
@@ -202,7 +202,7 @@
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnSend.ForeColor = System.Drawing.Color.White;
-            this.btnSend.Location = new System.Drawing.Point(222, 633);
+            this.btnSend.Location = new System.Drawing.Point(151, 636);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(109, 32);
             this.btnSend.TabIndex = 29;

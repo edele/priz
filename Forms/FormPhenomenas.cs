@@ -49,7 +49,8 @@ namespace PRIZ
             {
                 answer._hypothesises.Add(tbIdea.Text);
                 tbIdea.Clear();
-                lIdeas.Text = "Количество идей: "+answer._hypothesises.Count;
+                lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
+                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
             }
         }
 
@@ -191,10 +192,12 @@ namespace PRIZ
         {
             foreach (Label phenomenaLabel in phenomenaLabels)
             {
-                phenomenaLabel.Font = new System.Drawing.Font("Verdana", 9F, FontStyle.Regular);
+                phenomenaLabel.Font = new System.Drawing.Font("Segoe UI", 11F, FontStyle.Regular);
+                phenomenaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             }
             Label lbl = sender as Label;
-            lbl.Font = new System.Drawing.Font("Verdana", 9F, FontStyle.Bold);
+            lbl.Font = new System.Drawing.Font("Segoe UI", 11F, FontStyle.Bold);
+            lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(179)))), ((int)(((byte)(151)))));
             switch (lbl.Name)
             {
                 case "lblSound":
@@ -261,7 +264,7 @@ namespace PRIZ
 
         private void showTaskCond_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Program.p.currentTask._name  + "\r\n\r\n" + Program.p.currentTask._given + "\r\n\r\n" + Program.p.currentTask._toFind);
+            MessageBox.Show(Program.p.currentTask._name  + "\r\n\r\n" + Program.p.currentTask._given + "\r\n\r\n" + Program.p.currentTask._toFind, "Условие задачи");
         }
 
         private void lIdeas_Click(object sender, EventArgs e)
@@ -277,6 +280,12 @@ namespace PRIZ
                 }
                 MessageBox.Show(h, "Гипотезы");
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.fTasks.Show();
         }
     }
 }

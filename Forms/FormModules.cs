@@ -100,8 +100,6 @@ namespace PRIZ
         }
         void pbox_Click(object sender, EventArgs e)
         {
-
-            //MessageBox.Show(sender.GetType().ToString());
             if (sender.GetType().ToString() == "System.Windows.Forms.PictureBox")
             {
                 PictureBox pbox = sender as PictureBox;
@@ -118,7 +116,6 @@ namespace PRIZ
                 Program.fTasks.Show();
                 this.Hide();
             }
-            //MessageBox.Show("pbox tag: " + pbox.Tag);
         }
 
         #region events
@@ -185,7 +182,6 @@ namespace PRIZ
         private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
-            //this.Hide();
             Program.fAboutCreativeSchool.Show();
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
@@ -196,21 +192,18 @@ namespace PRIZ
         private void btnAbout_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutProgramm);
-            //this.Hide();
             Program.fAboutProgramm.ShowDialog();
         }
 
         private void btnWriteToUs_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fMailSender);
-            //this.Hide();
             Program.fMailSender.Show();
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
-            //this.Hide();
             Program.fAboutEducation.Show();
         }
 
@@ -221,6 +214,12 @@ namespace PRIZ
             Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             Program.fLogin.Show();
             this.Hide();
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.fLogin.Show();
         }
 
     }

@@ -132,7 +132,6 @@ namespace PRIZ
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
-
             if (MessageBox.Show("Вы уверены, что хотите перейти в задачи? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 this.Hide();

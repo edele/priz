@@ -200,7 +200,7 @@
             this.btnRegistration.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRegistration.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistration.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnRegistration.ForeColor = System.Drawing.Color.White;
             this.btnRegistration.Location = new System.Drawing.Point(168, 111);
             this.btnRegistration.Name = "btnRegistration";

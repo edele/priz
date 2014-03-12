@@ -35,7 +35,7 @@
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbForText = new ReadOnlyRichTextBox();
+            this.tbForText = new PRIZ.ReadOnlyRichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
@@ -78,7 +78,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -107,7 +107,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -129,10 +129,9 @@
             this.tbForText.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbForText.Font = new System.Drawing.Font("Segoe UI Light", 8.25F);
             this.tbForText.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.tbForText.Location = new System.Drawing.Point(84, 279);
+            this.tbForText.Location = new System.Drawing.Point(156, 253);
             this.tbForText.Name = "tbForText";
-            this.tbForText.ReadOnly = true;
-            this.tbForText.Size = new System.Drawing.Size(881, 415);
+            this.tbForText.Size = new System.Drawing.Size(793, 415);
             this.tbForText.TabIndex = 17;
             this.tbForText.Text = "";
             // 
@@ -142,7 +141,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 14F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label3.Location = new System.Drawing.Point(79, 251);
+            this.label3.Location = new System.Drawing.Point(151, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(276, 25);
             this.label3.TabIndex = 18;
@@ -158,7 +157,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(84, 194);
+            this.btnBack.Location = new System.Drawing.Point(51, 194);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 36);
             this.btnBack.TabIndex = 19;
@@ -181,7 +180,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 765);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormAboutProgramm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";
@@ -202,8 +201,8 @@
         private System.Windows.Forms.Button btnLogoEducationEra;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RichTextBox tbForText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBack;
+        private ReadOnlyRichTextBox tbForText;
     }
 }

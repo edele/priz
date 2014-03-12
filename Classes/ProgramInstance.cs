@@ -64,17 +64,12 @@ namespace PRIZ
             return user;
         }
 
-        public void Login() 
-        {
-
-        }
         public void GenerateTxtReport(Answer a) 
         {
             User u = CurrentUser;
             string report;
-            report = "===================================\r\n";
-            report += Program.p.currentTask._name.ToUpper() + "\r\n";
-            report += "===================================\r\n";
+            report = Program.p.currentTask._name.ToUpper() + "\r\n";
+            report += "\r\n";
             report += "Решал(а): " + Program.p.CurrentFullName + "\r\n";
             report += "Страна: " + u._country + "\r\n";
             report += "Статус: " + u._status + "\r\n";
@@ -91,7 +86,6 @@ namespace PRIZ
                 report += "• " + hypotesis;
                 report += "\r\n";
             }
-
 
             report += "\r\nКомментарий: \r\n";
             report += answer._comment;
