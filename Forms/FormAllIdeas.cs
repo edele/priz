@@ -38,7 +38,14 @@ namespace PRIZ
 
         private void btnSentToMail_Click(object sender, EventArgs e)
         {
+            
             answer._comment = tbComment.Text;
+            
+            answer._hypothesises.Clear();
+            for (int i = 0; i < lAllHypo.Items.Count; i++)
+            {
+                answer._hypothesises.Add(lAllHypo.Items[i].ToString());
+            }
             Program.p.GenerateTxtReport(answer);
         }
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
@@ -151,6 +158,11 @@ namespace PRIZ
             {
                 lAllHypo.Items.Add(answer._hypothesises[i]);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     //______________________________________________________________________________

@@ -46,7 +46,7 @@
             this.lGiven = new System.Windows.Forms.TextBox();
             this.lToFind = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.lAllHypo = new UserSortableListBox();
+            this.lAllHypo = new PRIZ.UserSortableListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -307,6 +307,8 @@
             // 
             // lAllHypo
             // 
+            this.lAllHypo.AllowDrop = true;
+            this.lAllHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lAllHypo.FormattingEnabled = true;
             this.lAllHypo.Location = new System.Drawing.Point(572, 164);
             this.lAllHypo.Name = "lAllHypo";
@@ -318,7 +320,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.ClientSize = new System.Drawing.Size(1008, 688);
             this.Controls.Add(this.lAllHypo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lToFind);
