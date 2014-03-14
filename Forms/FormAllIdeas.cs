@@ -160,10 +160,55 @@ namespace PRIZ
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void lAllHypo_DrawItem(object sender, DrawItemEventArgs e)
         {
-            
+            e.DrawBackground();
+            e.DrawFocusRectangle();
+            e.Graphics.DrawString(
+                 (string)lAllHypo.Items[e.Index],
+                 e.Font,
+                 new SolidBrush(e.ForeColor),
+                 e.Bounds);
         }
+        private void lAllHypo_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemHeight = 13 + (13 * GetLinesNumber((string)lAllHypo.Items[e.Index]));
+        }
+
+        private int GetLinesNumber(string text)
+        {
+            int count = 1;
+            for (int i = 0; i < text.Length / 80; i++)
+            {
+                count++;
+            }
+            return count;
+        }
+        private void btnEditSelectedItem_Click(object sender, EventArgs e)
+        {
+            if (tbAddOrEditIdea.TextLength > 0)
+            {
+                int i = lAllHypo.SelectedIndex;
+                lAllHypo.Items.RemoveAt(i);
+                lAllHypo.Items.Insert(i, tbAddOrEditIdea.Text);           
+            }
+            tbAddOrEditIdea.Clear();
+        }
+
+        private void btnRemoveSelectedItem_Click(object sender, EventArgs e)
+        {
+            lAllHypo.Items.Remove(lAllHypo.SelectedItem);
+        }
+
+        private void btnAddIdea_Click(object sender, EventArgs e)
+        {
+            if (tbAddOrEditIdea.TextLength>0)
+            {
+                lAllHypo.Items.Add(Convert.ToString(tbAddOrEditIdea.Text));
+            }
+            tbAddOrEditIdea.Clear();
+        }
+
     }
     //______________________________________________________________________________
 
