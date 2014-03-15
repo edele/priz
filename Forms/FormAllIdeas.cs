@@ -38,7 +38,14 @@ namespace PRIZ
 
         private void btnSentToMail_Click(object sender, EventArgs e)
         {
+            
             answer._comment = tbComment.Text;
+            
+            answer._hypothesises.Clear();
+            for (int i = 0; i < lAllHypo.Items.Count; i++)
+            {
+                answer._hypothesises.Add(lAllHypo.Items[i].ToString());
+            }
             Program.p.GenerateTxtReport(answer);
         }
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
@@ -149,11 +156,63 @@ namespace PRIZ
             }
         }
 
+<<<<<<< HEAD
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.fPhenomenas.Show();
         }
+=======
+        private void lAllHypo_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            e.DrawFocusRectangle();
+            e.Graphics.DrawString(
+                 (string)lAllHypo.Items[e.Index],
+                 e.Font,
+                 new SolidBrush(e.ForeColor),
+                 e.Bounds);
+        }
+        private void lAllHypo_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemHeight = 13 + (13 * GetLinesNumber((string)lAllHypo.Items[e.Index]));
+        }
+
+        private int GetLinesNumber(string text)
+        {
+            int count = 1;
+            for (int i = 0; i < text.Length / 80; i++)
+            {
+                count++;
+            }
+            return count;
+        }
+        private void btnEditSelectedItem_Click(object sender, EventArgs e)
+        {
+            if (tbAddOrEditIdea.TextLength > 0)
+            {
+                int i = lAllHypo.SelectedIndex;
+                lAllHypo.Items.RemoveAt(i);
+                lAllHypo.Items.Insert(i, tbAddOrEditIdea.Text);           
+            }
+            tbAddOrEditIdea.Clear();
+        }
+
+        private void btnRemoveSelectedItem_Click(object sender, EventArgs e)
+        {
+            lAllHypo.Items.Remove(lAllHypo.SelectedItem);
+        }
+
+        private void btnAddIdea_Click(object sender, EventArgs e)
+        {
+            if (tbAddOrEditIdea.TextLength>0)
+            {
+                lAllHypo.Items.Add(Convert.ToString(tbAddOrEditIdea.Text));
+            }
+            tbAddOrEditIdea.Clear();
+        }
+
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
     }
 
     public class UserSortableListBox : ListBox

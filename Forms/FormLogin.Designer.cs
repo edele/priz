@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 72);
+            this.label1.Size = new System.Drawing.Size(419, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -67,7 +67,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 25);
+            this.label2.Size = new System.Drawing.Size(596, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -181,6 +181,7 @@
             this.tbLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
             this.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.tbLogin.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.tbLogin.Location = new System.Drawing.Point(38, 13);
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(156, 20);

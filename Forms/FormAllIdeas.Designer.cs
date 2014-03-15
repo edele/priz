@@ -45,9 +45,18 @@
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
             this.lGiven = new System.Windows.Forms.TextBox();
             this.lToFind = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.label4 = new System.Windows.Forms.Label();
             this.lAllHypo = new PRIZ.UserSortableListBox();
             this.btnBack = new System.Windows.Forms.Button();
+=======
+            this.button1 = new System.Windows.Forms.Button();
+            this.lAllHypo = new PRIZ.UserSortableListBox();
+            this.tbAddOrEditIdea = new System.Windows.Forms.TextBox();
+            this.btnAddIdea = new System.Windows.Forms.Button();
+            this.btnEditIdea = new System.Windows.Forms.Button();
+            this.btnRemoveIdea = new System.Windows.Forms.Button();
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.SuspendLayout();
             // 
             // label1
@@ -141,7 +150,11 @@
             this.btnSentToMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSentToMail.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnSentToMail.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnSentToMail.Location = new System.Drawing.Point(152, 579);
+=======
+            this.btnSentToMail.Location = new System.Drawing.Point(176, 658);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.btnSentToMail.Name = "btnSentToMail";
             this.btnSentToMail.Size = new System.Drawing.Size(151, 31);
             this.btnSentToMail.TabIndex = 12;
@@ -311,11 +324,81 @@
             // lAllHypo
             // 
             this.lAllHypo.AllowDrop = true;
+<<<<<<< HEAD
             this.lAllHypo.FormattingEnabled = true;
             this.lAllHypo.Location = new System.Drawing.Point(548, 173);
+=======
+            this.lAllHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lAllHypo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.lAllHypo.FormattingEnabled = true;
+            this.lAllHypo.ItemHeight = 23;
+            this.lAllHypo.Location = new System.Drawing.Point(572, 164);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.lAllHypo.Name = "lAllHypo";
-            this.lAllHypo.Size = new System.Drawing.Size(399, 394);
+            this.lAllHypo.Size = new System.Drawing.Size(423, 394);
             this.lAllHypo.TabIndex = 31;
+            this.lAllHypo.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lAllHypo_DrawItem);
+            this.lAllHypo.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lAllHypo_MeasureItem);
+            // 
+            // tbAddOrEditIdea
+            // 
+            this.tbAddOrEditIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbAddOrEditIdea.Location = new System.Drawing.Point(572, 570);
+            this.tbAddOrEditIdea.Multiline = true;
+            this.tbAddOrEditIdea.Name = "tbAddOrEditIdea";
+            this.tbAddOrEditIdea.Size = new System.Drawing.Size(423, 82);
+            this.tbAddOrEditIdea.TabIndex = 34;
+            // 
+            // btnAddIdea
+            // 
+            this.btnAddIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAddIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnAddIdea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnAddIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.btnAddIdea.ForeColor = System.Drawing.Color.White;
+            this.btnAddIdea.Location = new System.Drawing.Point(572, 658);
+            this.btnAddIdea.Name = "btnAddIdea";
+            this.btnAddIdea.Size = new System.Drawing.Size(137, 31);
+            this.btnAddIdea.TabIndex = 35;
+            this.btnAddIdea.Text = "Ещё идея";
+            this.btnAddIdea.UseVisualStyleBackColor = false;
+            this.btnAddIdea.Click += new System.EventHandler(this.btnAddIdea_Click);
+            // 
+            // btnEditIdea
+            // 
+            this.btnEditIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnEditIdea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnEditIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.btnEditIdea.ForeColor = System.Drawing.Color.White;
+            this.btnEditIdea.Location = new System.Drawing.Point(715, 658);
+            this.btnEditIdea.Name = "btnEditIdea";
+            this.btnEditIdea.Size = new System.Drawing.Size(137, 31);
+            this.btnEditIdea.TabIndex = 36;
+            this.btnEditIdea.Text = "Редактировать";
+            this.btnEditIdea.UseVisualStyleBackColor = false;
+            this.btnEditIdea.Click += new System.EventHandler(this.btnEditSelectedItem_Click);
+            // 
+            // btnRemoveIdea
+            // 
+            this.btnRemoveIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRemoveIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnRemoveIdea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnRemoveIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.btnRemoveIdea.ForeColor = System.Drawing.Color.White;
+            this.btnRemoveIdea.Location = new System.Drawing.Point(858, 658);
+            this.btnRemoveIdea.Name = "btnRemoveIdea";
+            this.btnRemoveIdea.Size = new System.Drawing.Size(137, 31);
+            this.btnRemoveIdea.TabIndex = 37;
+            this.btnRemoveIdea.Text = "Удалить";
+            this.btnRemoveIdea.UseVisualStyleBackColor = false;
+            this.btnRemoveIdea.Click += new System.EventHandler(this.btnRemoveSelectedItem_Click);
             // 
             // btnBack
             // 
@@ -339,9 +422,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1008, 727);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label4);
+=======
+            this.ClientSize = new System.Drawing.Size(1024, 726);
+            this.Controls.Add(this.btnRemoveIdea);
+            this.Controls.Add(this.btnEditIdea);
+            this.Controls.Add(this.btnAddIdea);
+            this.Controls.Add(this.tbAddOrEditIdea);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.Controls.Add(this.lAllHypo);
             this.Controls.Add(this.lToFind);
             this.Controls.Add(this.lGiven);
@@ -389,7 +480,14 @@
         private System.Windows.Forms.TextBox lGiven;
         private System.Windows.Forms.TextBox lToFind;
         private UserSortableListBox lAllHypo;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBack;
+=======
+        private System.Windows.Forms.TextBox tbAddOrEditIdea;
+        private System.Windows.Forms.Button btnAddIdea;
+        private System.Windows.Forms.Button btnEditIdea;
+        private System.Windows.Forms.Button btnRemoveIdea;
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
     }
 }

@@ -98,10 +98,14 @@
             // lName
             // 
             this.lName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+<<<<<<< HEAD
             this.lName.AutoSize = true;
             this.lName.Location = new System.Drawing.Point(608, 113);
+=======
+            this.lName.Location = new System.Drawing.Point(627, 113);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.lName.Name = "lName";
-            this.lName.Size = new System.Drawing.Size(95, 13);
+            this.lName.Size = new System.Drawing.Size(369, 101);
             this.lName.TabIndex = 4;
             this.lName.Text = "Название задачи";
             // 
@@ -109,7 +113,11 @@
             // 
             this.lDescription.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lDescription.AutoSize = true;
+<<<<<<< HEAD
             this.lDescription.Location = new System.Drawing.Point(608, 160);
+=======
+            this.lDescription.Location = new System.Drawing.Point(627, 214);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.lDescription.Name = "lDescription";
             this.lDescription.Size = new System.Drawing.Size(95, 13);
             this.lDescription.TabIndex = 5;
@@ -127,7 +135,11 @@
             this.btnToTheNextForm.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnToTheNextForm.ForeColor = System.Drawing.Color.White;
             this.btnToTheNextForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnToTheNextForm.Location = new System.Drawing.Point(611, 456);
+=======
+            this.btnToTheNextForm.Location = new System.Drawing.Point(630, 456);
+>>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
             this.btnToTheNextForm.Name = "btnToTheNextForm";
             this.btnToTheNextForm.Size = new System.Drawing.Size(98, 34);
             this.btnToTheNextForm.TabIndex = 6;
