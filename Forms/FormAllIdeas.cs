@@ -156,13 +156,11 @@ namespace PRIZ
             }
         }
 
-<<<<<<< HEAD
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.fPhenomenas.Show();
         }
-=======
         private void lAllHypo_DrawItem(object sender, DrawItemEventArgs e)
         {
             e.DrawBackground();
@@ -211,8 +209,6 @@ namespace PRIZ
             }
             tbAddOrEditIdea.Clear();
         }
-
->>>>>>> f6a14d434daa6932ee8be6162fe9728e39ded715
     }
 
     public class UserSortableListBox : ListBox
