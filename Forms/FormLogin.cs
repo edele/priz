@@ -21,7 +21,6 @@ namespace PRIZ
             this.FormClosing += Program.ApplicationQuit;
             // 1) Создаем объект программы. С ним теперь всегда и работаем.
             RefreshUserList();
-            //MessageBox.Show(tbPassword.PasswordChar.ToString());
         }
 
         public void RefreshUserList()

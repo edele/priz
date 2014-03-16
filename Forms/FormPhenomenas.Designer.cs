@@ -65,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(147, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 38);
+            this.label1.Size = new System.Drawing.Size(269, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -161,6 +161,9 @@
             this.tbIdea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbIdea.Size = new System.Drawing.Size(475, 107);
             this.tbIdea.TabIndex = 0;
+            this.tbIdea.TextChanged += new System.EventHandler(this.tbIdea_TextChanged);
+            this.tbIdea.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbIdea_KeyDown);
+            this.tbIdea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIdea_KeyPress);
             this.tbIdea.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbIdea_KeyUp);
             // 
             // lbUserName

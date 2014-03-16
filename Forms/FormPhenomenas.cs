@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace PRIZ
 {
@@ -37,19 +38,29 @@ namespace PRIZ
             phenomenaLabels.Add(lblMechanical);
             phenomenaLabels.Add(lblLight);
         }
+
+        string CleanFromSpaces(string t)
+        {
+            t = Regex.Replace(t, "[ \t]{2,}", " ");
+            t = Regex.Replace(t, "[\\s]{2,}", Environment.NewLine);
+            return t;
+        }
+
         private void tb_MouseWheel(object sender, EventArgs e)
         {
             tbHypo.Focus();
         }
+
         private void btnPlusIdea_Click(object sender, EventArgs e)
         {
             tbIdea.Focus();
             if (tbIdea.Text != "")
             {
+                tbIdea.Text = CleanFromSpaces(tbIdea.Text);/*
                 answer._hypothesises.Add(tbIdea.Text);
                 tbIdea.Clear();
                 lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
-                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
+                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);*/
             }
         }
 
@@ -298,7 +309,48 @@ namespace PRIZ
                     lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
                     lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
                 }
+                return;
             }
+        }
+
+        private void tbIdea_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void tbIdea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch (e.KeyChar)
+            {
+                case ' ':
+                    if (tbIdea.Text.Length == 0)
+                    {
+                        e.Handled = true;
+                    }
+                    else
+                    {
+                        if (tbIdea.Text[tbIdea.Text.Length - 1] == ' ')
+                            e.Handled = true;
+                    }
+                    break;
+                case (char)13:
+                    if (tbIdea.Text.Length == 0)
+                    {
+                        e.Handled = true;
+                    }
+                    else
+                    if (tbIdea.Text[tbIdea.Text.Length - 1] == '\n')
+                    {
+                        e.Handled = true;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void tbIdea_TextChanged(object sender, EventArgs e)
+        {
+            tbIdea.Text = CleanFromSpaces(tbIdea.Text);
         }
     }
 }
