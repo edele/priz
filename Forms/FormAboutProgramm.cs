@@ -23,8 +23,7 @@ namespace PRIZ
             //this.FormClosing += Program.ApplicationQuit;
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
-            tbForText.LoadFile(@"content/textAboutProgramm.rtf");
-            tbForText.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            tbForText.LoadFile(@"content/textAboutProgramm.rtf", RichTextBoxStreamType.RichText);
         }
         private void btnBack_MouseEnter(object sender, EventArgs e)
         {

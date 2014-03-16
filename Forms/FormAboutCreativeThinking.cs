@@ -14,16 +14,12 @@ namespace PRIZ
         public FormAboutCreativeThinking()
         {
             InitializeComponent();
-            //btnLogoCreativeThinker.MouseEnter += Program.LogoMouseEnter;
-            //btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            //this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
-            tbForText.LoadFile(@"content/textAboutCreativeSchool.rtf");
-            tbForText.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            tbForText.LoadFile(@"content/textAboutCreativeSchool.rtf", RichTextBoxStreamType.RichText);
         }
         
 

@@ -27,8 +27,7 @@ namespace PRIZ
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
             this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
-            tbHypo.LoadFile(@"content/textSound.rtf");
-            tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
 
             phenomenaLabels = new List<Label>();
             phenomenaLabels.Add(lblSound);
@@ -204,32 +203,27 @@ namespace PRIZ
             switch (lbl.Name)
             {
                 case "lblSound":
-                    tbHypo.LoadFile(@"content/textSound.rtf");
+                    tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
                     break;
                 case "lblMagnetic":
-                    tbHypo.LoadFile(@"content/textMagnetic.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    tbHypo.LoadFile(@"content/textMagnetic.rtf", RichTextBoxStreamType.RichText);
                     break;
                 case "lblElectrical":
-                    tbHypo.LoadFile(@"content/textElectrical.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    tbHypo.LoadFile(@"content/textElectrical.rtf", RichTextBoxStreamType.RichText);
                     break;
                 case "lblThermal":
-                    tbHypo.LoadFile(@"content/textThermal.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    tbHypo.LoadFile(@"content/textThermal.rtf", RichTextBoxStreamType.RichText);
                     break;
                 case "lblMechanical":
-                    tbHypo.LoadFile(@"content/textMechanical.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    tbHypo.LoadFile(@"content/textMechanical.rtf", RichTextBoxStreamType.RichText);
                     break;
                 case "lblLight":
-                    tbHypo.LoadFile(@"content/textLight.rtf");
-                    tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+                    tbHypo.LoadFile(@"content/textLight.rtf", RichTextBoxStreamType.RichText);
                     break;
                 default:
                     break;
             }
-            tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            //tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
         }
 
         static string _elderText;
