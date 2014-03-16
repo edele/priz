@@ -58,8 +58,11 @@ namespace PRIZ
         {
             if (tbIdea.Text != "" || answer._hypothesises.Count > 0)
             {
-                if (tbIdea.Text != "") 
+                if (tbIdea.Text != "")
+                {
                     answer._hypothesises.Add(tbIdea.Text);
+                    tbIdea.Clear();
+                }
                 Program.InitWindow(Forms.fAllIdeas);
                 Program.fAllIdeas.Show();
                 this.Hide();
