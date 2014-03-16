@@ -245,7 +245,7 @@
             this.btnLogoCreativeThinker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(905, 14);
+            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(864, 14);
             this.btnLogoCreativeThinker.Name = "btnLogoCreativeThinker";
             this.btnLogoCreativeThinker.Size = new System.Drawing.Size(114, 93);
             this.btnLogoCreativeThinker.TabIndex = 16;
@@ -259,7 +259,7 @@
             this.lbUserName.BackColor = System.Drawing.Color.Transparent;
             this.lbUserName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lbUserName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbUserName.Location = new System.Drawing.Point(150, 28);
+            this.lbUserName.Location = new System.Drawing.Point(151, 28);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(100, 20);
             this.lbUserName.TabIndex = 15;
@@ -292,6 +292,7 @@
             // btnLogoEducationEra
             // 
             this.btnLogoEducationEra.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLogoEducationEra.BackgroundImage = global::PRIZ.Properties.Resources.logo_educationfornewera;
             this.btnLogoEducationEra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogoEducationEra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogoEducationEra.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -299,7 +300,7 @@
             this.btnLogoEducationEra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoEducationEra.Location = new System.Drawing.Point(779, 12);
+            this.btnLogoEducationEra.Location = new System.Drawing.Point(739, 10);
             this.btnLogoEducationEra.Name = "btnLogoEducationEra";
             this.btnLogoEducationEra.Size = new System.Drawing.Size(121, 99);
             this.btnLogoEducationEra.TabIndex = 19;

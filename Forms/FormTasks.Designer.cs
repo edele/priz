@@ -154,7 +154,7 @@
             this.lName.BackColor = System.Drawing.Color.Transparent;
             this.lName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lName.Location = new System.Drawing.Point(150, 29);
+            this.lName.Location = new System.Drawing.Point(151, 28);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(100, 20);
             this.lName.TabIndex = 8;
@@ -165,11 +165,11 @@
             this.lblTitleModule.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitleModule.AutoSize = true;
             this.lblTitleModule.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitleModule.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitleModule.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTitleModule.Location = new System.Drawing.Point(147, 60);
+            this.lblTitleModule.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            this.lblTitleModule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lblTitleModule.Location = new System.Drawing.Point(147, 69);
             this.lblTitleModule.Name = "lblTitleModule";
-            this.lblTitleModule.Size = new System.Drawing.Size(190, 30);
+            this.lblTitleModule.Size = new System.Drawing.Size(242, 38);
             this.lblTitleModule.TabIndex = 10;
             this.lblTitleModule.Text = "Выберите задание";
             // 
@@ -217,7 +217,7 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Underline);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label3.Location = new System.Drawing.Point(44, 29);
+            this.label3.Location = new System.Drawing.Point(44, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 32;
