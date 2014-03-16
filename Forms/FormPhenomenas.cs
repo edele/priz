@@ -283,6 +283,7 @@ namespace PRIZ
         {
             this.Hide();
             Program.fTask.Show();
+            answer._hypothesises.Clear();
         }
 
         private void tbIdea_KeyUp(object sender, KeyEventArgs e)
