@@ -42,15 +42,6 @@ namespace PRIZ
             btnRegistration.BackgroundImage = Properties.Resources.btn_registration;
         }
 
-        private void btnLogoCreativeThinker_MouseEnter(object sender, EventArgs e)
-        {
-            btnLogoCreativeThinker.BackgroundImage = Properties.Resources.logo_creativethinker_hover;
-        }
-        private void btnLogoCreativeThinker_MouseLeave(object sender, EventArgs e)
-        {
-            btnLogoCreativeThinker.BackgroundImage = Properties.Resources.logo_creativethinker;
-        }
-
         private void btnLogoEducationEra_MouseEnter(object sender, EventArgs e)
         {
             btnLogoEducationEra.BackgroundImage = Properties.Resources.logo_educationfornewera_hover;

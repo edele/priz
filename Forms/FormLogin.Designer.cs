@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -67,7 +67,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -124,7 +124,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::PRIZ.Properties.Resources.lineUnderTheText;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(84, 148);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(881, 10);
@@ -194,7 +194,7 @@
             // btnRegistration
             // 
             this.btnRegistration.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistration.BackgroundImage = global::PRIZ.Properties.Resources.btn_regis;
+            this.btnRegistration.BackgroundImage = global::PRIZ.Properties.Resources.btn_registration;
             this.btnRegistration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistration.FlatAppearance.BorderSize = 0;
@@ -211,6 +211,8 @@
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnRegistration.UseVisualStyleBackColor = true;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
+            this.btnRegistration.MouseEnter += new System.EventHandler(this.btnRegistration_MouseEnter);
+            this.btnRegistration.MouseLeave += new System.EventHandler(this.btnRegistration_MouseLeave);
             // 
             // FormLogin
             // 

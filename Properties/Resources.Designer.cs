@@ -123,16 +123,6 @@ namespace PRIZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_regis {
-            get {
-                object obj = ResourceManager.GetObject("btn_regis", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap btn_registration {
             get {
                 object obj = ResourceManager.GetObject("btn_registration", resourceCulture);
@@ -173,26 +163,6 @@ namespace PRIZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnReg {
-            get {
-                object obj = ResourceManager.GetObject("btnReg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnSMK {
-            get {
-                object obj = ResourceManager.GetObject("btnSMK", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Krug {
             get {
                 object obj = ResourceManager.GetObject("Krug", resourceCulture);
@@ -216,26 +186,6 @@ namespace PRIZ.Properties {
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_creativethinker {
-            get {
-                object obj = ResourceManager.GetObject("logo_creativethinker", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_creativethinker_hover {
-            get {
-                object obj = ResourceManager.GetObject("logo_creativethinker_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,16 +273,6 @@ namespace PRIZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mW8D4oodfmQ {
-            get {
-                object obj = ResourceManager.GetObject("mW8D4oodfmQ", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap mytasks01 {
             get {
                 object obj = ResourceManager.GetObject("mytasks01", resourceCulture);
@@ -356,16 +296,6 @@ namespace PRIZ.Properties {
         internal static System.Drawing.Bitmap mytasks03 {
             get {
                 object obj = ResourceManager.GetObject("mytasks03", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Oq6iuZLOVbk {
-            get {
-                object obj = ResourceManager.GetObject("Oq6iuZLOVbk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

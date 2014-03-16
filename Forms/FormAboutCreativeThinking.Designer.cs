@@ -56,7 +56,7 @@
             // 
             // btnLogoCreativeThinker
             // 
-            this.btnLogoCreativeThinker.BackgroundImage = global::PRIZ.Properties.Resources.Oq6iuZLOVbk;
+            this.btnLogoCreativeThinker.BackgroundImage = global::PRIZ.Properties.Resources.Logo_ShKM;
             this.btnLogoCreativeThinker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLogoCreativeThinker.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnLogoCreativeThinker.FlatAppearance.BorderColor = System.Drawing.Color.White;
