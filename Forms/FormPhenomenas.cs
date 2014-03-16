@@ -285,7 +285,7 @@ namespace PRIZ
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Program.fTasks.Show();
+            Program.fTask.Show();
         }
     }
 }
