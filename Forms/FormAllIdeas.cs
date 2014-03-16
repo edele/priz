@@ -36,11 +36,9 @@ namespace PRIZ
             Program.p.GenerateReport(answer);
         }
 
-        private void btnSentToMail_Click(object sender, EventArgs e)
+        private void btnReport_Click(object sender, EventArgs e)
         {
-            
             answer._comment = tbComment.Text;
-            
             answer._hypothesises.Clear();
             for (int i = 0; i < lAllHypo.Items.Count; i++)
             {
@@ -100,7 +98,7 @@ namespace PRIZ
         private void button1_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
-            Program.fAboutCreativeSchool.Show();
+            Program.fAboutCreativeSchool.ShowDialog();
         }
 
         private void btnModules_Click(object sender, EventArgs e)
@@ -125,13 +123,13 @@ namespace PRIZ
         private void btnWriteToUs_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fMailSender);
-            Program.fMailSender.Show();
+            Program.fMailSender.ShowDialog();
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
-            Program.fAboutEducation.Show();
+            Program.fAboutEducation.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -159,7 +157,13 @@ namespace PRIZ
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+            answer._hypothesises.Clear();
+            for (int i = 0; i < lAllHypo.Items.Count; i++)
+            {
+                answer._hypothesises.Add(lAllHypo.Items[i].ToString());
+            }
             Program.fPhenomenas.Show();
+            Program.fPhenomenas.RefreshlIdeas();
         }
         private void lAllHypo_DrawItem(object sender, DrawItemEventArgs e)
         {

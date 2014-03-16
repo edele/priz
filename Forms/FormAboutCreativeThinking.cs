@@ -51,10 +51,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fAboutEducation);
             this.Hide();
-            Program.fAboutEducation.Show();
-        }
-        private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
-        {
+            Program.fAboutEducation.ShowDialog();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

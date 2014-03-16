@@ -183,6 +183,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormAboutEducation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
             this.panel4.ResumeLayout(false);
