@@ -65,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(147, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 38);
+            this.label1.Size = new System.Drawing.Size(271, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -263,7 +263,7 @@
             this.btnLogoCreativeThinker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(872, 14);
+            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(864, 14);
             this.btnLogoCreativeThinker.Name = "btnLogoCreativeThinker";
             this.btnLogoCreativeThinker.Size = new System.Drawing.Size(114, 93);
             this.btnLogoCreativeThinker.TabIndex = 21;
@@ -294,7 +294,7 @@
             this.btnLogoEducationEra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoEducationEra.Location = new System.Drawing.Point(745, 14);
+            this.btnLogoEducationEra.Location = new System.Drawing.Point(739, 10);
             this.btnLogoEducationEra.Name = "btnLogoEducationEra";
             this.btnLogoEducationEra.Size = new System.Drawing.Size(121, 99);
             this.btnLogoEducationEra.TabIndex = 20;

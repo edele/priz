@@ -60,7 +60,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label1.Location = new System.Drawing.Point(146, 105);
+            this.label1.Location = new System.Drawing.Point(151, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(417, 21);
             this.label1.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 21F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label2.Location = new System.Drawing.Point(142, 62);
+            this.label2.Location = new System.Drawing.Point(147, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 38);
             this.label2.TabIndex = 1;
@@ -84,7 +84,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label3.Location = new System.Drawing.Point(147, 143);
+            this.label3.Location = new System.Drawing.Point(150, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label5.Location = new System.Drawing.Point(146, 287);
+            this.label5.Location = new System.Drawing.Point(149, 287);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 4;
@@ -108,16 +108,16 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label7.Location = new System.Drawing.Point(147, 426);
+            this.label7.Location = new System.Drawing.Point(149, 426);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 25);
+            this.label7.Size = new System.Drawing.Size(186, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Комментарии к отчету";
             // 
             // tbComment
             // 
             this.tbComment.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbComment.Location = new System.Drawing.Point(152, 454);
+            this.tbComment.Location = new System.Drawing.Point(154, 454);
             this.tbComment.Multiline = true;
             this.tbComment.Name = "tbComment";
             this.tbComment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -130,7 +130,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label8.Location = new System.Drawing.Point(543, 143);
+            this.label8.Location = new System.Drawing.Point(535, 143);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 25);
             this.label8.TabIndex = 8;
@@ -145,7 +145,7 @@
             this.btnSentToMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSentToMail.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnSentToMail.ForeColor = System.Drawing.Color.White;
-            this.btnSentToMail.Location = new System.Drawing.Point(152, 579);
+            this.btnSentToMail.Location = new System.Drawing.Point(154, 579);
             this.btnSentToMail.Name = "btnSentToMail";
             this.btnSentToMail.Size = new System.Drawing.Size(151, 31);
             this.btnSentToMail.TabIndex = 12;
@@ -160,7 +160,7 @@
             this.lbUserName.BackColor = System.Drawing.Color.Transparent;
             this.lbUserName.Font = new System.Drawing.Font("Segoe UI Light", 11.25F);
             this.lbUserName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbUserName.Location = new System.Drawing.Point(147, 28);
+            this.lbUserName.Location = new System.Drawing.Point(151, 28);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(100, 20);
             this.lbUserName.TabIndex = 17;
@@ -178,7 +178,7 @@
             this.btnLogoCreativeThinker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(901, 12);
+            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(864, 14);
             this.btnLogoCreativeThinker.Name = "btnLogoCreativeThinker";
             this.btnLogoCreativeThinker.Size = new System.Drawing.Size(114, 93);
             this.btnLogoCreativeThinker.TabIndex = 23;
@@ -197,7 +197,7 @@
             this.btnWriteToUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnWriteToUs.Image = global::PRIZ.Properties.Resources.writeus01;
             this.btnWriteToUs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnWriteToUs.Location = new System.Drawing.Point(12, 333);
+            this.btnWriteToUs.Location = new System.Drawing.Point(12, 324);
             this.btnWriteToUs.Name = "btnWriteToUs";
             this.btnWriteToUs.Size = new System.Drawing.Size(111, 68);
             this.btnWriteToUs.TabIndex = 26;
@@ -222,7 +222,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAbout.Image = global::PRIZ.Properties.Resources.about01;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbout.Location = new System.Drawing.Point(12, 253);
+            this.btnAbout.Location = new System.Drawing.Point(12, 244);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(111, 68);
             this.btnAbout.TabIndex = 25;
@@ -247,7 +247,7 @@
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModules.Location = new System.Drawing.Point(12, 173);
+            this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(111, 68);
             this.btnModules.TabIndex = 24;
@@ -271,7 +271,7 @@
             this.btnLogoEducationEra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoEducationEra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoEducationEra.Location = new System.Drawing.Point(784, 9);
+            this.btnLogoEducationEra.Location = new System.Drawing.Point(739, 10);
             this.btnLogoEducationEra.Name = "btnLogoEducationEra";
             this.btnLogoEducationEra.Size = new System.Drawing.Size(121, 99);
             this.btnLogoEducationEra.TabIndex = 27;
@@ -281,7 +281,7 @@
             // lGiven
             // 
             this.lGiven.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lGiven.Location = new System.Drawing.Point(151, 173);
+            this.lGiven.Location = new System.Drawing.Point(153, 173);
             this.lGiven.Multiline = true;
             this.lGiven.Name = "lGiven";
             this.lGiven.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -291,7 +291,7 @@
             // lToFind
             // 
             this.lToFind.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lToFind.Location = new System.Drawing.Point(152, 316);
+            this.lToFind.Location = new System.Drawing.Point(154, 316);
             this.lToFind.Multiline = true;
             this.lToFind.Name = "lToFind";
             this.lToFind.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -305,7 +305,7 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Underline);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label4.Location = new System.Drawing.Point(45, 28);
+            this.label4.Location = new System.Drawing.Point(44, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 32;
@@ -319,7 +319,7 @@
             this.lAllHypo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.lAllHypo.FormattingEnabled = true;
             this.lAllHypo.ItemHeight = 23;
-            this.lAllHypo.Location = new System.Drawing.Point(548, 173);
+            this.lAllHypo.Location = new System.Drawing.Point(540, 173);
             this.lAllHypo.Name = "lAllHypo";
             this.lAllHypo.Size = new System.Drawing.Size(423, 233);
             this.lAllHypo.TabIndex = 31;
@@ -346,7 +346,7 @@
             // tbAddOrEditIdea
             // 
             this.tbAddOrEditIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbAddOrEditIdea.Location = new System.Drawing.Point(548, 454);
+            this.tbAddOrEditIdea.Location = new System.Drawing.Point(540, 454);
             this.tbAddOrEditIdea.Multiline = true;
             this.tbAddOrEditIdea.Name = "tbAddOrEditIdea";
             this.tbAddOrEditIdea.Size = new System.Drawing.Size(423, 107);
@@ -361,7 +361,7 @@
             this.btnAddIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnAddIdea.ForeColor = System.Drawing.Color.White;
-            this.btnAddIdea.Location = new System.Drawing.Point(548, 579);
+            this.btnAddIdea.Location = new System.Drawing.Point(540, 579);
             this.btnAddIdea.Name = "btnAddIdea";
             this.btnAddIdea.Size = new System.Drawing.Size(137, 31);
             this.btnAddIdea.TabIndex = 35;
@@ -378,7 +378,7 @@
             this.btnEditIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnEditIdea.ForeColor = System.Drawing.Color.White;
-            this.btnEditIdea.Location = new System.Drawing.Point(691, 579);
+            this.btnEditIdea.Location = new System.Drawing.Point(683, 579);
             this.btnEditIdea.Name = "btnEditIdea";
             this.btnEditIdea.Size = new System.Drawing.Size(137, 31);
             this.btnEditIdea.TabIndex = 36;
@@ -395,7 +395,7 @@
             this.btnRemoveIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnRemoveIdea.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveIdea.Location = new System.Drawing.Point(834, 579);
+            this.btnRemoveIdea.Location = new System.Drawing.Point(826, 579);
             this.btnRemoveIdea.Name = "btnRemoveIdea";
             this.btnRemoveIdea.Size = new System.Drawing.Size(137, 31);
             this.btnRemoveIdea.TabIndex = 37;
@@ -408,7 +408,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1024, 726);
+            this.ClientSize = new System.Drawing.Size(1008, 727);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRemoveIdea);

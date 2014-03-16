@@ -49,7 +49,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnLogoEducationEra);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(48, 4);
+            this.panel4.Location = new System.Drawing.Point(47, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(933, 138);
             this.panel4.TabIndex = 14;
@@ -78,7 +78,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 25);
+            this.label2.Size = new System.Drawing.Size(596, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -106,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 72);
+            this.label1.Size = new System.Drawing.Size(419, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -165,7 +165,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label3.Location = new System.Drawing.Point(151, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 25);
+            this.label3.Size = new System.Drawing.Size(361, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "«Образование для Новой Эры» - что это?";
             // 
