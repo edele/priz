@@ -98,6 +98,10 @@ namespace PRIZ
                 panelForElements.Controls.Add(description);
                 panelForElements.Controls.Add(pbox);
                 panelForElements.Controls.Add(panel);
+
+
+                // Если название не помещается в одну строку, то сдвигаем описание ниже
+                description.Location = new Point(description.Location.X, description.Location.Y + (title.Size.Height - 31));
                 ypos += 300;
             }
             panelForElements.Focus();

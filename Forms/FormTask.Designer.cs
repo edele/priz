@@ -100,8 +100,9 @@
             this.lName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lName.AutoSize = true;
             this.lName.Location = new System.Drawing.Point(608, 113);
+            this.lName.MaximumSize = new System.Drawing.Size(385, 0);
             this.lName.Name = "lName";
-            this.lName.Size = new System.Drawing.Size(369, 101);
+            this.lName.Size = new System.Drawing.Size(95, 13);
             this.lName.TabIndex = 4;
             this.lName.Text = "Название задачи";
             // 

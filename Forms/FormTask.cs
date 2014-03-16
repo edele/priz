@@ -33,7 +33,8 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            
+            // Если название не помещается в одну строку, то сдвигаем описание ниже
+            lDescription.Location = new Point(lDescription.Location.X, lDescription.Location.Y + (lName.Size.Height - 38));
         }
 
         private void btnBack_MouseEnter(object sender, EventArgs e)
