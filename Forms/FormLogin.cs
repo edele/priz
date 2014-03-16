@@ -109,7 +109,7 @@ namespace PRIZ
                     return;
                 }
             }
-            MessageBox.Show("Неправильный логин или пароль");
+            MessageBox.Show("Пользователь с таким именем и фамилией не зарегестрирован");
         }
         static public FormRegistration f;
         private void btnRegistration_Click(object sender, EventArgs e)
