@@ -86,9 +86,12 @@ namespace PRIZ
                 report += "• " + hypotesis;
                 report += "\r\n";
             }
-
-            report += "\r\nКомментарий: \r\n";
-            report += answer._comment;
+            answer._comment = answer._comment.Trim();
+            if (answer._comment.Length>0)
+            {
+                report += "\r\nКомментарий: \r\n";
+                report += answer._comment;
+            }
             string filename = CurrentFullName.ToLower() + "_" + 
                 Program.p.currentTask._name.ToLower() + "_" +
                 (System.DateTime.Now.ToShortDateString() +"_" + System.DateTime.Now.ToShortTimeString()).Replace(".", "_").Replace(":", "-") + "_" +

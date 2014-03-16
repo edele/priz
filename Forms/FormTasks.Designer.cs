@@ -185,7 +185,7 @@
             this.btnLogoCreativeThinker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogoCreativeThinker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(861, 14);
+            this.btnLogoCreativeThinker.Location = new System.Drawing.Point(864, 14);
             this.btnLogoCreativeThinker.Name = "btnLogoCreativeThinker";
             this.btnLogoCreativeThinker.Size = new System.Drawing.Size(114, 93);
             this.btnLogoCreativeThinker.TabIndex = 14;

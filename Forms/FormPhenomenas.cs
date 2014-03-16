@@ -114,7 +114,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fMailSender);
             //this.Hide();
-            Program.fMailSender.Show();
+            Program.fMailSender.ShowDialog();
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
@@ -191,7 +191,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fAboutEducation);
             //this.Hide();
-            Program.fAboutEducation.Show();
+            Program.fAboutEducation.ShowDialog();
         }
 
         private void btnLogoCreativeThinker_Click_1(object sender, EventArgs e)
@@ -289,7 +289,10 @@ namespace PRIZ
                 MessageBox.Show(h, "Гипотезы");
             }
         }
-
+        public void RefreshlIdeas() 
+        {
+            lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -346,11 +349,6 @@ namespace PRIZ
                 default:
                     break;
             }
-        }
-
-        private void tbIdea_TextChanged(object sender, EventArgs e)
-        {
-            tbIdea.Text = CleanFromSpaces(tbIdea.Text);
         }
     }
 }

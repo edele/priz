@@ -65,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(147, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 38);
+            this.label1.Size = new System.Drawing.Size(271, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -83,11 +83,12 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.panel2.Controls.Add(this.lIdeas);
-            this.panel2.Controls.Add(this.btnPlusIdea);
             this.panel2.Controls.Add(this.btnSendToTheNextForm);
+            this.panel2.Controls.Add(this.btnPlusIdea);
+            this.panel2.Controls.Add(this.lIdeas);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Location = new System.Drawing.Point(0, 546);
             this.panel2.Name = "panel2";
@@ -96,7 +97,8 @@
             // 
             // lIdeas
             // 
-            this.lIdeas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lIdeas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.lIdeas.AutoSize = true;
             this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lIdeas.Font = new System.Drawing.Font("Segoe UI", 11F);
@@ -111,9 +113,8 @@
             // btnPlusIdea
             // 
             this.btnPlusIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnPlusIdea.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlusIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPlusIdea.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPlusIdea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnPlusIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlusIdea.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnPlusIdea.ForeColor = System.Drawing.Color.White;
@@ -128,9 +129,8 @@
             // btnSendToTheNextForm
             // 
             this.btnSendToTheNextForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSendToTheNextForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSendToTheNextForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSendToTheNextForm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSendToTheNextForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnSendToTheNextForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSendToTheNextForm.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnSendToTheNextForm.ForeColor = System.Drawing.Color.White;
@@ -161,7 +161,6 @@
             this.tbIdea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbIdea.Size = new System.Drawing.Size(475, 107);
             this.tbIdea.TabIndex = 0;
-            this.tbIdea.TextChanged += new System.EventHandler(this.tbIdea_TextChanged);
             this.tbIdea.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbIdea_KeyDown);
             this.tbIdea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIdea_KeyPress);
             this.tbIdea.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbIdea_KeyUp);
@@ -402,7 +401,8 @@
             // 
             // showTaskCond
             // 
-            this.showTaskCond.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.showTaskCond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.showTaskCond.AutoSize = true;
             this.showTaskCond.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showTaskCond.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -473,6 +473,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormPhenomenas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ПРИЗ";
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
             this.Click += new System.EventHandler(this.tbForText_SizeChanged);

@@ -71,15 +71,15 @@ namespace PRIZ
         private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
         {
                 Program.InitWindow(Forms.fAboutCreativeSchool);
-                this.Hide();
-                Program.fAboutCreativeSchool.Show();
+                //this.Hide();
+                Program.fAboutCreativeSchool.ShowDialog();
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
-            this.Hide();
-            Program.fAboutEducation.Show();
+            //this.Hide();
+            Program.fAboutEducation.ShowDialog();
         }
         private void btnBack_MouseEnter(object sender, EventArgs e)
         {

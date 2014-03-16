@@ -145,7 +145,7 @@ namespace PRIZ
             
             Program.InitWindow(Forms.fAboutCreativeSchool);
             //this.Hide();
-            Program.fAboutCreativeSchool.Show();
+            Program.fAboutCreativeSchool.ShowDialog();
         }
 
         private void btnModules_Click(object sender, EventArgs e)
@@ -169,7 +169,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fMailSender);
             //this.Hide();
-            Program.fMailSender.Show();
+            Program.fMailSender.ShowDialog();
         }
 
         private void FormTask_SizeChanged(object sender, EventArgs e)
@@ -181,7 +181,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fAboutEducation);
             //this.Hide();
-            Program.fAboutEducation.Show();
+            Program.fAboutEducation.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

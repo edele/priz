@@ -52,7 +52,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnLogoEducationEra);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(48, 4);
+            this.panel4.Location = new System.Drawing.Point(47, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(933, 138);
             this.panel4.TabIndex = 15;
@@ -230,6 +230,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormMailSender";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Отправить сообщение";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

@@ -43,7 +43,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
             this.Hide();
-            Program.fAboutCreativeSchool.Show();
+            Program.fAboutCreativeSchool.ShowDialog();
         }
         private void tb_MouseWheel(object sender, EventArgs e)
         {

@@ -85,13 +85,13 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
             //this.Hide();
-            Program.fAboutCreativeSchool.Show();
+            Program.fAboutCreativeSchool.ShowDialog();
         }
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
             //this.Hide();
-            Program.fAboutEducation.Show();
+            Program.fAboutEducation.ShowDialog();
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {

@@ -184,7 +184,7 @@ namespace PRIZ
         private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutCreativeSchool);
-            Program.fAboutCreativeSchool.Show();
+            Program.fAboutCreativeSchool.ShowDialog();
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
@@ -200,13 +200,13 @@ namespace PRIZ
         private void btnWriteToUs_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fMailSender);
-            Program.fMailSender.Show();
+            Program.fMailSender.ShowDialog();
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
         {
             Program.InitWindow(Forms.fAboutEducation);
-            Program.fAboutEducation.Show();
+            Program.fAboutEducation.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
