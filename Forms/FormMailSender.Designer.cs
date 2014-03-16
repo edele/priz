@@ -81,7 +81,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 25);
+            this.label2.Size = new System.Drawing.Size(596, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -111,7 +111,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 72);
+            this.label1.Size = new System.Drawing.Size(419, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -160,12 +160,15 @@
             // 
             this.txtFrom.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtFrom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.txtFrom.Location = new System.Drawing.Point(186, 200);
             this.txtFrom.Multiline = true;
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(531, 28);
             this.txtFrom.TabIndex = 24;
             this.txtFrom.Text = "example@mail.com";
+            this.txtFrom.Enter += new System.EventHandler(this.txtFrom_Enter);
+            this.txtFrom.Leave += new System.EventHandler(this.txtFrom_Leave);
             // 
             // message
             // 

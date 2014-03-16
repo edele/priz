@@ -102,5 +102,22 @@ namespace PRIZ
         {
             this.Hide();
         }
+
+        static string _earlierText;
+        private void txtFrom_Enter(object sender, EventArgs e)
+        {
+            _earlierText = (sender as TextBox).Text;
+            (sender as TextBox).Text = "";
+            (sender as TextBox).ForeColor = Color.Black;
+        }
+
+        private void txtFrom_Leave(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "")
+            {
+                (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                (sender as TextBox).Text = _earlierText;
+            }
+        }
     }
 }
