@@ -56,11 +56,11 @@ namespace PRIZ
             tbIdea.Focus();
             if (tbIdea.Text != "")
             {
-                tbIdea.Text = CleanFromSpaces(tbIdea.Text);/*
+                tbIdea.Text = CleanFromSpaces(tbIdea.Text);
                 answer._hypothesises.Add(tbIdea.Text);
                 tbIdea.Clear();
                 lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
-                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);*/
+                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
             }
         }
 
