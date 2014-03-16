@@ -179,7 +179,7 @@ namespace PRIZ
         private int GetLinesNumber(string text)
         {
             int count = 1;
-            for (int i = 0; i < text.Length / 80; i++)
+            for (int i = 0; i < text.Length / 65; i++)
             {
                 count++;
             }
