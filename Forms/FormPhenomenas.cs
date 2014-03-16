@@ -290,6 +290,21 @@ namespace PRIZ
             this.Hide();
             Program.fTask.Show();
         }
+
+        private void tbIdea_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.Enter)
+            {
+                if (tbIdea.Text != "")
+                {
+                    e.Handled = true;
+                    answer._hypothesises.Add(tbIdea.Text);
+                    tbIdea.Clear();
+                    lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
+                    lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
+                }
+            }
+        }
     }
 }
 

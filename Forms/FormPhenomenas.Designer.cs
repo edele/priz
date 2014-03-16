@@ -161,6 +161,7 @@
             this.tbIdea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbIdea.Size = new System.Drawing.Size(475, 107);
             this.tbIdea.TabIndex = 0;
+            this.tbIdea.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbIdea_KeyUp);
             // 
             // lbUserName
             // 
