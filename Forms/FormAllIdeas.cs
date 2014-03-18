@@ -27,8 +27,10 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-
-            
+            btnEditIdea.Enabled = false;
+            btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            btnRemoveIdea.Enabled = false;
+            btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -195,23 +197,25 @@ namespace PRIZ
             return count;
         }
         static string _earlierText;
+        FormEditOrAddIdea frm2;
         private void btnEditSelectedItem_Click(object sender, EventArgs e)
         {
-            if ((tbAddOrEditIdea.TextLength > 0) &&(lAllHypo.SelectedIndex != -1)&&(tbAddOrEditIdea.Text != "Сначала запишите идею в этот блок"))
+            answer._currentIndex = lAllHypo.SelectedIndex;
+            frm2 = new FormEditOrAddIdea();
+            if (answer._currentIndex != -1)
             {
-                int i = lAllHypo.SelectedIndex;
-                lAllHypo.Items.RemoveAt(i);
-                lAllHypo.Items.Insert(i, tbAddOrEditIdea.Text);
-                tbAddOrEditIdea.Clear();
-            }
-            else if (lAllHypo.SelectedIndex < 0)
-            {
-                MessageBox.Show("Вы не выберали идею для редактирования");
-            }
-            else 
-            { 
-                tbAddOrEditIdea.Text="Сначала запишите идею в этот блок";
-                tbAddOrEditIdea.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                frm2._text = lAllHypo.SelectedItem.ToString();
+                DialogResult dr = frm2.ShowDialog(this);
+                if (dr == DialogResult.Cancel)
+                {
+                    frm2.Close();
+                }
+                else if (dr == DialogResult.OK)
+                {
+                    frm2.Close();
+                    lAllHypo.Items.RemoveAt(answer._currentIndex);
+                    lAllHypo.Items.Insert(answer._currentIndex, frm2.GetText());
+                }  
             }
         }
 
@@ -222,16 +226,18 @@ namespace PRIZ
 
         private void btnAddIdea_Click(object sender, EventArgs e)
         {
-            if (tbAddOrEditIdea.TextLength>0)
+            frm2 = new FormEditOrAddIdea();
+            frm2._textOnButton = "Добавить";
+            DialogResult dr = frm2.ShowDialog(this);
+            if (dr == DialogResult.Cancel)
             {
-                lAllHypo.Items.Add(Convert.ToString(tbAddOrEditIdea.Text));
-                tbAddOrEditIdea.Clear();
+                frm2.Close();
             }
-            else
+            else if (dr == DialogResult.OK)
             {
-                tbAddOrEditIdea.Text = "Сначала запишите идею в этот блок";
-                tbAddOrEditIdea.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            }
+                frm2.Close();
+                lAllHypo.Items.Add(frm2.GetText());
+            }  
         }
 
         private void tbAddOrEditIdea_Enter(object sender, EventArgs e)
@@ -251,6 +257,24 @@ namespace PRIZ
             {
                 (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
                 (sender as TextBox).Text = _earlierText;
+            }
+        }
+
+        private void lAllHypo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lAllHypo.SelectedIndex < 0)
+            {
+                btnEditIdea.Enabled = false;
+                btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+                btnRemoveIdea.Enabled = false;
+                btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            }
+            else
+            {
+                btnEditIdea.Enabled = true;
+                btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+                btnRemoveIdea.Enabled = true;
+                btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             }
         }
     }

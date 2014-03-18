@@ -93,7 +93,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(511, 448);
             this.Name = "FormShowAllIdeas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Все мои гиппотезы";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormShowAllIdeas_FormClosing);
             this.ResumeLayout(false);

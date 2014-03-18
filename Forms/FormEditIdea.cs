@@ -9,11 +9,12 @@ using System.Windows.Forms;
 
 namespace PRIZ
 {
-    public partial class FormEditIdea : Form
+    public partial class FormEditOrAddIdea : Form
     {
+        public string _textOnButton = "Редактировать";
         public string _text;
         Answer answer = Program.p.answer;
-        public FormEditIdea()
+        public FormEditOrAddIdea()
         {
             InitializeComponent();
         }
@@ -25,12 +26,14 @@ namespace PRIZ
         
         public string GetText()
         {
-            return tbToEdit.Text;
+            _textOnButton = "Редактировать";
+            return tbToEdit.Text.Trim();
         }
 
         private void FormEditIdea_Load(object sender, EventArgs e)
         {
             tbToEdit.Text = _text;
+            btnEditIdea.Text = _textOnButton;
         }
     }
 }

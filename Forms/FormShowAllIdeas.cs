@@ -48,11 +48,11 @@ namespace PRIZ
             }
             return count;
         }
-        FormEditIdea frm2;
+        FormEditOrAddIdea frm2;
         private void btnEditIdea_Click(object sender, EventArgs e)
         {
             answer._currentIndex = lShowAllIdeas.SelectedIndex;
-            frm2 = new FormEditIdea();
+            frm2 = new FormEditOrAddIdea();
             frm2._text = lShowAllIdeas.SelectedItem.ToString();
             DialogResult dr = frm2.ShowDialog(this);
             if (dr == DialogResult.Cancel)

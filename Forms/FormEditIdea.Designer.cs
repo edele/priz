@@ -1,6 +1,6 @@
 ﻿namespace PRIZ
 {
-    partial class FormEditIdea
+    partial class FormEditOrAddIdea
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditOrAddIdea));
             this.tbToEdit = new System.Windows.Forms.TextBox();
             this.btnEditIdea = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -61,17 +62,18 @@
             this.btnEditIdea.UseVisualStyleBackColor = false;
             this.btnEditIdea.Click += new System.EventHandler(this.btnEditIdea_Click);
             // 
-            // FormEditIdea
+            // FormEditOrAddIdea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(242, 141);
             this.Controls.Add(this.btnEditIdea);
             this.Controls.Add(this.tbToEdit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(258, 179);
-            this.Name = "FormEditIdea";
+            this.Name = "FormEditOrAddIdea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormEditIdea";
+            this.Text = "Введите текст идеи";
             this.Load += new System.EventHandler(this.FormEditIdea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
