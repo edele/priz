@@ -189,15 +189,25 @@ namespace PRIZ
             }
             return count;
         }
+        static string _earlierText;
         private void btnEditSelectedItem_Click(object sender, EventArgs e)
         {
-            if (tbAddOrEditIdea.TextLength > 0)
+            if ((tbAddOrEditIdea.TextLength > 0) && (lAllHypo.SelectedIndex != -1))
             {
                 int i = lAllHypo.SelectedIndex;
                 lAllHypo.Items.RemoveAt(i);
-                lAllHypo.Items.Insert(i, tbAddOrEditIdea.Text);           
+                lAllHypo.Items.Insert(i, tbAddOrEditIdea.Text);
+                tbAddOrEditIdea.Clear();
             }
-            tbAddOrEditIdea.Clear();
+            else if (lAllHypo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Вы не выберали идею для редактирования");
+            }
+            else 
+            { 
+                tbAddOrEditIdea.Text="Сначала запишите идею в этот блок";
+                tbAddOrEditIdea.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            }
         }
 
         private void btnRemoveSelectedItem_Click(object sender, EventArgs e)
@@ -210,8 +220,33 @@ namespace PRIZ
             if (tbAddOrEditIdea.TextLength>0)
             {
                 lAllHypo.Items.Add(Convert.ToString(tbAddOrEditIdea.Text));
+                tbAddOrEditIdea.Clear();
             }
-            tbAddOrEditIdea.Clear();
+            else
+            {
+                tbAddOrEditIdea.Text = "Сначала запишите идею в этот блок";
+                tbAddOrEditIdea.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            }
+        }
+
+        private void tbAddOrEditIdea_Enter(object sender, EventArgs e)
+        {
+
+            if ((sender as TextBox).Text == "Сначала запишите идею в этот блок")
+            {
+                _earlierText = (sender as TextBox).Text;
+                (sender as TextBox).Text = "";
+            }
+            (sender as TextBox).ForeColor = Color.Black;
+        }
+
+        private void tbAddOrEditIdea_Leave(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "")
+            {
+                (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                (sender as TextBox).Text = _earlierText;
+            }
         }
     }
 
