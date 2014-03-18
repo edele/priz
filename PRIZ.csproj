@@ -72,6 +72,12 @@
     <Compile Include="Forms\FormAllIdeas.Designer.cs">
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormEditIdea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEditIdea.Designer.cs">
+      <DependentUpon>FormEditIdea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="Forms\FormAllIdeas.resx">
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEditIdea.resx">
+      <DependentUpon>FormEditIdea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

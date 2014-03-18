@@ -15,6 +15,8 @@ namespace PRIZ
         public FormShowAllIdeas()
         {
             InitializeComponent();
+            btnEditIdea.Enabled = false;
+            btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             for (int i = 0; i < answer._hypothesises.Count; i++)
             {
                 lShowAllIdeas.Items.Add(answer._hypothesises[i].ToString());
@@ -46,49 +48,28 @@ namespace PRIZ
             }
             return count;
         }
-
+        FormEditOrAddIdea frm2;
         private void btnEditIdea_Click(object sender, EventArgs e)
         {
-            if ((tbEditIdea.TextLength > 0) && (lShowAllIdeas.SelectedIndex != -1))
+            answer._currentIndex = lShowAllIdeas.SelectedIndex;
+            frm2 = new FormEditOrAddIdea();
+            frm2._text = lShowAllIdeas.SelectedItem.ToString();
+            DialogResult dr = frm2.ShowDialog(this);
+            if (dr == DialogResult.Cancel)
             {
-                int i = lShowAllIdeas.SelectedIndex;
-                lShowAllIdeas.Items.RemoveAt(i);
-                lShowAllIdeas.Items.Insert(i, tbEditIdea.Text);
-                tbEditIdea.Clear();
+                frm2.Close();
             }
-            else if (lShowAllIdeas.SelectedIndex < 0)
+            else if (dr == DialogResult.OK)
             {
-                MessageBox.Show("Вы не выберали идею для редактирования");
-            }
-            else
-            {
-                tbEditIdea.Text = "Сначала запишите идею в этот блок";
-                tbEditIdea.ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            }
+                frm2.Close();
+                lShowAllIdeas.Items.RemoveAt(answer._currentIndex);
+                lShowAllIdeas.Items.Insert(answer._currentIndex, frm2.GetText());
+            }  
         }
 
         private void btnRemoveIdea_Click(object sender, EventArgs e)
         {
             lShowAllIdeas.Items.Remove(lShowAllIdeas.SelectedItem);
-        }
-        static string _earlierText;
-        private void tbEditIdea_Enter(object sender, EventArgs e)
-        {
-            if ((sender as TextBox).Text=="Сначала запишите идею в этот блок")
-            {
-                _earlierText = (sender as TextBox).Text;
-                (sender as TextBox).Text = "";
-            }
-            (sender as TextBox).ForeColor = Color.Black;
-        }
-
-        private void tbEditIdea_Leave(object sender, EventArgs e)
-        {
-            if ((sender as TextBox).Text == "")
-            {
-                (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-                (sender as TextBox).Text = _earlierText;
-            }
         }
 
         private void FormShowAllIdeas_FormClosing(object sender, FormClosingEventArgs e)
@@ -97,6 +78,21 @@ namespace PRIZ
             for (int i = 0; i < lShowAllIdeas.Items.Count; i++)
             {
                 answer._hypothesises.Add(lShowAllIdeas.Items[i].ToString());
+            }
+            Program.fPhenomenas.RefreshlIdeas();
+        }
+
+        private void lShowAllIdeas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lShowAllIdeas.SelectedIndex < 0)
+            {
+                btnEditIdea.Enabled = false;
+                btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            }
+            else
+            {
+                btnEditIdea.Enabled = true;
+                btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             }
         }
     }

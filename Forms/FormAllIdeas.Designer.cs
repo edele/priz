@@ -47,7 +47,6 @@
             this.lToFind = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
-            this.tbAddOrEditIdea = new System.Windows.Forms.TextBox();
             this.btnAddIdea = new System.Windows.Forms.Button();
             this.btnEditIdea = new System.Windows.Forms.Button();
             this.btnRemoveIdea = new System.Windows.Forms.Button();
@@ -96,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label5.Location = new System.Drawing.Point(149, 287);
+            this.label5.Location = new System.Drawing.Point(149, 290);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 4;
@@ -108,7 +107,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Light", 13F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.label7.Location = new System.Drawing.Point(149, 426);
+            this.label7.Location = new System.Drawing.Point(149, 432);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(186, 25);
             this.label7.TabIndex = 6;
@@ -117,7 +116,7 @@
             // tbComment
             // 
             this.tbComment.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbComment.Location = new System.Drawing.Point(154, 454);
+            this.tbComment.Location = new System.Drawing.Point(154, 460);
             this.tbComment.Multiline = true;
             this.tbComment.Name = "tbComment";
             this.tbComment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -291,7 +290,7 @@
             // lToFind
             // 
             this.lToFind.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lToFind.Location = new System.Drawing.Point(154, 316);
+            this.lToFind.Location = new System.Drawing.Point(154, 319);
             this.lToFind.Multiline = true;
             this.lToFind.Name = "lToFind";
             this.lToFind.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -329,17 +328,6 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // tbAddOrEditIdea
-            // 
-            this.tbAddOrEditIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbAddOrEditIdea.Location = new System.Drawing.Point(540, 454);
-            this.tbAddOrEditIdea.Multiline = true;
-            this.tbAddOrEditIdea.Name = "tbAddOrEditIdea";
-            this.tbAddOrEditIdea.Size = new System.Drawing.Size(423, 107);
-            this.tbAddOrEditIdea.TabIndex = 34;
-            this.tbAddOrEditIdea.Enter += new System.EventHandler(this.tbAddOrEditIdea_Enter);
-            this.tbAddOrEditIdea.Leave += new System.EventHandler(this.tbAddOrEditIdea_Leave);
-            // 
             // btnAddIdea
             // 
             this.btnAddIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -360,7 +348,7 @@
             // btnEditIdea
             // 
             this.btnEditIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEditIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnEditIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.btnEditIdea.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnEditIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -377,7 +365,7 @@
             // btnRemoveIdea
             // 
             this.btnRemoveIdea.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnRemoveIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnRemoveIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.btnRemoveIdea.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemoveIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnRemoveIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -395,15 +383,17 @@
             // 
             this.lAllHypo.AllowDrop = true;
             this.lAllHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lAllHypo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lAllHypo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.lAllHypo.FormattingEnabled = true;
             this.lAllHypo.ItemHeight = 23;
             this.lAllHypo.Location = new System.Drawing.Point(540, 173);
             this.lAllHypo.Name = "lAllHypo";
-            this.lAllHypo.Size = new System.Drawing.Size(423, 233);
+            this.lAllHypo.Size = new System.Drawing.Size(423, 394);
             this.lAllHypo.TabIndex = 31;
             this.lAllHypo.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lAllHypo_DrawItem);
             this.lAllHypo.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lAllHypo_MeasureItem);
+            this.lAllHypo.SelectedIndexChanged += new System.EventHandler(this.lAllHypo_SelectedIndexChanged);
             // 
             // FormAllIdeas
             // 
@@ -416,7 +406,6 @@
             this.Controls.Add(this.btnRemoveIdea);
             this.Controls.Add(this.btnEditIdea);
             this.Controls.Add(this.btnAddIdea);
-            this.Controls.Add(this.tbAddOrEditIdea);
             this.Controls.Add(this.lAllHypo);
             this.Controls.Add(this.lToFind);
             this.Controls.Add(this.lGiven);
@@ -466,7 +455,6 @@
         private UserSortableListBox lAllHypo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TextBox tbAddOrEditIdea;
         private System.Windows.Forms.Button btnAddIdea;
         private System.Windows.Forms.Button btnEditIdea;
         private System.Windows.Forms.Button btnRemoveIdea;
