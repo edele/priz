@@ -17,7 +17,8 @@ namespace PRIZ
         fAboutEducation,
         fReg,
         fAboutProgramm,
-        fMailSender
+        fMailSender,
+        fShowAllIdeas
     }
 
 
@@ -40,6 +41,7 @@ namespace PRIZ
         static public FormRegistration fReg;
         static public FormAboutProgramm fAboutProgramm;
         static public FormMailSender fMailSender;
+        static public FormShowAllIdeas fShowAllIdeas;
         private static DateTime endProgram = Convert.ToDateTime("11/02/2014");
         [STAThread]
         static void Main()
@@ -132,6 +134,9 @@ namespace PRIZ
                     break;
                 case Forms.fMailSender:
                     fMailSender = new FormMailSender();
+                    break;
+                case Forms.fShowAllIdeas:
+                    fShowAllIdeas = new FormShowAllIdeas();
                     break;
                 default:
                     break;

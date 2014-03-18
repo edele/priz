@@ -278,7 +278,15 @@ namespace PRIZ
         private void lIdeas_Click(object sender, EventArgs e)
         {
             //вывод всех идей
-            string h="Гипотезы:\n\n";
+            string h = "Гипотезы:\n\n";
+            if (tbIdea.Text!="")
+            {
+                tbIdea.Text = CleanFromSpaces(tbIdea.Text);
+                answer._hypothesises.Add(tbIdea.Text);
+                tbIdea.Clear();
+                lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
+                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
+            }
             if (answer._hypothesises.Count>0)
             {
                 for (int i = 0; i < answer._hypothesises.Count; i++)
@@ -286,7 +294,9 @@ namespace PRIZ
                     h +=answer._hypothesises[i];
                     h += "\n\n";
                 }
-                MessageBox.Show(h, "Гипотезы");
+                //MessageBox.Show(h, "Гипотезы");
+                Program.InitWindow(Forms.fShowAllIdeas);
+                Program.fShowAllIdeas.ShowDialog();
             }
         }
         public void RefreshlIdeas() 

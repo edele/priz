@@ -84,6 +84,12 @@
     <Compile Include="Forms\FormPhenomenas.Designer.cs">
       <DependentUpon>FormPhenomenas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormShowAllIdeas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormShowAllIdeas.Designer.cs">
+      <DependentUpon>FormShowAllIdeas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPhenomenas.resx">
       <DependentUpon>FormPhenomenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormShowAllIdeas.resx">
+      <DependentUpon>FormShowAllIdeas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormTask.resx">
       <DependentUpon>FormTask.cs</DependentUpon>

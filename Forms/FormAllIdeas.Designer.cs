@@ -337,6 +337,8 @@
             this.tbAddOrEditIdea.Name = "tbAddOrEditIdea";
             this.tbAddOrEditIdea.Size = new System.Drawing.Size(423, 107);
             this.tbAddOrEditIdea.TabIndex = 34;
+            this.tbAddOrEditIdea.Enter += new System.EventHandler(this.tbAddOrEditIdea_Enter);
+            this.tbAddOrEditIdea.Leave += new System.EventHandler(this.tbAddOrEditIdea_Leave);
             // 
             // btnAddIdea
             // 
