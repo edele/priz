@@ -37,6 +37,14 @@ namespace PRIZ
             phenomenaLabels.Add(lblThermal);
             phenomenaLabels.Add(lblMechanical);
             phenomenaLabels.Add(lblLight);
+            if (Program.debug)
+            {
+                answer._hypothesises.Add("Одна из идей заключается в планомерном распределении всех параметров, что не может не являться очевидным при дальнейшем развитии событий");
+                answer._hypothesises.Add("Возможно вероятность случайных событий сильно преувеличена, что влечет за собой потери смысла всех проведенных исследований");
+                answer._hypothesises.Add("Не исключено, что у нас просто недостаточно данных для совершение каких либо умозаключений");
+                lIdeas.Text = "Количество идей: " + answer._hypothesises.Count;
+                lIdeas.Font = new Font("Segoue UI", 11F, FontStyle.Underline);
+            }
         }
 
         string CleanFromSpaces(string t)

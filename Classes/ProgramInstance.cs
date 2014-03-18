@@ -11,7 +11,6 @@ namespace PRIZ
         public List<User> _users;
         public List<Task> _tasks;
         public Answer answer;
-
         public Module currentModule;
         public Task currentTask;
         public int _currentUser = 0;

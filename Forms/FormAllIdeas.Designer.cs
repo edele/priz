@@ -395,6 +395,7 @@
             // 
             this.lAllHypo.AllowDrop = true;
             this.lAllHypo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lAllHypo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lAllHypo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.lAllHypo.FormattingEnabled = true;
             this.lAllHypo.ItemHeight = 23;

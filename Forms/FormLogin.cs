@@ -10,7 +10,6 @@ namespace PRIZ
 {
     public partial class FormLogin : Form
     {
-
         public FormLogin()
         {
             InitializeComponent();
@@ -135,8 +134,14 @@ namespace PRIZ
 
         private void FormLogin_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter && !e.Control)
             {
+                btnSubmit_Click((object)sender, (EventArgs)e);
+            }
+            else if (e.KeyCode == Keys.Enter && e.Control) 
+            {
+                Program.debug = true;
+                tbLogin.Text = "Назарова Александра";
                 btnSubmit_Click((object)sender, (EventArgs)e);
             }
         }

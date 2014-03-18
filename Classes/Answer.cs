@@ -13,6 +13,10 @@ namespace PRIZ
         /// <summary> Дано, сформулированное юзером </summary>
         public string _givenByUser;
 
+        public int _currentIndex = -1;
+
+        public string _ideaTextToEdit = "";
+
         public string _comment;
 
         public Task problem;

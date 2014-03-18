@@ -151,9 +151,13 @@ namespace PRIZ
             for (int i = 0; i < answer._hypothesises.Count; i++)
             {
                 lAllHypo.Items.Add(answer._hypothesises[i]);
+                
             }
         }
-
+        private void b_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ХЕУХУЕХУХУ");
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -177,7 +181,8 @@ namespace PRIZ
         }
         private void lAllHypo_MeasureItem(object sender, MeasureItemEventArgs e)
         {
-            e.ItemHeight = 13 + (13 * GetLinesNumber((string)lAllHypo.Items[e.Index]));
+            int txtHeight = GetLinesNumber((string)lAllHypo.Items[e.Index]);
+            e.ItemHeight = 13 + (13 * txtHeight);
         }
 
         private int GetLinesNumber(string text)
@@ -192,7 +197,7 @@ namespace PRIZ
         static string _earlierText;
         private void btnEditSelectedItem_Click(object sender, EventArgs e)
         {
-            if ((tbAddOrEditIdea.TextLength > 0) && (lAllHypo.SelectedIndex != -1))
+            if ((tbAddOrEditIdea.TextLength > 0) &&(lAllHypo.SelectedIndex != -1)&&(tbAddOrEditIdea.Text != "Сначала запишите идею в этот блок"))
             {
                 int i = lAllHypo.SelectedIndex;
                 lAllHypo.Items.RemoveAt(i);

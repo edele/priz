@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(240, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 72);
+            this.label1.Size = new System.Drawing.Size(420, 72);
             this.label1.TabIndex = 8;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -67,7 +67,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(155, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(596, 25);
+            this.label2.Size = new System.Drawing.Size(595, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -231,6 +231,7 @@
             this.Text = "ПРИЗ";
             this.LocationChanged += new System.EventHandler(this.FormLogin_LocationChanged);
             this.SizeChanged += new System.EventHandler(this.FormLogin_SizeChanged);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyUp);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
