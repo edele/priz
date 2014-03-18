@@ -43,6 +43,7 @@ namespace PRIZ
         static public FormMailSender fMailSender;
         static public FormShowAllIdeas fShowAllIdeas;
         private static DateTime endProgram = Convert.ToDateTime("11/02/2014");
+        static public bool debug = false;
         [STAThread]
         static void Main()
         {

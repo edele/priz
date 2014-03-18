@@ -35,6 +35,11 @@ namespace PRIZ
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
             // Если название не помещается в одну строку, то сдвигаем описание ниже
             lDescription.Location = new Point(lDescription.Location.X, lDescription.Location.Y + (lName.Size.Height - 38));
+            if (Program.debug)
+            {
+                tbGiven.Text = "Некоторая задача с такими и такими параметрами. При определенном условии происходят совершенно разные события, но иногда не происходят. Также вероятно варьирование всех вышеперечиленных фактов";
+                tbToFind.Text = "Нужно найти такое состояние, при котором правильно выполняются все тесты.";
+            }
         }
 
         private void btnBack_MouseEnter(object sender, EventArgs e)
