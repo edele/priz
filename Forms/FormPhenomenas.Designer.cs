@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lIdeas = new System.Windows.Forms.Label();
-            this.btnPlusIdea = new System.Windows.Forms.Button();
             this.btnSendToTheNextForm = new System.Windows.Forms.Button();
+            this.btnPlusIdea = new System.Windows.Forms.Button();
+            this.lIdeas = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbIdea = new System.Windows.Forms.TextBox();
             this.lbUserName = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(147, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 38);
+            this.label1.Size = new System.Drawing.Size(269, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выдвижение гипотиз";
             // 
@@ -83,8 +83,8 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
             this.panel2.Controls.Add(this.btnSendToTheNextForm);
             this.panel2.Controls.Add(this.btnPlusIdea);
@@ -95,20 +95,21 @@
             this.panel2.Size = new System.Drawing.Size(1009, 185);
             this.panel2.TabIndex = 0;
             // 
-            // lIdeas
+            // btnSendToTheNextForm
             // 
-            this.lIdeas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lIdeas.AutoSize = true;
-            this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lIdeas.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.lIdeas.Location = new System.Drawing.Point(656, 120);
-            this.lIdeas.Name = "lIdeas";
-            this.lIdeas.Size = new System.Drawing.Size(203, 20);
-            this.lIdeas.TabIndex = 30;
-            this.lIdeas.Text = "Вы не ввели ни одной идеи";
-            this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
+            this.btnSendToTheNextForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSendToTheNextForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSendToTheNextForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSendToTheNextForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendToTheNextForm.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.btnSendToTheNextForm.ForeColor = System.Drawing.Color.White;
+            this.btnSendToTheNextForm.Location = new System.Drawing.Point(835, 24);
+            this.btnSendToTheNextForm.Name = "btnSendToTheNextForm";
+            this.btnSendToTheNextForm.Size = new System.Drawing.Size(109, 32);
+            this.btnSendToTheNextForm.TabIndex = 1;
+            this.btnSendToTheNextForm.Text = "Отчет";
+            this.btnSendToTheNextForm.UseVisualStyleBackColor = false;
+            this.btnSendToTheNextForm.Click += new System.EventHandler(this.btnSendToTheNextForm_Click);
             // 
             // btnPlusIdea
             // 
@@ -126,21 +127,20 @@
             this.btnPlusIdea.UseVisualStyleBackColor = false;
             this.btnPlusIdea.Click += new System.EventHandler(this.btnPlusIdea_Click);
             // 
-            // btnSendToTheNextForm
+            // lIdeas
             // 
-            this.btnSendToTheNextForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSendToTheNextForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSendToTheNextForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSendToTheNextForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSendToTheNextForm.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.btnSendToTheNextForm.ForeColor = System.Drawing.Color.White;
-            this.btnSendToTheNextForm.Location = new System.Drawing.Point(835, 24);
-            this.btnSendToTheNextForm.Name = "btnSendToTheNextForm";
-            this.btnSendToTheNextForm.Size = new System.Drawing.Size(109, 32);
-            this.btnSendToTheNextForm.TabIndex = 1;
-            this.btnSendToTheNextForm.Text = "Отчет";
-            this.btnSendToTheNextForm.UseVisualStyleBackColor = false;
-            this.btnSendToTheNextForm.Click += new System.EventHandler(this.btnSendToTheNextForm_Click);
+            this.lIdeas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lIdeas.AutoSize = true;
+            this.lIdeas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lIdeas.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lIdeas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.lIdeas.Location = new System.Drawing.Point(656, 120);
+            this.lIdeas.Name = "lIdeas";
+            this.lIdeas.Size = new System.Drawing.Size(203, 20);
+            this.lIdeas.TabIndex = 30;
+            this.lIdeas.Text = "Вы не ввели ни одной идеи";
+            this.lIdeas.Click += new System.EventHandler(this.lIdeas_Click);
             // 
             // panel1
             // 
@@ -401,17 +401,17 @@
             // 
             // showTaskCond
             // 
-            this.showTaskCond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.showTaskCond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.showTaskCond.AutoSize = true;
             this.showTaskCond.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showTaskCond.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.showTaskCond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.showTaskCond.Location = new System.Drawing.Point(151, 514);
             this.showTaskCond.Name = "showTaskCond";
-            this.showTaskCond.Size = new System.Drawing.Size(214, 20);
+            this.showTaskCond.Size = new System.Drawing.Size(119, 20);
             this.showTaskCond.TabIndex = 29;
-            this.showTaskCond.Text = "Просмотреть условие задачи";
+            this.showTaskCond.Text = "Условие задачи";
             this.showTaskCond.Click += new System.EventHandler(this.showTaskCond_Click);
             // 
             // label3
