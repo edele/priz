@@ -13,6 +13,8 @@ namespace PRIZ
         public FormLogin()
         {
             InitializeComponent();
+            this.Size = Program.currentSize;
+            this.Location = Program.currentLocation;
             btnLogoCreativeThinker.MouseEnter += Program.LogoMouseEnter;
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
@@ -94,14 +96,18 @@ namespace PRIZ
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            Program.InitWindow(Forms.fModules);
+            /*Program.fModules.WindowState = Program.fLogin.WindowState;
+            Program.fModules.Size = Program.fLogin.Size;
+            Program.fModules.DesktopLocation = Program.fLogin.DesktopLocation;*/
             var users = User.GetListOfObjects();
 
             for (int i = 0; i < users.Count; i++)
             {
                 if ((users[i]._surname.ToLower() + " " + users[i]._name.ToLower()) == tbLogin.Text.ToLower())
                 {
+                    
                     Program.p._currentUser = i;
-                    Program.InitWindow(Forms.fModules);
                     Program.fModules.Show();
                     this.Hide();
                     return;
@@ -112,9 +118,12 @@ namespace PRIZ
         static public FormRegistration f;
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            this.Hide();
             f = new FormRegistration();
+            /*f.WindowState = Program.fLogin.WindowState;
+            f.Size = Program.fLogin.Size;
+            f.Location = Program.fLogin.Location;*/
             f.Show();
+            this.Hide();
         }
 
         private void btnLogoCreativeThinker_MouseEnter_1(object sender, EventArgs e)
@@ -129,7 +138,11 @@ namespace PRIZ
 
         private void FormLogin_LocationChanged(object sender, EventArgs e)
         {
-            Program.currentLocation = this.Location;
+            Program.currentLocation = this.DesktopLocation;
+            if (this.WindowState!=Program.currentWindowState)
+            {
+                Program.currentWindowState = this.WindowState;
+            }
         }
 
         private void FormLogin_KeyUp(object sender, KeyEventArgs e)
@@ -144,6 +157,21 @@ namespace PRIZ
                 tbLogin.Text = "Назарова Александра";
                 btnSubmit_Click((object)sender, (EventArgs)e);
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            this.Size = Program.currentSize;
+            this.DesktopLocation = Program.currentLocation;
+            this.WindowState = Program.currentWindowState;
+        }
+
+
+        private void FormLogin_VisibleChanged_1(object sender, EventArgs e)
+        {
+            this.Size = Program.currentSize;
+            this.Location = Program.currentLocation;
+            this.WindowState = Program.currentWindowState;
         }
     }
 }

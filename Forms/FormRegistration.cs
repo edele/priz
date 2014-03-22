@@ -60,6 +60,7 @@ namespace PRIZ
         }
         private void btnModules_Click(object sender, EventArgs e)
         {
+            Program.InitWindow(Forms.fLogin);
             Program.fLogin.Show();
             FormLogin.f.Hide();
         }
@@ -126,6 +127,27 @@ namespace PRIZ
         private void tbStatus_SelectedValueChanged(object sender, EventArgs e)
         {
             label4.Hide();
+        }
+
+
+        private void Form_VisibleChangedOrLoad(object sender, EventArgs e)
+        {
+            this.DesktopLocation = Program.currentLocation;
+            this.Size = Program.currentSize;
+        }
+
+        private void Form_LocationChanged(object sender, EventArgs e)
+        {
+            Program.currentLocation = this.DesktopLocation;
+            if (this.WindowState != Program.currentWindowState)
+            {
+                Program.currentWindowState = this.WindowState;
+            }
+        }
+
+        private void Form_SizeChanged(object sender, EventArgs e)
+        {
+            Program.currentSize = this.Size;
         }
     }
 }

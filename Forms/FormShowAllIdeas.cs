@@ -17,6 +17,8 @@ namespace PRIZ
             InitializeComponent();
             btnEditIdea.Enabled = false;
             btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            btnRemoveIdea.Enabled = false;
+            btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             for (int i = 0; i < answer._hypothesises.Count; i++)
             {
                 lShowAllIdeas.Items.Add(answer._hypothesises[i].ToString());
@@ -88,11 +90,15 @@ namespace PRIZ
             {
                 btnEditIdea.Enabled = false;
                 btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+                btnRemoveIdea.Enabled = false;
+                btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             }
             else
             {
                 btnEditIdea.Enabled = true;
                 btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+                btnRemoveIdea.Enabled = true;
+                btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             }
         }
     }

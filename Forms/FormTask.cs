@@ -140,8 +140,8 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите перейти в задачи? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                this.Hide();
                 Program.fTasks.Show();
+                this.Hide();
             }
         }
 
@@ -157,6 +157,9 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Program.fModules.WindowState = Program.fTask.WindowState;
+                Program.fModules.Size = Program.fTask.Size;
+                Program.fModules.Location = Program.fTask.Location;
                 Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
                 this.Hide();
@@ -180,6 +183,7 @@ namespace PRIZ
         private void FormTask_SizeChanged(object sender, EventArgs e)
         {
             lDescription.Size = lName.Size;
+            Program.currentSize = this.Size;
         }
 
         private void btnLogoEducationEra_Click(object sender, EventArgs e)
@@ -193,6 +197,8 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Program.fLogin.Size = Program.fTask.Size;
+                Program.fLogin.Location = Program.fTask.Location;
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
                 Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
@@ -201,6 +207,59 @@ namespace PRIZ
             }
         }
 
-       
+        private void Form_VisibleChangedOrLoad(object sender, EventArgs e)
+        {
+            this.DesktopLocation = Program.currentLocation;
+            this.Size = Program.currentSize;
+        }
+
+        private void Form_LocationChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState != Program.currentWindowState)
+            {
+                Program.currentWindowState = this.WindowState;
+            }
+            Program.currentLocation = this.DesktopLocation;
+        }
+
+        private void lName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lDescription_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGiven_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbToFind_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbTask_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

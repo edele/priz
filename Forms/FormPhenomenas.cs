@@ -127,6 +127,7 @@ namespace PRIZ
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
             tbHypo.Size = new Size(tbHypo.Size.Width, this.Size.Height - 430);
+            Program.currentSize=this.Size;
         }
         
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
@@ -313,6 +314,9 @@ namespace PRIZ
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
+            Program.fTask.WindowState = Program.fPhenomenas.WindowState;
+            Program.fTask.Size = Program.fPhenomenas.Size;
+            Program.fTask.Location = Program.fPhenomenas.Location;
             this.Hide();
             Program.fTask.Show();
             answer._hypothesises.Clear();
@@ -367,6 +371,17 @@ namespace PRIZ
                 default:
                     break;
             }
+        }
+
+        private void Form_VisibleChangedOrLoad(object sender, EventArgs e)
+        {
+            this.Location = Program.currentLocation;
+            this.Size = Program.currentSize;
+        }
+
+        private void Form_LocationChanged(object sender, EventArgs e)
+        {
+            Program.currentLocation = this.Location;
         }
     }
 }

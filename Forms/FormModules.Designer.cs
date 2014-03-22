@@ -110,7 +110,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(147, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 38);
+            this.label2.Size = new System.Drawing.Size(113, 38);
             this.label2.TabIndex = 12;
             this.label2.Text = "Модули";
             // 
@@ -234,9 +234,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormModule";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ПРИЗ";
+            this.Load += new System.EventHandler(this.FormModule_Load);
+            this.ClientSizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
+            this.LocationChanged += new System.EventHandler(this.FormModule_LocationChanged);
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.FormModule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
