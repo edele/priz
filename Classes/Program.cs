@@ -5,6 +5,7 @@ using System.Drawing;
 
 namespace PRIZ
 {
+    
     enum Forms
     {
         fLogin,
@@ -39,6 +40,7 @@ namespace PRIZ
         static public FormAboutEducation fAboutEducation;
         static public Size currentSize;
         static public Point currentLocation;
+        static public FormWindowState currentWindowState = FormWindowState.Normal;
         static public FormRegistration fReg;
         static public FormAboutProgramm fAboutProgramm;
         static public FormMailSender fMailSender;

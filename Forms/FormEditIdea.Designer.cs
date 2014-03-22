@@ -41,7 +41,7 @@
             this.tbToEdit.Location = new System.Drawing.Point(12, 12);
             this.tbToEdit.Multiline = true;
             this.tbToEdit.Name = "tbToEdit";
-            this.tbToEdit.Size = new System.Drawing.Size(218, 90);
+            this.tbToEdit.Size = new System.Drawing.Size(294, 204);
             this.tbToEdit.TabIndex = 0;
             // 
             // btnEditIdea
@@ -54,9 +54,9 @@
             this.btnEditIdea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditIdea.Font = new System.Drawing.Font("Segoe UI Light", 10F);
             this.btnEditIdea.ForeColor = System.Drawing.Color.White;
-            this.btnEditIdea.Location = new System.Drawing.Point(53, 107);
+            this.btnEditIdea.Location = new System.Drawing.Point(103, 220);
             this.btnEditIdea.Name = "btnEditIdea";
-            this.btnEditIdea.Size = new System.Drawing.Size(137, 31);
+            this.btnEditIdea.Size = new System.Drawing.Size(113, 32);
             this.btnEditIdea.TabIndex = 40;
             this.btnEditIdea.Text = "Редактировать";
             this.btnEditIdea.UseVisualStyleBackColor = false;
@@ -66,11 +66,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 141);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(318, 255);
             this.Controls.Add(this.btnEditIdea);
             this.Controls.Add(this.tbToEdit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(258, 179);
+            this.MinimumSize = new System.Drawing.Size(334, 293);
             this.Name = "FormEditOrAddIdea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Введите текст идеи";

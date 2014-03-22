@@ -23,8 +23,6 @@ namespace PRIZ
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
             btnLogoEducationEra.MouseEnter += Program.LogoMouseEnter;
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
-            this.Size = Program.currentSize;
-            this.Location = Program.currentLocation;
             lblTitleModule.Text = Program.p.currentModule._name;
             lblTitleModule.Font = new System.Drawing.Font("Segoe UI Light", 21F);
             lblTitleModule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -218,8 +216,8 @@ namespace PRIZ
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Program.fModules.Show();
+            this.Hide();
         }
 
         private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
@@ -238,6 +236,7 @@ namespace PRIZ
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
             panelForElements.Size = new Size(panelForElements.Size.Width, this.Size.Height - 170);
+            Program.currentSize = this.Size;
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -263,12 +262,28 @@ namespace PRIZ
 
         private void button1_Click(object sender, EventArgs e)
         {
-                Program.fLogin.tbLogin.Text = "Фамилия и имя";
+            Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
                 Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
                 Program.fLogin.Show();
                 this.Hide();
            
         }
+
+        private void Form_VisibleChangedOrLoad(object sender, EventArgs e)
+        {
+            this.Location = Program.currentLocation;
+            this.Size = Program.currentSize;
+        }
+
+        private void Form_LocationChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState != Program.currentWindowState)
+            {
+                Program.currentWindowState = this.WindowState;
+            }
+            Program.currentLocation = this.Location;
+        }
+
     }
 }

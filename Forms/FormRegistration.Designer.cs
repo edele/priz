@@ -223,7 +223,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label2.Location = new System.Drawing.Point(154, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 25);
+            this.label2.Size = new System.Drawing.Size(596, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Решайте, летайте, ищите, творите и дерзостью мысли весь мир покорите!";
             // 
@@ -254,7 +254,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(239, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 72);
+            this.label1.Size = new System.Drawing.Size(419, 72);
             this.label1.TabIndex = 3;
             this.label1.Text = "ПРИЗ для умных";
             // 
@@ -379,8 +379,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormRegistration";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ПРИЗ";
+            this.Load += new System.EventHandler(this.Form_VisibleChangedOrLoad);
+            this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
+            this.SizeChanged += new System.EventHandler(this.Form_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.Form_VisibleChangedOrLoad);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);

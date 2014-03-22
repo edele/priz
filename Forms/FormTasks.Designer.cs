@@ -244,9 +244,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormTasks";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ПРИЗ";
+            this.Load += new System.EventHandler(this.Form_VisibleChangedOrLoad);
+            this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.Form_VisibleChangedOrLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -54,7 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -86,6 +85,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.panel2.Controls.Add(this.tbIdea);
             this.panel2.Controls.Add(this.btnSendToTheNextForm);
             this.panel2.Controls.Add(this.btnPlusIdea);
             this.panel2.Controls.Add(this.lIdeas);
@@ -113,6 +113,7 @@
             // 
             // btnPlusIdea
             // 
+            this.btnPlusIdea.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnPlusIdea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.btnPlusIdea.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlusIdea.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -144,9 +145,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.BackgroundImage = global::PRIZ.Properties.Resources.registration_underlay_big;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.tbIdea);
             this.panel1.Location = new System.Drawing.Point(155, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(481, 116);
@@ -154,8 +155,9 @@
             // 
             // tbIdea
             // 
+            this.tbIdea.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbIdea.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbIdea.Location = new System.Drawing.Point(3, 6);
+            this.tbIdea.Location = new System.Drawing.Point(158, 28);
             this.tbIdea.Multiline = true;
             this.tbIdea.Name = "tbIdea";
             this.tbIdea.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -473,15 +475,16 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormPhenomenas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ПРИЗ";
+            this.Load += new System.EventHandler(this.Form_VisibleChangedOrLoad);
+            this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
             this.SizeChanged += new System.EventHandler(this.tbForText_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.Form_VisibleChangedOrLoad);
             this.Click += new System.EventHandler(this.tbForText_SizeChanged);
             this.Leave += new System.EventHandler(this.LabelLostFokus);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

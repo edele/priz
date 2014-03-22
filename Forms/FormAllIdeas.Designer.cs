@@ -394,6 +394,8 @@
             this.lAllHypo.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lAllHypo_DrawItem);
             this.lAllHypo.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lAllHypo_MeasureItem);
             this.lAllHypo.SelectedIndexChanged += new System.EventHandler(this.lAllHypo_SelectedIndexChanged);
+            this.lAllHypo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lAllHypo_MouseDown);
+            this.lAllHypo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lAllHypo_MouseUp);
             // 
             // FormAllIdeas
             // 
@@ -426,9 +428,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormAllIdeas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ПРИЗ";
             this.Load += new System.EventHandler(this.FormAllIdeas_Load);
+            this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
+            this.SizeChanged += new System.EventHandler(this.FormAllIdeas_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.FormAllIdeas_VisibleChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

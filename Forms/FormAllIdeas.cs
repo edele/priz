@@ -107,10 +107,13 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены.\r\n Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Program.InitWindow(Forms.fModules);
+                Program.fModules.WindowState = Program.fAllIdeas.WindowState;
+                Program.fModules.Size = Program.fAllIdeas.Size;
+                Program.fModules.Location = Program.fAllIdeas.Location;
                 answer._hypothesises.Clear();
                 answer._givenByUser = "";
                 answer._ToFindByUser = "";
-                Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
                 this.Hide();
             }
@@ -138,6 +141,9 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Program.fLogin.WindowState = Program.fAllIdeas.WindowState;
+                Program.fLogin.Size = Program.fAllIdeas.Size;
+                Program.fLogin.Location = Program.fAllIdeas.Location;
                 answer._hypothesises.Clear();
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
@@ -149,7 +155,8 @@ namespace PRIZ
 
         private void FormAllIdeas_Load(object sender, EventArgs e)
         {
-
+            this.Location = Program.currentLocation;
+            this.Size = Program.currentSize;
             for (int i = 0; i < answer._hypothesises.Count; i++)
             {
                 lAllHypo.Items.Add(answer._hypothesises[i]);
@@ -162,6 +169,9 @@ namespace PRIZ
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
+            Program.fPhenomenas.WindowState = Program.fAllIdeas.WindowState;
+            Program.fPhenomenas.Size = Program.fAllIdeas.Size;
+            Program.fPhenomenas.Location = Program.fAllIdeas.Location;
             this.Hide();
             answer._hypothesises.Clear();
             for (int i = 0; i < lAllHypo.Items.Count; i++)
@@ -277,6 +287,34 @@ namespace PRIZ
                 btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             }
         }
+
+        private void FormAllIdeas_VisibleChanged(object sender, EventArgs e)
+        {
+            this.Location = Program.currentLocation;
+            this.Size = Program.currentSize;
+        }
+        private void Form_LocationChanged(object sender, EventArgs e)
+        {
+            Program.currentLocation = this.Location;
+        }
+
+        private void FormAllIdeas_SizeChanged(object sender, EventArgs e)
+        {
+            Program.currentSize = this.Size;
+        }
+
+        private void lAllHypo_MouseDown(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void lAllHypo_MouseUp(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
+
+
+
     }
 
     public class UserSortableListBox : ListBox
@@ -320,6 +358,7 @@ namespace PRIZ
         private int sourceIndex = 0;
         protected override void OnDragDrop(DragEventArgs e)
         {
+            
             base.OnDragDrop(e);
             Point point = PointToClient(new Point(e.X, e.Y));
             int index = IndexFromPoint(point); // destination index

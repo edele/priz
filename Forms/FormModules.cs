@@ -104,6 +104,9 @@ namespace PRIZ
         {
             if (sender.GetType().ToString() == "System.Windows.Forms.PictureBox")
             {
+                /*Program.fTasks.WindowState = Program.fModules.WindowState;
+                Program.fTasks.Size = Program.fModules.Size;
+                Program.fTasks.Location = Program.fModules.Location;*/
                 PictureBox pbox = sender as PictureBox;
                 Program.p.currentModule = modules[int.Parse(pbox.Tag.ToString())];
                 Program.InitWindow(Forms.fTasks);
@@ -112,6 +115,9 @@ namespace PRIZ
             }
             if (sender.GetType().ToString() == "System.Windows.Forms.Label")
             {
+                /*Program.fTasks.WindowState = Program.fModules.WindowState;
+                Program.fTasks.Size = Program.fModules.Size;
+                Program.fTasks.Location = Program.fModules.Location;*/
                 Label pbox = sender as Label;
                 Program.p.currentModule = modules[int.Parse(pbox.Tag.ToString())];
                 Program.InitWindow(Forms.fTasks);
@@ -177,8 +183,8 @@ namespace PRIZ
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Program.fLogin.Show();
+            this.Hide();
         }
 
         private void btnLogoCreativeThinker_Click(object sender, EventArgs e)
@@ -188,7 +194,8 @@ namespace PRIZ
         }
         private void tbForText_SizeChanged(object sender, EventArgs e)
         {
-            panelForElements.Size = new Size(panelForElements.Size.Width, this.Size.Height-170);           
+            panelForElements.Size = new Size(panelForElements.Size.Width, this.Size.Height-170);
+            Program.currentSize = this.Size;
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -211,17 +218,40 @@ namespace PRIZ
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*Program.fLogin.WindowState = Program.fModules.WindowState;
+            Program.fLogin.Size = Program.fModules.Size;
+            Program.fLogin.Location = Program.fModules.Location;*/
             Program.fLogin.tbLogin.Text = "Фамилия и имя";
             Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
             Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            Program.InitWindow(Forms.fLogin);
             Program.fLogin.Show();
             this.Hide();
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            /*Program.fLogin.WindowState = Program.fModules.WindowState;
+            Program.fLogin.Size = Program.fModules.Size;
+            Program.fLogin.Location = Program.fModules.Location;*/
             Program.fLogin.Show();
+            this.Hide();
+        }
+
+        private void FormModule_Load(object sender, EventArgs e)
+        {
+            this.Size = Program.currentSize;
+            this.Location = Program.currentLocation;
+            this.WindowState = Program.currentWindowState;
+        }
+
+        private void FormModule_LocationChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState != Program.currentWindowState)
+            {
+                Program.currentWindowState = this.WindowState;
+            }
+            Program.currentLocation = this.Location;
         }
 
     }
