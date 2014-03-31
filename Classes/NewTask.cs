@@ -18,13 +18,11 @@ namespace PRIZ
 
         public NewTask() { }
 
-        public NewTask(string name, string given, string toFind, Rectangle r)
+        public NewTask(string name, string given, Rectangle r)
         {
             Task n = new Task();
             this._name = name;
-            this._description = given+"... "+toFind;
-            this._given = given;
-            this._toFind = toFind;
+            this._description = given;
             Serialize(name, r);
         }
         public void CreateFromXML(string path)

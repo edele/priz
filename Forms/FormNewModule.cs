@@ -13,12 +13,14 @@ namespace PRIZ
 {
     public partial class FormNewModule : Form
     {
+        bool def = true;
         public static string _currentModuleName;
         OpenFileDialog ofd = new OpenFileDialog();
 
         public FormNewModule()
         {
             InitializeComponent();
+            this.FormClosing += Program.ApplicationQuit;
             pnlWhite.Visible = false;
             ofd.Title = "Выберите изображение";
             ofd.Filter = "Файлы изображения|*.jpg; *jpeg; *bmp; *png;";
@@ -30,12 +32,14 @@ namespace PRIZ
             {
                 pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImage.Image = Image.FromFile(ofd.FileName);
+                def = false;
             }
         }
         static string _earlierText;
+        static string _earlierText2;
         private void txtFrom_Enter(object sender, EventArgs e)
         {
-            if ((sender as TextBox).Text=="Введите название модуля")
+            if ((sender as TextBox).Text=="Название модуля")
             {
                 _earlierText = (sender as TextBox).Text;
                 (sender as TextBox).Text = "";
@@ -52,9 +56,28 @@ namespace PRIZ
             }
         }
 
+        private void descFrom_Enter(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "Описание модуля")
+            {
+                _earlierText2 = (sender as TextBox).Text;
+                (sender as TextBox).Text = "";
+                (sender as TextBox).ForeColor = Color.Black;
+            }
+        }
+
+        private void descFrom_Leave(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "")
+            {
+                (sender as TextBox).ForeColor = Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+                (sender as TextBox).Text = _earlierText2;
+            }
+        }
+
         private void btnCreateModule_Click(object sender, EventArgs e)
         {
-            if (tbDescription.Text == "" || tbModuleName.Text == "")
+            if (tbModuleName.Text == "" || tbModuleName.Text == "Название модуля" || tbDescription.Text == "Описание модуля")
             {
                 MessageBox.Show("Заполнены не все поля");
             }
@@ -63,13 +86,13 @@ namespace PRIZ
                 _currentModuleName = tbModuleName.Text;
                 NewModule newModule = new NewModule(tbModuleName.Text, tbDescription.Text, pbImage.RectangleToScreen(pbImage.ClientRectangle));
                 pnlWhite.Visible = true;
+                pnlWhite.BringToFront();
             }
         }
 
         private void btnAnotherModule_Click(object sender, EventArgs e)
         {
             pnlWhite.Visible = false;
-            tbDescription.Text = "";
             tbModuleName.Text = "";
             pbImage.Image = Properties.Resources.Logo_ShKM;
             pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -80,6 +103,21 @@ namespace PRIZ
             Program.InitWindow(Forms.fNewTask);
             Program.fNewTask.Show();
             this.Hide();
+        }
+        private void pbImage_MouseEnter(object sender, EventArgs e)
+        {
+            if (def)
+            {
+                pbImage.Image = Properties.Resources.iconimage_hover;
+            }
+        }
+
+        private void pbImage_MouseLeave(object sender, EventArgs e)
+        {
+            if (def)
+            {
+                pbImage.Image = Properties.Resources.iconimage;
+            }
         }
     }
 }

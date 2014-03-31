@@ -74,6 +74,12 @@
     <Compile Include="Forms\FormAllIdeas.Designer.cs">
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormDeleteConform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDeleteConform.Designer.cs">
+      <DependentUpon>FormDeleteConform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormEditIdea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="Forms\FormEditModule.Designer.cs">
       <DependentUpon>FormEditModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEditModuleEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEditModuleEntity.Designer.cs">
+      <DependentUpon>FormEditModuleEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormEditTask.cs">
       <SubType>Form</SubType>
@@ -181,11 +193,17 @@
       <DependentUpon>FormAllIdeas.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDeleteConform.resx">
+      <DependentUpon>FormDeleteConform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEditIdea.resx">
       <DependentUpon>FormEditIdea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEditModule.resx">
       <DependentUpon>FormEditModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEditModuleEntity.resx">
+      <DependentUpon>FormEditModuleEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEditTask.resx">
       <DependentUpon>FormEditTask.cs</DependentUpon>
@@ -415,6 +433,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reg_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconimage_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

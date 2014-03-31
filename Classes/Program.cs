@@ -25,7 +25,9 @@ namespace PRIZ
         fEditModule,
         fNewModule,
         fNewTask,
-        fEditTask
+        fEditTask,
+        fDeleteConform,
+        fEditModuleEntity
     }
 
 
@@ -56,6 +58,8 @@ namespace PRIZ
         static public FormEditModule fEditModule;
         static public FormNewTask fNewTask;
         static public FormEditTask fEditTask;
+        static public FormDeleteConform fDeleteConform;
+        static public FormEditModuleEntity fEditModuleEntity;
         private static DateTime endProgram = Convert.ToDateTime("11/02/2014");
         static public bool debug = false;
         [STAThread]
@@ -119,7 +123,7 @@ namespace PRIZ
             switch (form)
             {
                 case Forms.fLogin:
-                    //fLogin = new Form1();
+                    fLogin = new FormLogin();
                     break;
                 case Forms.fModules:
                     fModules = new FormModule();
@@ -171,6 +175,12 @@ namespace PRIZ
                     break;
                 case Forms.fEditTask:
                     fEditTask = new FormEditTask();
+                    break;
+                case Forms.fDeleteConform:
+                    fDeleteConform = new FormDeleteConform();
+                    break;
+                case Forms.fEditModuleEntity:
+                    fEditModuleEntity = new FormEditModuleEntity();
                     break;
                 default:
                     break;

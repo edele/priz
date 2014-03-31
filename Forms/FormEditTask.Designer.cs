@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelForElements = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // panelForElements
+            // 
+            this.panelForElements.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelForElements.AutoScroll = true;
+            this.panelForElements.BackColor = System.Drawing.Color.Transparent;
+            this.panelForElements.Location = new System.Drawing.Point(53, 58);
+            this.panelForElements.Name = "panelForElements";
+            this.panelForElements.Size = new System.Drawing.Size(802, 604);
+            this.panelForElements.TabIndex = 8;
             // 
             // FormEditTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 460);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(867, 674);
+            this.Controls.Add(this.panelForElements);
             this.Name = "FormEditTask";
             this.Text = "FormEditTask";
             this.ResumeLayout(false);
@@ -42,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelForElements;
     }
 }
