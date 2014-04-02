@@ -48,6 +48,7 @@ namespace PRIZ
         /// <param name="annotation"></param>
         public NewModule(string name, string annotation, Rectangle r, string oldModuleName)
         {
+            
             this._name = name;
             this._annotation = annotation;
             this._pic = "mainpic.png";
@@ -91,6 +92,7 @@ namespace PRIZ
         }
         public void SaveImage(Rectangle r, string name)
         {
+            name = name.Trim();
             Bitmap b = new Bitmap(r.Width, r.Height);
             Graphics g = Graphics.FromImage(b);
             g.CopyFromScreen(r.Location, new Point(0, 0), r.Size);

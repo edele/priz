@@ -67,7 +67,7 @@ namespace PRIZ
                 description.Tag = i;
 
                 btnEditTaskEntity.Text = "Редактировать задание";
-                btnEditTaskEntity.Location = new Point(448, ypos + 245);
+                btnEditTaskEntity.Location = new Point(448, ypos + 237);
                 btnEditTaskEntity.Size = new Size(162, 31);
                 btnEditTaskEntity.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnEditTaskEntity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -77,12 +77,12 @@ namespace PRIZ
                 btnEditTaskEntity.Font = new System.Drawing.Font("Segoe UI Light", 10F);
                 btnEditTaskEntity.ForeColor = System.Drawing.Color.White;
                 btnEditTaskEntity.UseVisualStyleBackColor = false;
-                //btnDone.Click += new System.EventHandler(this.btnEditTask_Click);
+                btnEditTaskEntity.Click += new EventHandler(btnEditTaskEntity_Click);
                 btnEditTaskEntity.Tag = i;
 
 
-                btnDeleteTask.Text = "Удалить задачу";
-                btnDeleteTask.Location = new Point(624, ypos + 245);
+                btnDeleteTask.Text = "Удалить задание";
+                btnDeleteTask.Location = new Point(624, ypos + 237);
                 btnDeleteTask.Size = new Size(162, 31);
                 btnDeleteTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnDeleteTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -92,12 +92,8 @@ namespace PRIZ
                 btnDeleteTask.Font = new System.Drawing.Font("Segoe UI Light", 10F);
                 btnDeleteTask.ForeColor = System.Drawing.Color.White;
                 btnDeleteTask.UseVisualStyleBackColor = false;
-                //btnDeleteTask.Click += new System.EventHandler(this.btnDeleteTask_Click);
+                btnDeleteTask.Click += new EventHandler(btnDeleteTask_Click);
                 btnDeleteTask.Tag = i;
-
-                pbox.Click += pbox_Click;
-                pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-                pbox.Tag = i;
 
                 panelForElements.Controls.Add(title);
                 panelForElements.Controls.Add(description);
@@ -111,6 +107,75 @@ namespace PRIZ
                 ypos += 300;
             }
             panelForElements.Focus();
+            Panel addTask = new Panel();
+            addTask.Cursor = Cursors.Hand;
+            addTask.Size = new Size(786, 170);
+            addTask.Location = new Point(0, ypos + 20);
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
+            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
+            addTask.Click += new EventHandler(addTask_Click);
+            Label addTaskLabel = new Label();
+            addTaskLabel.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            addTaskLabel.Text = "Добавить задание";
+            addTaskLabel.Size = new Size(349, 40);
+            addTaskLabel.Location = new Point(300, 65);
+            addTaskLabel.Click += new EventHandler(addTask_Click);
+            addTaskLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
+            addTask.Controls.Add(addTaskLabel);
+            panelForElements.Controls.Add(addTask);
+        }
+
+        void addTask_Click(object sender, EventArgs e)
+        {
+            FormNewModule._currentModuleName = Program.p.currentModule._filename;
+            Program.InitWindow(Forms.fNewTask);
+            Program.fNewTask.Show();
+            bool b = true;
+            Program.fNewTask.GetPlace(b);
+            this.Hide();
+        }
+
+        void addTask_MouseLeave(object sender, EventArgs e)
+        {
+            Panel addTask = sender as Panel;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+        }
+
+        void addTask_MouseEnter(object sender, EventArgs e)
+        {
+            Panel addTask = sender as Panel;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
+        }
+
+        void btnDeleteTask_Click(object sender, EventArgs e)
+        {
+            Button btnDelete = sender as Button;
+            Program.p.currentTask = tasks[int.Parse(btnDelete.Tag.ToString())];
+            FormDeleteConformTask frm = new FormDeleteConformTask();
+            DialogResult dr = frm.ShowDialog(this);
+            if (dr == DialogResult.Cancel)
+            {
+                frm.Close();
+            }
+            else if (dr == DialogResult.OK)
+            {
+                frm.Close();
+                DirectoryInfo dir = new DirectoryInfo(@"modules\" + Program.p.currentModule._filename + @"\" + Program.p.currentTask._name);
+                dir.Delete(true);
+                Program.InitWindow(Forms.fEditTask);
+                Program.fEditTask.Show();
+                this.Hide();
+            }  
+        }
+
+        void btnEditTaskEntity_Click(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            Program.p.currentTask = tasks[int.Parse(button.Tag.ToString())];
+            Program.InitWindow(Forms.fEditTaskEntity);
+            Program.fEditTaskEntity.Show();
+            this.Hide();
         }
         private void tb_MouseWheel(object sender, EventArgs e)
         {
@@ -123,8 +188,8 @@ namespace PRIZ
             {
                 PictureBox pbox = sender as PictureBox;
                 Program.p.currentTask = tasks[int.Parse(pbox.Tag.ToString())];
-                Program.InitWindow(Forms.fTask);
-                Program.fTask.Show();
+                Program.InitWindow(Forms.fEditTaskEntity);
+                Program.fEditTaskEntity.Show();
                 this.Hide();
             }
         }

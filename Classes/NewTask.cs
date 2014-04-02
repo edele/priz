@@ -18,6 +18,32 @@ namespace PRIZ
 
         public NewTask() { }
 
+        public NewTask(string name, string given, Rectangle r, string oldTaskName, string currentModule)
+        {
+            Task n = new Task();
+            this._name = name;
+            this._description = given;
+            if (oldTaskName != name)
+            {
+                Directory.Move(@"modules\" + currentModule + @"\" + oldTaskName, @"modules\" + currentModule + @"\" + _name);
+            }
+            SerializeEdit(name, r, @"modules\" + currentModule + @"\" + _name);
+        }
+
+        private void SerializeEdit(string name, Rectangle r, string modulePath)
+        {
+            string path = modulePath;
+            Task n = new Task();
+            n._name = this._name;
+            n._description = this._description;
+            n._toFind = this._toFind;
+            n._given = this._given;
+            FileStream fs = new FileStream(path + @"\main.xml", FileMode.Create);
+            XmlSerializer xs = new XmlSerializer(typeof(Task));
+            xs.Serialize(fs, n);
+            fs.Close();
+            SaveImage(r, name, path);
+        }
         public NewTask(string name, string given, Rectangle r)
         {
             Task n = new Task();
@@ -74,6 +100,14 @@ namespace PRIZ
             Graphics g = Graphics.FromImage(b);
             g.CopyFromScreen(r.Location, new Point(0, 0), r.Size);
             b.Save(@"modules\" + FormNewModule._currentModuleName + @"\"+ name + @"\mainpic.png");
+        }
+
+        public void SaveImage(Rectangle r, string name, string modulePath)
+        {
+            Bitmap b = new Bitmap(r.Width, r.Height);
+            Graphics g = Graphics.FromImage(b);
+            g.CopyFromScreen(r.Location, new Point(0, 0), r.Size);
+            b.Save(modulePath + @"\mainpic.png");
         }
     }   
 }

@@ -8,11 +8,13 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PRIZ
 {
     public partial class FormNewModule : Form
     {
+        bool error = false;
         bool def = true;
         public static string _currentModuleName;
         OpenFileDialog ofd = new OpenFileDialog();
@@ -30,9 +32,14 @@ namespace PRIZ
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImage.SizeMode = PictureBoxSizeMode.Zoom;
                 pbImage.Image = Image.FromFile(ofd.FileName);
                 def = false;
+            }
+            else {
+                pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                pbImage.Image = Properties.Resources.iconimage;
+                def = true;
             }
         }
         static string _earlierText;
@@ -83,10 +90,13 @@ namespace PRIZ
             }
             else
             {
-                _currentModuleName = tbModuleName.Text;
-                NewModule newModule = new NewModule(tbModuleName.Text, tbDescription.Text, pbImage.RectangleToScreen(pbImage.ClientRectangle));
-                pnlWhite.Visible = true;
-                pnlWhite.BringToFront();
+                if (!error)
+                {
+                    _currentModuleName = tbModuleName.Text;
+                    NewModule newModule = new NewModule(tbModuleName.Text, tbDescription.Text, pbImage.RectangleToScreen(pbImage.ClientRectangle));
+                    pnlWhite.Visible = true;
+                    pnlWhite.BringToFront();
+                }
             }
         }
 
@@ -117,6 +127,15 @@ namespace PRIZ
             if (def)
             {
                 pbImage.Image = Properties.Resources.iconimage;
+            }
+        }
+
+        private void tb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char l = e.KeyChar;
+            if ((l < 'А' || l > 'я') && l != '\b' && l != '.' && l!=' ')
+            {
+                e.Handled = true;
             }
         }
     }

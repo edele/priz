@@ -123,7 +123,7 @@
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModules.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.btnModules.Image = global::PRIZ.Properties.Resources.modules03;
+            this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";

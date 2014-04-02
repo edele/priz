@@ -1,6 +1,6 @@
 ﻿namespace PRIZ
 {
-    partial class FormEditModule
+    partial class FormEditTaskEntity
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,25 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditModule));
-            this.panelForElements = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditTaskEntity));
+            this.pbTask = new System.Windows.Forms.PictureBox();
+            this.lName = new System.Windows.Forms.TextBox();
+            this.lDescription = new System.Windows.Forms.TextBox();
+            this.btnSaveChanges = new System.Windows.Forms.Button();
+            this.pnlEdited = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnWriteToUs = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTask)).BeginInit();
+            this.pnlEdited.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelForElements
+            // pbTask
             // 
-            this.panelForElements.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelForElements.AutoScroll = true;
-            this.panelForElements.BackColor = System.Drawing.Color.Transparent;
-            this.panelForElements.Location = new System.Drawing.Point(155, 117);
-            this.panelForElements.Name = "panelForElements";
-            this.panelForElements.Size = new System.Drawing.Size(802, 604);
-            this.panelForElements.TabIndex = 8;
+            this.pbTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbTask.BackColor = System.Drawing.Color.Transparent;
+            this.pbTask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbTask.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbTask.Location = new System.Drawing.Point(155, 117);
+            this.pbTask.Name = "pbTask";
+            this.pbTask.Size = new System.Drawing.Size(430, 270);
+            this.pbTask.TabIndex = 6;
+            this.pbTask.TabStop = false;
+            this.pbTask.Click += new System.EventHandler(this.pbTask_Click);
+            this.pbTask.MouseEnter += new System.EventHandler(this.pbImage_MouseEnter);
+            this.pbTask.MouseLeave += new System.EventHandler(this.pbImage_MouseLeave);
+            // 
+            // lName
+            // 
+            this.lName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lName.Font = new System.Drawing.Font("Segoe UI Light", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lName.Location = new System.Drawing.Point(610, 117);
+            this.lName.Name = "lName";
+            this.lName.Size = new System.Drawing.Size(363, 45);
+            this.lName.TabIndex = 9;
+            this.lName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
+            // 
+            // lDescription
+            // 
+            this.lDescription.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lDescription.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lDescription.Location = new System.Drawing.Point(610, 182);
+            this.lDescription.Multiline = true;
+            this.lDescription.Name = "lDescription";
+            this.lDescription.Size = new System.Drawing.Size(363, 205);
+            this.lDescription.TabIndex = 10;
+            // 
+            // btnSaveChanges
+            // 
+            this.btnSaveChanges.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSaveChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSaveChanges.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSaveChanges.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveChanges.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveChanges.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSaveChanges.ForeColor = System.Drawing.Color.White;
+            this.btnSaveChanges.Location = new System.Drawing.Point(811, 413);
+            this.btnSaveChanges.Name = "btnSaveChanges";
+            this.btnSaveChanges.Size = new System.Drawing.Size(162, 31);
+            this.btnSaveChanges.TabIndex = 11;
+            this.btnSaveChanges.Text = "Сохранить изменения";
+            this.btnSaveChanges.UseVisualStyleBackColor = false;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
+            // 
+            // pnlEdited
+            // 
+            this.pnlEdited.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEdited.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pnlEdited.Controls.Add(this.label1);
+            this.pnlEdited.Location = new System.Drawing.Point(-12, 171);
+            this.pnlEdited.Name = "pnlEdited";
+            this.pnlEdited.Size = new System.Drawing.Size(1033, 216);
+            this.pnlEdited.TabIndex = 13;
+            this.pnlEdited.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 21.75F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
+            this.label1.Location = new System.Drawing.Point(328, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(375, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Задание успешно изменено";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
             // 
@@ -58,7 +140,7 @@
             this.label2.Location = new System.Drawing.Point(151, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 73;
+            this.label2.TabIndex = 55;
             this.label2.Text = "Имя Фамилия";
             // 
             // btnAbout
@@ -76,7 +158,7 @@
             this.btnAbout.Location = new System.Drawing.Point(12, 244);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(111, 68);
-            this.btnAbout.TabIndex = 71;
+            this.btnAbout.TabIndex = 53;
             this.btnAbout.Text = "О программе";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbout.UseVisualStyleBackColor = true;
@@ -96,7 +178,7 @@
             this.btnWriteToUs.Location = new System.Drawing.Point(12, 324);
             this.btnWriteToUs.Name = "btnWriteToUs";
             this.btnWriteToUs.Size = new System.Drawing.Size(111, 68);
-            this.btnWriteToUs.TabIndex = 72;
+            this.btnWriteToUs.TabIndex = 54;
             this.btnWriteToUs.Text = "Напишите нам";
             this.btnWriteToUs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnWriteToUs.UseVisualStyleBackColor = true;
@@ -115,7 +197,7 @@
             this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(111, 68);
-            this.btnModules.TabIndex = 70;
+            this.btnModules.TabIndex = 52;
             this.btnModules.Text = "Модули";
             this.btnModules.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnModules.UseVisualStyleBackColor = true;
@@ -133,7 +215,7 @@
             this.btnBack.Location = new System.Drawing.Point(51, 103);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 36);
-            this.btnBack.TabIndex = 69;
+            this.btnBack.TabIndex = 51;
             this.btnBack.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -146,25 +228,33 @@
             this.label3.Location = new System.Drawing.Point(44, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
-            this.label3.TabIndex = 68;
+            this.label3.TabIndex = 50;
             this.label3.Text = "Выход";
             // 
-            // FormEditModule
+            // FormEditTaskEntity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1008, 693);
+            this.ClientSize = new System.Drawing.Size(1008, 688);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnWriteToUs);
             this.Controls.Add(this.btnModules);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panelForElements);
+            this.Controls.Add(this.btnSaveChanges);
+            this.Controls.Add(this.lDescription);
+            this.Controls.Add(this.lName);
+            this.Controls.Add(this.pbTask);
+            this.Controls.Add(this.pnlEdited);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
-            this.Name = "FormEditModule";
-            this.Text = "FormEditModule";
+            this.Name = "FormEditTaskEntity";
+            this.Text = "Редактировать задание";
+            ((System.ComponentModel.ISupportInitialize)(this.pbTask)).EndInit();
+            this.pnlEdited.ResumeLayout(false);
+            this.pnlEdited.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,7 +262,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelForElements;
+        private System.Windows.Forms.PictureBox pbTask;
+        private System.Windows.Forms.TextBox lName;
+        private System.Windows.Forms.TextBox lDescription;
+        private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.Panel pnlEdited;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnWriteToUs;

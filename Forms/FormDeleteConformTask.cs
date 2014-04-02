@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace PRIZ
 {
-    public partial class FormDeleteConform : Form
+    public partial class FormDeleteConformTask : Form
     {
-        public FormDeleteConform()
+        public FormDeleteConformTask()
         {
             InitializeComponent();
-            lReallyModule.Text = lReallyModule.Text + "\r\n «" + Program.p.currentModule._filename + "»?";
+            lReallyTask.Text = lReallyTask.Text + "\r\n «" + Program.p.currentTask._name + "» из модуля «" + Program.p.currentModule._filename + "»?";
         }
     }
 }

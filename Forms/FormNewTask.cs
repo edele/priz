@@ -7,13 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PRIZ
 {
     public partial class FormNewTask : Form
     {
+        bool error = false;
         bool def= true;
         OpenFileDialog ofd = new OpenFileDialog();
+
+        public void GetPlace(bool taskList)
+        {
+            if (taskList)
+            {
+                btnBackToTasks.Visible = true;
+            }
+        }
+
         public FormNewTask()
         {
             InitializeComponent();
@@ -27,9 +38,14 @@ namespace PRIZ
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImage.SizeMode = PictureBoxSizeMode.Zoom;
                 pbImage.Image = Image.FromFile(ofd.FileName);
                 def = false;
+            }
+            else 
+            {
+                pbImage.Image = Properties.Resources.iconimage;
+                def = true;
             }
         }
         static string _earlierText;
@@ -61,13 +77,16 @@ namespace PRIZ
             }
             else
             {
-                NewTask newTask = new NewTask(tbTaskName.Text, tbGiven.Text, pbImage.RectangleToScreen(pbImage.ClientRectangle));
-                pnlAdded.Visible = true;
-                timer1.Enabled = true;
-                tbGiven.Clear();
-                tbTaskName.Clear();
-                pbImage.Image = Properties.Resources.iconimage;
-                pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                if (!error)
+                {
+                    NewTask newTask = new NewTask(tbTaskName.Text, tbGiven.Text, pbImage.RectangleToScreen(pbImage.ClientRectangle));
+                    pnlAdded.Visible = true;
+                    timer1.Enabled = true;
+                    tbGiven.Clear();
+                    tbTaskName.Clear();
+                    pbImage.Image = Properties.Resources.iconimage;
+                    pbImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                }
             }
         }
 
@@ -109,6 +128,23 @@ namespace PRIZ
             if (def)
             {
                 pbImage.Image = Properties.Resources.iconimage;
+            }
+        }
+        
+        private void btnBackToTasks_Click(object sender, EventArgs e)
+        {
+            btnBackToTasks.Visible = false;
+            Program.InitWindow(Forms.fEditTask);
+            Program.fEditTask.Show();
+            this.Hide();
+        }
+
+        private void tb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char l = e.KeyChar;
+            if ((l < 'А' || l > 'я') && l != '\b' && l != '.' && l != ' ')
+            {
+                e.Handled = true;
             }
         }
     }
