@@ -80,6 +80,10 @@
             this.btnAbout.Text = "О программе";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAbout_MouseDown);
+            this.btnAbout.MouseEnter += new System.EventHandler(this.btnAbout_MouseEnter);
+            this.btnAbout.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
+            this.btnAbout.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnAbout_MouseUp);
             // 
             // btnWriteToUs
             // 
@@ -100,10 +104,15 @@
             this.btnWriteToUs.Text = "Напишите нам";
             this.btnWriteToUs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnWriteToUs.UseVisualStyleBackColor = true;
+            this.btnWriteToUs.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnWriteToUs_MouseDown);
+            this.btnWriteToUs.MouseEnter += new System.EventHandler(this.btnWriteToUs_MouseEnter);
+            this.btnWriteToUs.MouseLeave += new System.EventHandler(this.btnWriteToUs_MouseLeave);
+            this.btnWriteToUs.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnWriteToUs_MouseUp);
             // 
             // btnModules
             // 
             this.btnModules.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnModules.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModules.FlatAppearance.BorderSize = 0;
             this.btnModules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -119,6 +128,10 @@
             this.btnModules.Text = "Модули";
             this.btnModules.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnModules.UseVisualStyleBackColor = true;
+            this.btnModules.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnModules_MouseDown);
+            this.btnModules.MouseEnter += new System.EventHandler(this.btnModules_MouseEnter);
+            this.btnModules.MouseLeave += new System.EventHandler(this.btnModules_MouseLeave);
+            this.btnModules.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnModules_MouseUp);
             // 
             // btnBack
             // 
@@ -135,6 +148,7 @@
             this.btnBack.Size = new System.Drawing.Size(36, 36);
             this.btnBack.TabIndex = 69;
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label3
             // 
@@ -148,6 +162,7 @@
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 68;
             this.label3.Text = "Выход";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FormEditModule
             // 
@@ -162,9 +177,16 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panelForElements);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormEditModule";
-            this.Text = "FormEditModule";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Список модулей";
+            this.Load += new System.EventHandler(this.Form_Load);
+            this.ClientSizeChanged += new System.EventHandler(this.Form_SizeChanged);
+            this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
+            this.SizeChanged += new System.EventHandler(this.Form_SizeChanged);
+            this.VisibleChanged += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,6 +39,7 @@
             this.btnLogoEducationEra = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnAddTask = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnWriteToUs
@@ -123,7 +124,7 @@
             this.btnModules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModules.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnModules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.btnModules.Image = global::PRIZ.Properties.Resources.modules01;
+            this.btnModules.Image = global::PRIZ.Properties.Resources.modules03;
             this.btnModules.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnModules.Location = new System.Drawing.Point(12, 164);
             this.btnModules.Name = "btnModules";
@@ -214,6 +215,24 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
+            // btnAddTask
+            // 
+            this.btnAddTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAddTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnAddTask.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddTask.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnAddTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTask.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.btnAddTask.ForeColor = System.Drawing.Color.White;
+            this.btnAddTask.Location = new System.Drawing.Point(29, 410);
+            this.btnAddTask.Name = "btnAddTask";
+            this.btnAddTask.Size = new System.Drawing.Size(75, 50);
+            this.btnAddTask.TabIndex = 43;
+            this.btnAddTask.Text = "Редактор модулей";
+            this.btnAddTask.UseVisualStyleBackColor = false;
+            this.btnAddTask.Visible = false;
+            this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
+            // 
             // FormModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +240,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1008, 727);
+            this.Controls.Add(this.btnAddTask);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLogoEducationEra);
@@ -258,6 +278,7 @@
         private System.Windows.Forms.Button btnLogoEducationEra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnAddTask;
 
 
     }

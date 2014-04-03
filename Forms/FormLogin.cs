@@ -96,7 +96,7 @@ namespace PRIZ
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            Program.InitWindow(Forms.fModules);
+            
             /*Program.fModules.WindowState = Program.fLogin.WindowState;
             Program.fModules.Size = Program.fLogin.Size;
             Program.fModules.DesktopLocation = Program.fLogin.DesktopLocation;*/
@@ -108,6 +108,7 @@ namespace PRIZ
                 {
                     
                     Program.p._currentUser = i;
+                    Program.InitWindow(Forms.fModules);
                     Program.fModules.Show();
                     this.Hide();
                     return;
@@ -151,12 +152,12 @@ namespace PRIZ
             {
                 btnSubmit_Click((object)sender, (EventArgs)e);
             }
-            else if (e.KeyCode == Keys.Enter && e.Control) 
+            /*else if (e.KeyCode == Keys.Enter && e.Control) 
             {
                 Program.debug = true;
                 tbLogin.Text = "Назарова Александра";
                 btnSubmit_Click((object)sender, (EventArgs)e);
-            }
+            }*/
         }
 
         private void FormLogin_Load(object sender, EventArgs e)

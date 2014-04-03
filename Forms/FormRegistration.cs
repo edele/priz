@@ -33,7 +33,14 @@ namespace PRIZ
             }
 
         }
-        
+        private void tb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char l = e.KeyChar;
+            if ((l < 'А' || l > 'я') && l != '\b' && l != '.')
+            {
+                e.Handled = true;
+            }
+        }
         private void TextBox_GotFocus(object sender, EventArgs e)
         {
             _earlierText = (sender as TextBox).Text;

@@ -79,9 +79,9 @@ namespace PRIZ
 
 
             p = new ProgramInstance();
-            //fLogin = new FormLogin();
-            fModuleEditor = new FormModuleEditor();
-            Application.Run(fModuleEditor);
+            fLogin = new FormLogin();
+            //fModuleEditor = new FormModuleEditor();
+            Application.Run(fLogin);
         }
 
         static bool quitOnce = false;

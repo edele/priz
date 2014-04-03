@@ -72,6 +72,7 @@
             this.tbSurename.TabIndex = 1;
             this.tbSurename.Text = "Фамилия";
             this.tbSurename.Enter += new System.EventHandler(this.TextBox_GotFocus);
+            this.tbSurename.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             this.tbSurename.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // tbCountry
@@ -86,6 +87,7 @@
             this.tbCountry.TabIndex = 1;
             this.tbCountry.Text = "Страна";
             this.tbCountry.Enter += new System.EventHandler(this.TextBox_GotFocus);
+            this.tbCountry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             this.tbCountry.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // tbName
@@ -100,6 +102,7 @@
             this.tbName.TabIndex = 1;
             this.tbName.Text = "Имя";
             this.tbName.Enter += new System.EventHandler(this.TextBox_GotFocus);
+            this.tbName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             this.tbName.Leave += new System.EventHandler(this.TextBox_LostFocus);
             // 
             // tbAbout

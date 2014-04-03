@@ -26,8 +26,12 @@ namespace PRIZ
             this.Location = Program.currentLocation;
             this.FormClosing += Program.ApplicationQuit;
             lName.Text = Program.p.CurrentFullName;
+            string status = Program.p.CurrentUser._status;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
-           
+            if (status=="Учитель")
+            {
+                btnAddTask.Visible = true;
+            }
             string[] modulePaths = Directory.GetDirectories(@"modules");
             /* read */
             modules = new List<Module>();
@@ -128,24 +132,22 @@ namespace PRIZ
 
         #region events
 
-       /* private void btnMyTasks_MouseDown(object sender, MouseEventArgs e)
+        private void btnModules_MouseDown(object sender, MouseEventArgs e)
         {
-            btnMyTasks.Image = Properties.Resources.mytasks03;
+            btnModules.Image = Properties.Resources.modules03;
         }
-        private void btnMyTasks_MouseEnter(object sender, EventArgs e)
+        private void btnModules_MouseEnter(object sender, EventArgs e)
         {
-            btnMyTasks.Image = Properties.Resources.mytasks02;
+            btnModules.Image = Properties.Resources.modules02;
         }
-        private void btnMyTasks_MouseLeave(object sender, EventArgs e)
+        private void btnModules_MouseLeave(object sender, EventArgs e)
         {
-            btnMyTasks.Image = Properties.Resources.mytasks01;
+            btnModules.Image = Properties.Resources.modules01;
         }
-        private void btnMyTasks_MouseUp(object sender, MouseEventArgs e)
+        private void btnModules_MouseUp(object sender, MouseEventArgs e)
         {
-            btnMyTasks.Image = Properties.Resources.mytasks02;
+            btnModules.Image = Properties.Resources.modules02;
         }
-        */ 
-
         private void btnAbout_MouseDown(object sender, MouseEventArgs e)
         {
             btnAbout.Image = Properties.Resources.about03;
@@ -162,7 +164,6 @@ namespace PRIZ
         {
             btnAbout.Image = Properties.Resources.about02;
         }
-
         private void btnWriteToUs_MouseDown(object sender, MouseEventArgs e)
         {
             btnWriteToUs.Image = Properties.Resources.writeus03;
@@ -234,6 +235,7 @@ namespace PRIZ
             /*Program.fLogin.WindowState = Program.fModules.WindowState;
             Program.fLogin.Size = Program.fModules.Size;
             Program.fLogin.Location = Program.fModules.Location;*/
+            Program.InitWindow(Forms.fLogin);
             Program.fLogin.Show();
             this.Hide();
         }
@@ -252,6 +254,13 @@ namespace PRIZ
                 Program.currentWindowState = this.WindowState;
             }
             Program.currentLocation = this.Location;
+        }
+
+        private void btnAddTask_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fModuleEditor);
+            Program.fModuleEditor.Show();
+            this.Hide();
         }
 
     }

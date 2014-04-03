@@ -14,6 +14,7 @@ namespace PRIZ
         public FormModuleEditor()
         {
             InitializeComponent();
+            this.FormClosing += Program.ApplicationQuit;
         }
 
         private void btnNewModule_Click(object sender, EventArgs e)

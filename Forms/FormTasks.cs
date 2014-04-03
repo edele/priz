@@ -18,6 +18,8 @@ namespace PRIZ
         public FormTasks()
         {
             InitializeComponent();
+            this.Size = Program.currentSize;
+            this.Location = Program.currentLocation;
             this.FormClosing += Program.ApplicationQuit;
             btnLogoCreativeThinker.MouseEnter += Program.LogoMouseEnter;
             btnLogoCreativeThinker.MouseLeave += Program.LogoMouseLeave;
