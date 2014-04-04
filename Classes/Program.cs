@@ -20,7 +20,16 @@ namespace PRIZ
         fAboutProgramm,
         fMailSender,
         fShowAllIdeas,
-        fEditIdea
+        fEditIdea,
+        fModuleEditor,
+        fEditModule,
+        fNewModule,
+        fNewTask,
+        fEditTask,
+        fDeleteConform,
+        fDeleteConformTask,
+        fEditModuleEntity,
+        fEditTaskEntity,
     }
 
 
@@ -46,6 +55,15 @@ namespace PRIZ
         static public FormMailSender fMailSender;
         static public FormShowAllIdeas fShowAllIdeas;
         static public FormEditOrAddIdea fEditIdea;
+        static public FormModuleEditor fModuleEditor;
+        static public FormNewModule fNewModule;
+        static public FormEditModule fEditModule;
+        static public FormNewTask fNewTask;
+        static public FormEditTask fEditTask;
+        static public FormDeleteConform fDeleteConform;
+        static public FormDeleteConformTask fDeleteConformTask;
+        static public FormEditModuleEntity fEditModuleEntity;
+        static public FormEditTaskEntity fEditTaskEntity;
         private static DateTime endProgram = Convert.ToDateTime("11/02/2014");
         static public bool debug = false;
         [STAThread]
@@ -62,6 +80,7 @@ namespace PRIZ
 
             p = new ProgramInstance();
             fLogin = new FormLogin();
+            //fModuleEditor = new FormModuleEditor();
             Application.Run(fLogin);
         }
 
@@ -108,7 +127,7 @@ namespace PRIZ
             switch (form)
             {
                 case Forms.fLogin:
-                    //fLogin = new Form1();
+                    fLogin = new FormLogin();
                     break;
                 case Forms.fModules:
                     fModules = new FormModule();
@@ -145,6 +164,33 @@ namespace PRIZ
                     break;
                 case Forms.fEditIdea:
                     fEditIdea = new FormEditOrAddIdea();
+                    break;
+                case Forms.fModuleEditor:
+                    fModuleEditor = new FormModuleEditor();
+                    break;
+                case Forms.fNewModule:
+                    fNewModule = new FormNewModule();
+                    break;
+                case Forms.fEditModule:
+                    fEditModule = new FormEditModule();
+                    break;
+                case Forms.fNewTask:
+                    fNewTask = new FormNewTask();
+                    break;
+                case Forms.fEditTask:
+                    fEditTask = new FormEditTask();
+                    break;
+                case Forms.fDeleteConform:
+                    fDeleteConform = new FormDeleteConform();
+                    break;
+                case Forms.fEditModuleEntity:
+                    fEditModuleEntity = new FormEditModuleEntity();
+                    break;
+                case Forms.fEditTaskEntity:
+                    fEditTaskEntity = new FormEditTaskEntity();
+                    break;
+                case Forms.fDeleteConformTask:
+                    fDeleteConformTask = new FormDeleteConformTask();
                     break;
                 default:
                     break;

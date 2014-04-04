@@ -118,32 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="about01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_ShKM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ShKM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="about02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\about02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ShKM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ShKM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modules03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modules03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reg_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reg_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_submitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_submitt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="writeus01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\writeus01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_educationfornewera_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_educationfornewera_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mytasks01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mytasks01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="about01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mytasks02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mytasks02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbPass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbPass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,70 +154,73 @@
   <data name="logo_educationfornewera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_educationfornewera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="about03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ShKM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ShKM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modules02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modules02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registration_underlay_big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registration-underlay-big.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_ShKM_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_ShKM_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_submitt_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_submitt_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="writeus02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\writeus02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mytasks03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mytasks03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skvazhina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skvazhina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lineUnderTheText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lineUnderTheText.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_registration_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_registration_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="transparentpixel70" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transparentpixel70.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="writeus01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\writeus01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="registration_underlay_big" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registration-underlay-big.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_ShKM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ShKM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_submitt_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_submitt_hover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="about03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="modules02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\modules02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Skvazhina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Skvazhina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_ShKM_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_ShKM_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mytasks03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mytasks03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btn_registration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_registration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="modules03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\modules03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mytasks02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mytasks02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="writeus03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\writeus03.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Krug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Krug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tbLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tbLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="writeus02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\writeus02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reg_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reg_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="modules01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modules01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lineUnderTheText" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lineUnderTheText.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Krug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Krug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mytasks01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mytasks01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconimage_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconimage_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
