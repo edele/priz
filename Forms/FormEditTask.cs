@@ -21,7 +21,8 @@ namespace PRIZ
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
             label2.Text = Program.p.CurrentFullName;
-            string[] modulePaths = Directory.GetDirectories(@"modules/" + Program.p.currentModule._filename + @"/");
+            string[] modulePaths = {};
+            modulePaths = Directory.GetDirectories(@"modules/" + Program.p.currentModule._filename + @"/");
             // read 
             tasks = new List<Task>();
             /*Task task01 = new Task("Космические шаттлы", "Есть шаттлы и космос", "Найдите ответ на все вопросы"); //(string name, string given, string toFind)

@@ -95,7 +95,7 @@ namespace PRIZ
                     description.Font = new System.Drawing.Font("Segoe UI Light", 10F);
                     description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
                     description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                    description.MaximumSize = new System.Drawing.Size(340, 0);
+                    description.MaximumSize = new System.Drawing.Size(340, 238);
                     description.Click += pbox_Click;
                     description.Cursor = System.Windows.Forms.Cursors.Hand;
                     description.Tag = i;

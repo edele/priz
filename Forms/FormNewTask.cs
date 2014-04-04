@@ -214,8 +214,8 @@ namespace PRIZ
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Program.InitWindow(Forms.fEditTask);
-            Program.fEditTask.Show();
+            Program.InitWindow(Forms.fEditModule);
+            Program.fEditModule.Show();
             this.Hide();
         }
         private void Form_SizeChanged(object sender, EventArgs e)

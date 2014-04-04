@@ -127,6 +127,7 @@ namespace PRIZ
         {
             Program.InitWindow(Forms.fNewModule);
             Program.fNewModule.Show();
+            Program.p.currentModule = modules[modules.Count-1];
             bool b = true;
             Program.fNewModule.GetPlace(b);
             this.Hide();

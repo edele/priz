@@ -70,7 +70,7 @@
             this.lName.Location = new System.Drawing.Point(610, 117);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(363, 45);
-            this.lName.TabIndex = 9;
+            this.lName.TabIndex = 1;
             this.lName.TextChanged += new System.EventHandler(this.lName_TextChanged);
             this.lName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             // 
@@ -82,7 +82,7 @@
             this.lDescription.Multiline = true;
             this.lDescription.Name = "lDescription";
             this.lDescription.Size = new System.Drawing.Size(363, 205);
-            this.lDescription.TabIndex = 10;
+            this.lDescription.TabIndex = 2;
             this.lDescription.TextChanged += new System.EventHandler(this.lName_TextChanged);
             // 
             // btnSaveChanges
