@@ -20,8 +20,8 @@ namespace PRIZ
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
+            label2.Text = Program.p.CurrentFullName;
             string[] modulePaths = Directory.GetDirectories(@"modules/" + Program.p.currentModule._filename + @"/");
-
             // read 
             tasks = new List<Task>();
             /*Task task01 = new Task("Космические шаттлы", "Есть шаттлы и космос", "Найдите ответ на все вопросы"); //(string name, string given, string toFind)
@@ -40,6 +40,18 @@ namespace PRIZ
             }
             int ypos = 10;
 
+            PictureBox addTask = new PictureBox();
+            addTask.Cursor = Cursors.Hand;
+            addTask.Size = new Size(780, 170);
+            addTask.Location = new Point(0, ypos + 20);
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
+            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
+            addTask.Click += new EventHandler(addTask_Click);
+            addTask.Image = Properties.Resources.add_task;
+            addTask.SizeMode = PictureBoxSizeMode.CenterImage;
+            panelForElements.Controls.Add(addTask);
+            ypos += 200;
             for (int i = 0; i < tasks.Count; i++)
             {
                 Button btnDeleteTask = new Button();
@@ -51,7 +63,8 @@ namespace PRIZ
                 pbox.Location = new Point(0, ypos);
                 pbox.Size = new Size(430, 270);
                 pbox.ImageLocation = tasks[i]._path + "mainpic.png";
-                pbox.BackgroundImageLayout = ImageLayout.Stretch;
+                pbox.Cursor = Cursors.Hand;
+                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(440, ypos);
                 title.Text = tasks[i]._name;
@@ -59,6 +72,7 @@ namespace PRIZ
                 title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
                 title.Size = new System.Drawing.Size(340, 43);
                 title.Tag = i;
+                title.Cursor = Cursors.Hand;
 
                 description.Location = new Point(440, ypos + 40);
                 description.Text = tasks[i]._description;
@@ -66,9 +80,10 @@ namespace PRIZ
                 description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
                 description.Size = new System.Drawing.Size(340, 189);
                 description.Tag = i;
+                description.Cursor = Cursors.Hand;
 
                 btnEditTaskEntity.Text = "Редактировать задание";
-                btnEditTaskEntity.Location = new Point(448, ypos + 237);
+                btnEditTaskEntity.Location = new Point(448, ypos + 238);
                 btnEditTaskEntity.Size = new Size(162, 31);
                 btnEditTaskEntity.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnEditTaskEntity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -83,7 +98,7 @@ namespace PRIZ
 
 
                 btnDeleteTask.Text = "Удалить задание";
-                btnDeleteTask.Location = new Point(624, ypos + 237);
+                btnDeleteTask.Location = new Point(624, ypos + 238);
                 btnDeleteTask.Size = new Size(162, 31);
                 btnDeleteTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnDeleteTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -108,23 +123,7 @@ namespace PRIZ
                 ypos += 300;
             }
             panelForElements.Focus();
-            Panel addTask = new Panel();
-            addTask.Cursor = Cursors.Hand;
-            addTask.Size = new Size(786, 170);
-            addTask.Location = new Point(0, ypos + 20);
-            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
-            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
-            addTask.Click += new EventHandler(addTask_Click);
-            Label addTaskLabel = new Label();
-            addTaskLabel.Font = new System.Drawing.Font("Segoe UI Light", 21F);
-            addTaskLabel.Text = "Добавить задание";
-            addTaskLabel.Size = new Size(349, 40);
-            addTaskLabel.Location = new Point(300, 65);
-            addTaskLabel.Click += new EventHandler(addTask_Click);
-            addTaskLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
-            addTask.Controls.Add(addTaskLabel);
-            panelForElements.Controls.Add(addTask);
+            
         }
 
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
@@ -187,13 +186,13 @@ namespace PRIZ
 
         void addTask_MouseLeave(object sender, EventArgs e)
         {
-            Panel addTask = sender as Panel;
+            PictureBox addTask = sender as PictureBox;
             addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
         }
 
         void addTask_MouseEnter(object sender, EventArgs e)
         {
-            Panel addTask = sender as Panel;
+            PictureBox addTask = sender as PictureBox;
             addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
         }
 
@@ -220,11 +219,30 @@ namespace PRIZ
 
         void btnEditTaskEntity_Click(object sender, EventArgs e)
         {
-            Button button = sender as Button;
-            Program.p.currentTask = tasks[int.Parse(button.Tag.ToString())];
-            Program.InitWindow(Forms.fEditTaskEntity);
-            Program.fEditTaskEntity.Show();
-            this.Hide();
+            if (sender.GetType().ToString() == "System.Windows.Forms.Button")
+            {
+                Button button = sender as Button;
+                Program.p.currentTask = tasks[int.Parse(button.Tag.ToString())];
+                Program.InitWindow(Forms.fEditTaskEntity);
+                Program.fEditTaskEntity.Show();
+                this.Hide();
+            }
+            if (sender.GetType().ToString() == "System.Windows.Forms.PictureBox")
+            {
+                PictureBox button = sender as PictureBox;
+                Program.p.currentTask = tasks[int.Parse(button.Tag.ToString())];
+                Program.InitWindow(Forms.fEditTaskEntity);
+                Program.fEditTaskEntity.Show();
+                this.Hide();
+            }
+            if (sender.GetType().ToString() == "System.Windows.Forms.Label")
+            {
+                Label button = sender as Label;
+                Program.p.currentTask = tasks[int.Parse(button.Tag.ToString())];
+                Program.InitWindow(Forms.fEditTaskEntity);
+                Program.fEditTaskEntity.Show();
+                this.Hide();
+            }
         }
         private void tb_MouseWheel(object sender, EventArgs e)
         {

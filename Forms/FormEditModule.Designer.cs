@@ -36,6 +36,7 @@
             this.btnModules = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panelForElements
@@ -43,9 +44,9 @@
             this.panelForElements.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelForElements.AutoScroll = true;
             this.panelForElements.BackColor = System.Drawing.Color.Transparent;
-            this.panelForElements.Location = new System.Drawing.Point(155, 117);
+            this.panelForElements.Location = new System.Drawing.Point(155, 111);
             this.panelForElements.Name = "panelForElements";
-            this.panelForElements.Size = new System.Drawing.Size(802, 604);
+            this.panelForElements.Size = new System.Drawing.Size(802, 564);
             this.panelForElements.TabIndex = 8;
             // 
             // label2
@@ -164,12 +165,26 @@
             this.label3.Text = "Выход";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label1.Location = new System.Drawing.Point(147, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(242, 38);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "Редактор модулей";
+            // 
             // FormEditModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 693);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnWriteToUs);
@@ -181,7 +196,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormEditModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Список модулей";
+            this.Text = "ПРИЗ";
             this.Load += new System.EventHandler(this.Form_Load);
             this.ClientSizeChanged += new System.EventHandler(this.Form_SizeChanged);
             this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
@@ -201,5 +216,6 @@
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }

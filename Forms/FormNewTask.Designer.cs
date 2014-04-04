@@ -44,6 +44,7 @@
             this.btnModules = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.pnlAdded.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +97,7 @@
             // pbImage
             // 
             this.pbImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbImage.BackColor = System.Drawing.Color.White;
             this.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbImage.Image = global::PRIZ.Properties.Resources.iconimage;
@@ -274,12 +276,26 @@
             this.label3.Text = "Выход";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label4.Location = new System.Drawing.Point(147, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(203, 38);
+            this.label4.TabIndex = 76;
+            this.label4.Text = "Новое задание";
+            // 
             // FormNewTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 688);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pnlAdded);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
@@ -296,7 +312,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormNewTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Новое задание";
+            this.Text = "ПРИЗ";
             this.Load += new System.EventHandler(this.Form_Load);
             this.ClientSizeChanged += new System.EventHandler(this.Form_SizeChanged);
             this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
@@ -326,5 +342,6 @@
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

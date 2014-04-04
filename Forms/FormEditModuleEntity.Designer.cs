@@ -44,6 +44,7 @@
             this.btnWriteToUs = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbModule)).BeginInit();
             this.pnlEdited.SuspendLayout();
             this.SuspendLayout();
@@ -268,12 +269,26 @@
             this.label2.TabIndex = 38;
             this.label2.Text = "Имя Фамилия";
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label4.Location = new System.Drawing.Point(147, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(242, 38);
+            this.label4.TabIndex = 75;
+            this.label4.Text = "Редактор модулей";
+            // 
             // FormEditModuleEntity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 688);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pnlEdited);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
@@ -290,7 +305,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormEditModuleEntity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Редактировать Модуль";
+            this.Text = "ПРИЗ";
             this.Load += new System.EventHandler(this.Form_Load);
             this.ClientSizeChanged += new System.EventHandler(this.Form_SizeChanged);
             this.LocationChanged += new System.EventHandler(this.Form_LocationChanged);
@@ -320,5 +335,6 @@
         private System.Windows.Forms.Button btnWriteToUs;
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

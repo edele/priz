@@ -22,6 +22,7 @@ namespace PRIZ
             InitializeComponent();
             ofd.Title = "Выберите изображение";
             ofd.Filter = "Файлы изображения|*.jpg; *jpeg; *bmp; *png;";
+            label2.Text = Program.p.CurrentFullName;
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
             this.FormClosing += Program.ApplicationQuit;

@@ -21,6 +21,7 @@ namespace PRIZ
             InitializeComponent();
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
+            label2.Text = Program.p.CurrentFullName;
             this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.FormClosing += Program.ApplicationQuit;
@@ -35,7 +36,18 @@ namespace PRIZ
             }
             /* front end */
             int ypos = 10;
-
+            PictureBox addTask = new PictureBox();
+            addTask.Cursor = Cursors.Hand;
+            addTask.Size = new Size(780, 170);
+            addTask.Location = new Point(0, ypos + 20);
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
+            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
+            addTask.Click += new EventHandler(addTask_Click);
+            addTask.Image = Properties.Resources.add_module;
+            addTask.SizeMode = PictureBoxSizeMode.CenterImage;
+            panelForElements.Controls.Add(addTask);
+            ypos += 200;
             for (int i = 0; i < modules.Count; i++)
             {
                 Button btnDeleteModule = new Button();
@@ -47,6 +59,9 @@ namespace PRIZ
                 pbox.Location = new Point(0, ypos);
                 pbox.Size = new Size(430, 270);
                 pbox.ImageLocation = modules[i]._pic;
+                pbox.Click += btnEditModule_Click;
+                pbox.Cursor = Cursors.Hand;
+                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(437, ypos);
                 title.Text = modules[i]._name;
@@ -54,6 +69,8 @@ namespace PRIZ
                 title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
                 title.Size = new System.Drawing.Size(340, 43);
                 title.Tag = i;
+                title.Click += btnEditModule_Click;
+                title.Cursor = Cursors.Hand;
 
                 description.Location = new Point(440, ypos + 32);
                 description.Text = modules[i]._annotation;
@@ -61,10 +78,11 @@ namespace PRIZ
                 description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
                 description.Size = new System.Drawing.Size(340, 189);
                 description.Tag = i;
-                description.Click += new EventHandler(description_Click);
+                description.Click += btnEditModule_Click;
+                description.Cursor = Cursors.Hand;
 
                 btnEditModule.Text = "Редактировать модуль";
-                btnEditModule.Location = new Point(448, ypos + 237);
+                btnEditModule.Location = new Point(448, ypos + 238);
                 btnEditModule.Size = new Size(162, 31);
                 btnEditModule.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnEditModule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -78,7 +96,7 @@ namespace PRIZ
                 btnEditModule.Tag = i;
 
                 btnDeleteModule.Text = "Удалить модуль";
-                btnDeleteModule.Location = new Point(624, ypos + 237);
+                btnDeleteModule.Location = new Point(624, ypos + 238);
                 btnDeleteModule.Size = new Size(162, 31);
                 btnDeleteModule.Anchor = System.Windows.Forms.AnchorStyles.Top;
                 btnDeleteModule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
@@ -106,6 +124,26 @@ namespace PRIZ
             panelForElements.Focus();
             }
 
+        void addTask_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fNewModule);
+            Program.fNewModule.Show();
+            bool b = true;
+            Program.fNewModule.GetPlace(b);
+            this.Hide();
+        }
+
+        void addTask_MouseLeave(object sender, EventArgs e)
+        {
+            PictureBox addTask = sender as PictureBox;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+        }
+
+        void addTask_MouseEnter(object sender, EventArgs e)
+        {
+            PictureBox addTask = sender as PictureBox;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
+        }
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
         {
             btnModules.Image = Properties.Resources.modules03;
@@ -178,11 +216,30 @@ namespace PRIZ
 
             void btnEditModule_Click(object sender, EventArgs e) 
             {
-                Button btnEditTask = sender as Button;
-                Program.p.currentModule = modules[int.Parse(btnEditTask.Tag.ToString())];
-                Program.InitWindow(Forms.fEditModuleEntity);
-                Program.fEditModuleEntity.Show();
-                this.Hide();
+                if (sender.GetType().ToString() == "System.Windows.Forms.Button")
+                {
+                    Button b = sender as Button;
+                    Program.p.currentModule = modules[int.Parse(b.Tag.ToString())];
+                    Program.InitWindow(Forms.fEditModuleEntity);
+                    Program.fEditModuleEntity.Show();
+                    this.Hide();
+                }
+                if (sender.GetType().ToString() == "System.Windows.Forms.Label")
+                {
+                    Label b = sender as Label;
+                    Program.p.currentModule = modules[int.Parse(b.Tag.ToString())];
+                    Program.InitWindow(Forms.fEditModuleEntity);
+                    Program.fEditModuleEntity.Show();
+                    this.Hide();
+                }
+                if (sender.GetType().ToString() == "System.Windows.Forms.PictureBox")
+                {
+                    PictureBox b = sender as PictureBox;
+                    Program.p.currentModule = modules[int.Parse(b.Tag.ToString())];
+                    Program.InitWindow(Forms.fEditModuleEntity);
+                    Program.fEditModuleEntity.Show();
+                    this.Hide();
+                }
             }
             void btnDeleteTask_Click(object sender, EventArgs e)
             {

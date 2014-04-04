@@ -458,6 +458,18 @@
   <ItemGroup>
     <None Include="Resources\iconimage_hover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_module.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomodules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notasks.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

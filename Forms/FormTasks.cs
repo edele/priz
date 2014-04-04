@@ -51,60 +51,73 @@ namespace PRIZ
             }
             int ypos = 10;
 
-            for (int i = 0; i < tasks.Count; i++)
+            if (tasks.Count == 0)
             {
-                Label title = new Label();
-                Label description = new Label();
-                PictureBox pbox = new PictureBox();
-
-                pbox.Location = new Point(0, ypos);
-                pbox.Size = new Size(430, 270);
-                pbox.ImageLocation = tasks[i]._path + "mainpic.png";
-                pbox.BackgroundImageLayout = ImageLayout.Stretch;
-
-
-                title.AutoSize = true;
-                title.Location = new Point(440, ypos);
-                title.Text = tasks[i]._name;
-                title.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-                title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-                title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                title.MaximumSize = new System.Drawing.Size(373, 0);
-                title.Cursor = Cursors.Hand;
-                title.Tag = i;
-
-                description.AutoSize = true;
-                description.Location = new Point(440, ypos + 30);
-                description.Text = tasks[i]._description;
-                description.Font = new System.Drawing.Font("Segoe UI Light", 10F);
-                description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-                description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                description.MaximumSize = new System.Drawing.Size(340, 0);
-                description.Cursor = Cursors.Hand;
-                description.Tag = i;
-
-                title.Click += pbox_Click;
-                description.Click += pbox_Click;
-                pbox.Click += pbox_Click;
-                pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-                pbox.Tag = i;
-
-                Panel panel = new Panel();
-                panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                panel.Size = new Size(355, 270);
-                panel.Location = new Point(430, ypos);
-
-                panelForElements.Controls.Add(title);
-                panelForElements.Controls.Add(description);
-                panelForElements.Controls.Add(pbox);
-                panelForElements.Controls.Add(panel);
-
-
-                // Если название не помещается в одну строку, то сдвигаем описание ниже
-                description.Location = new Point(description.Location.X, description.Location.Y + (title.Size.Height - 31));
-                ypos += 300;
+                PictureBox addTask = new PictureBox();
+                addTask.Size = new Size(780, 170);
+                addTask.Location = new Point(0, ypos + 20);
+                addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+                addTask.Image = Properties.Resources.notasks;
+                addTask.SizeMode = PictureBoxSizeMode.CenterImage;
+                panelForElements.Controls.Add(addTask);
             }
-            panelForElements.Focus();
+            else
+            {
+                for (int i = 0; i < tasks.Count; i++)
+                {
+                    Label title = new Label();
+                    Label description = new Label();
+                    PictureBox pbox = new PictureBox();
+
+                    pbox.Location = new Point(0, ypos);
+                    pbox.Size = new Size(430, 270);
+                    pbox.ImageLocation = tasks[i]._path + "mainpic.png";
+                    pbox.BackgroundImageLayout = ImageLayout.Stretch;
+
+
+                    title.AutoSize = true;
+                    title.Location = new Point(440, ypos);
+                    title.Text = tasks[i]._name;
+                    title.Font = new System.Drawing.Font("Segoe UI Light", 17F);
+                    title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+                    title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    title.MaximumSize = new System.Drawing.Size(373, 0);
+                    title.Cursor = Cursors.Hand;
+                    title.Tag = i;
+
+                    description.AutoSize = true;
+                    description.Location = new Point(440, ypos + 30);
+                    description.Text = tasks[i]._description;
+                    description.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+                    description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+                    description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    description.MaximumSize = new System.Drawing.Size(340, 0);
+                    description.Cursor = Cursors.Hand;
+                    description.Tag = i;
+
+                    title.Click += pbox_Click;
+                    description.Click += pbox_Click;
+                    pbox.Click += pbox_Click;
+                    pbox.Cursor = System.Windows.Forms.Cursors.Hand;
+                    pbox.Tag = i;
+
+                    Panel panel = new Panel();
+                    panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    panel.Size = new Size(355, 270);
+                    panel.Location = new Point(430, ypos);
+
+                    panelForElements.Controls.Add(title);
+                    panelForElements.Controls.Add(description);
+                    panelForElements.Controls.Add(pbox);
+                    panelForElements.Controls.Add(panel);
+
+
+                    // Если название не помещается в одну строку, то сдвигаем описание ниже
+                    description.Location = new Point(description.Location.X, description.Location.Y + (title.Size.Height - 31));
+                    ypos += 300;
+                }
+                panelForElements.Focus();
+            }
         }
 
         private void tb_MouseWheel(object sender, EventArgs e)
