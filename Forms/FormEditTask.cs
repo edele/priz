@@ -64,7 +64,6 @@ namespace PRIZ
                 pbox.Size = new Size(430, 270);
                 pbox.ImageLocation = tasks[i]._path + "mainpic.png";
                 pbox.Cursor = Cursors.Hand;
-                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(440, ypos);
                 title.Text = tasks[i]._name;
@@ -299,6 +298,30 @@ namespace PRIZ
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
             this.WindowState = Program.currentWindowState;
+        }
+
+        private void btnModules_Click(object sender, EventArgs e)
+        {
+            Program.fModules.WindowState = Program.fTask.WindowState;
+            Program.fModules.Size = Program.fTask.Size;
+            Program.fModules.Location = Program.fTask.Location;
+            Program.InitWindow(Forms.fModules);
+            Program.fModules.Show();
+            this.Hide();
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fAboutProgramm);
+            //this.Hide();
+            Program.fAboutProgramm.ShowDialog();
+        }
+
+        private void btnWriteToUs_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fMailSender);
+            //this.Hide();
+            Program.fMailSender.ShowDialog();
         }
     }
 }

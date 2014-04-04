@@ -61,7 +61,6 @@ namespace PRIZ
                 pbox.ImageLocation = modules[i]._pic;
                 pbox.Click += btnEditModule_Click;
                 pbox.Cursor = Cursors.Hand;
-                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(437, ypos);
                 title.Text = modules[i]._name;
@@ -327,6 +326,30 @@ namespace PRIZ
                 this.Size = Program.currentSize;
                 this.Location = Program.currentLocation;
                 this.WindowState = Program.currentWindowState;
+            }
+
+            private void btnModules_Click(object sender, EventArgs e)
+            {
+                Program.fModules.WindowState = Program.fTask.WindowState;
+                Program.fModules.Size = Program.fTask.Size;
+                Program.fModules.Location = Program.fTask.Location;
+                Program.InitWindow(Forms.fModules);
+                Program.fModules.Show();
+                this.Hide();
+            }
+
+            private void btnAbout_Click(object sender, EventArgs e)
+            {
+                Program.InitWindow(Forms.fAboutProgramm);
+                //this.Hide();
+                Program.fAboutProgramm.ShowDialog();
+            }
+
+            private void btnWriteToUs_Click(object sender, EventArgs e)
+            {
+                Program.InitWindow(Forms.fMailSender);
+                //this.Hide();
+                Program.fMailSender.ShowDialog();
             }
         }
     }

@@ -203,6 +203,7 @@
             this.btnAbout.Text = "О программе";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             this.btnAbout.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAbout_MouseDown);
             this.btnAbout.MouseEnter += new System.EventHandler(this.btnAbout_MouseEnter);
             this.btnAbout.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
@@ -227,6 +228,7 @@
             this.btnWriteToUs.Text = "Напишите нам";
             this.btnWriteToUs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnWriteToUs.UseVisualStyleBackColor = true;
+            this.btnWriteToUs.Click += new System.EventHandler(this.btnWriteToUs_Click);
             this.btnWriteToUs.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnWriteToUs_MouseDown);
             this.btnWriteToUs.MouseEnter += new System.EventHandler(this.btnWriteToUs_MouseEnter);
             this.btnWriteToUs.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
@@ -251,6 +253,7 @@
             this.btnModules.Text = "Модули";
             this.btnModules.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnModules.UseVisualStyleBackColor = true;
+            this.btnModules.Click += new System.EventHandler(this.btnModules_Click);
             this.btnModules.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnModules_MouseDown);
             this.btnModules.MouseEnter += new System.EventHandler(this.btnModules_MouseEnter);
             this.btnModules.MouseLeave += new System.EventHandler(this.btnModules_MouseLeave);
@@ -288,8 +291,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 688);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pnlEdited);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnWriteToUs);

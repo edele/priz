@@ -176,5 +176,32 @@ namespace PRIZ
             this.Location = Program.currentLocation;
             this.WindowState = Program.currentWindowState;
         }
+
+        private void btnModules_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Program.fModules.WindowState = Program.fTask.WindowState;
+                Program.fModules.Size = Program.fTask.Size;
+                Program.fModules.Location = Program.fTask.Location;
+                Program.InitWindow(Forms.fModules);
+                Program.fModules.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fAboutProgramm);
+            //this.Hide();
+            Program.fAboutProgramm.ShowDialog();
+        }
+
+        private void btnWriteToUs_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fMailSender);
+            //this.Hide();
+            Program.fMailSender.ShowDialog();
+        }
     }
 }
