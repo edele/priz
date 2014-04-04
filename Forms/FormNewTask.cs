@@ -193,7 +193,7 @@ namespace PRIZ
         private void tb_KeyPress(object sender, KeyPressEventArgs e)
         {
             char l = e.KeyChar;
-            if ((l < 'А' || l > 'я') && l != '\b' && l != '.' && l != ' ')
+            if (l == '\\' || l == '/' || l == ':' || l == '*' || l == '?' || l == '"' || l == '<' || l == '>' || l == '|')
             {
                 e.Handled = true;
             }
@@ -216,8 +216,8 @@ namespace PRIZ
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Program.InitWindow(Forms.fNewModule);
-            Program.fNewModule.Show();
+            Program.InitWindow(Forms.fEditTask);
+            Program.fEditTask.Show();
             this.Hide();
         }
         private void Form_SizeChanged(object sender, EventArgs e)

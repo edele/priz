@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using System.Xml.Serialization;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace PRIZ
 {
@@ -55,7 +56,14 @@ namespace PRIZ
             this._filename = name;
             if (oldModuleName!=name)
             {
-                Directory.Move(@"modules\" + oldModuleName, @"modules\" + name);
+                try
+                {
+                    Directory.Move(@"modules\" + oldModuleName, @"modules\" + name);
+                }
+                catch (System.IO.IOException)
+                {
+                    //MessageBox.Show("Файл задания открыт другой программой. Закройте его и повторите попытку");
+                }
             }
             Serialize(name, r);
         }

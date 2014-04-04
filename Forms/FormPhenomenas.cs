@@ -28,7 +28,15 @@ namespace PRIZ
             btnLogoEducationEra.MouseLeave += Program.LogoMouseLeave;
             this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
-            tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
+
+            try
+            {
+                tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                tbHypo.Text = "Справочный файл удален или поврежден";
+            }
 
             phenomenaLabels = new List<Label>();
             phenomenaLabels.Add(lblSound);
@@ -220,28 +228,35 @@ namespace PRIZ
             Label lbl = sender as Label;
             lbl.Font = new System.Drawing.Font("Segoe UI", 11F, FontStyle.Bold);
             lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(179)))), ((int)(((byte)(151)))));
-            switch (lbl.Name)
+            try
             {
-                case "lblSound":
-                    tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                case "lblMagnetic":
-                    tbHypo.LoadFile(@"content/textMagnetic.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                case "lblElectrical":
-                    tbHypo.LoadFile(@"content/textElectrical.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                case "lblThermal":
-                    tbHypo.LoadFile(@"content/textThermal.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                case "lblMechanical":
-                    tbHypo.LoadFile(@"content/textMechanical.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                case "lblLight":
-                    tbHypo.LoadFile(@"content/textLight.rtf", RichTextBoxStreamType.RichText);
-                    break;
-                default:
-                    break;
+                switch (lbl.Name)
+                {
+                    case "lblSound":
+                        tbHypo.LoadFile(@"content/textSound.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    case "lblMagnetic":
+                        tbHypo.LoadFile(@"content/textMagnetic.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    case "lblElectrical":
+                        tbHypo.LoadFile(@"content/textElectrical.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    case "lblThermal":
+                        tbHypo.LoadFile(@"content/textThermal.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    case "lblMechanical":
+                        tbHypo.LoadFile(@"content/textMechanical.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    case "lblLight":
+                        tbHypo.LoadFile(@"content/textLight.rtf", RichTextBoxStreamType.RichText);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                tbHypo.Text = "Справочный файл удален или поврежден";
             }
             //tbHypo.Font = new System.Drawing.Font("Segoe UI Light", 13F);
         }

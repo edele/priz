@@ -110,6 +110,7 @@
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(363, 46);
             this.lName.TabIndex = 9;
+            this.lName.TextChanged += new System.EventHandler(this.lName_TextChanged);
             this.lName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KeyPress);
             // 
             // lDescription
@@ -122,11 +123,12 @@
             this.lDescription.Name = "lDescription";
             this.lDescription.Size = new System.Drawing.Size(363, 205);
             this.lDescription.TabIndex = 10;
+            this.lDescription.TextChanged += new System.EventHandler(this.lName_TextChanged);
             // 
             // pnlEdited
             // 
-            this.pnlEdited.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEdited.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlEdited.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.pnlEdited.Controls.Add(this.label1);
             this.pnlEdited.Location = new System.Drawing.Point(-12, 171);
@@ -143,7 +145,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
             this.label1.Location = new System.Drawing.Point(362, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 40);
+            this.label1.Size = new System.Drawing.Size(346, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Модуль успешно изменён";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -281,7 +283,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label4.Location = new System.Drawing.Point(147, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(242, 38);
+            this.label4.Size = new System.Drawing.Size(238, 38);
             this.label4.TabIndex = 75;
             this.label4.Text = "Редактор модулей";
             // 

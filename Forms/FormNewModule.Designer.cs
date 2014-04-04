@@ -84,9 +84,9 @@
             // 
             // pnlWhite
             // 
-            this.pnlWhite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlWhite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlWhite.Controls.Add(this.btnAddTasks);
             this.pnlWhite.Controls.Add(this.btnAnotherModule);
             this.pnlWhite.Location = new System.Drawing.Point(-1, -2);
@@ -303,7 +303,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
             this.label1.Location = new System.Drawing.Point(148, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 38);
+            this.label1.Size = new System.Drawing.Size(192, 38);
             this.label1.TabIndex = 75;
             this.label1.Text = "Новый модуль";
             // 
@@ -342,7 +342,6 @@
 
         private System.Windows.Forms.Button btnAnotherModule;
         private System.Windows.Forms.Button btnAddTasks;
-        private System.Windows.Forms.Panel pnlWhite;
         private System.Windows.Forms.TextBox tbModuleName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbImage;
@@ -355,6 +354,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBackToTasks;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel pnlWhite;
 
     }
 }

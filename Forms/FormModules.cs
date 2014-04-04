@@ -32,7 +32,17 @@ namespace PRIZ
             {
                 btnAddTask.Visible = true;
             }
-            string[] modulePaths = Directory.GetDirectories(@"modules");
+
+            string[] modulePaths = { };
+
+            try
+            {
+                modulePaths = Directory.GetDirectories(@"modules");
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Directory.CreateDirectory("modules");
+            }
             /* read */
             modules = new List<Module>();
             foreach (string path in modulePaths)
@@ -66,6 +76,7 @@ namespace PRIZ
                     pbox.Location = new Point(0, ypos);
                     pbox.Size = new Size(430, 270);
                     pbox.ImageLocation = modules[i]._pic;
+                    pbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
 
                     title.AutoSize = true;
                     title.Location = new Point(440, ypos);

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PRIZ
 {
@@ -19,7 +20,14 @@ namespace PRIZ
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
-            tbForText.LoadFile(@"content/textAboutCreativeSchool.rtf", RichTextBoxStreamType.RichText);
+            try
+            {
+                tbForText.LoadFile(@"content/textAboutCreativeSchool.rtf", RichTextBoxStreamType.RichText);
+            }
+            catch (DirectoryNotFoundException)
+            {
+                tbForText.Text = "Справочный файл удален или поврежден";
+            }
         }
         
 

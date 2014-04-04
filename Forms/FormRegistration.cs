@@ -36,7 +36,7 @@ namespace PRIZ
         private void tb_KeyPress(object sender, KeyPressEventArgs e)
         {
             char l = e.KeyChar;
-            if ((l < 'А' || l > 'я') && l != '\b' && l != '.')
+            if (l == '\\' || l == '/' || l == ':' || l == '*' || l == '?' || l == '"' || l == '<' || l == '>' || l == '|')
             {
                 e.Handled = true;
             }

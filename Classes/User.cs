@@ -19,15 +19,15 @@ namespace PRIZ
 
         /// <summary> Сохраняет этот объект в файл методом стандартной сериализации </summary>
         /// <param name="path">Путь к файлу, в который будет сохранен объект</param>
-        public void SaveToFile(string path = "Users\\test.xml")
+        public void SaveToFile(string path = "users\\test.xml")
         {
             if (!UserExists(_surname+" "+_name))
             {
-                path = "Users\\" + _name + "_" + _surname + ".xml";
+                path = "users\\" + _name + "_" + _surname + ".xml";
             }
             else
             {
-                path = "Users\\" + _name + "_" + _surname + "(1)" + ".xml";
+                path = "users\\" + _name + "_" + _surname + "(1)" + ".xml";
             }
             DirectoryInfo parentDir = Directory.GetParent(path);
             if (!Directory.Exists(parentDir.ToString()))
@@ -50,7 +50,7 @@ namespace PRIZ
             return false;
         }
 
-        public static List<string> GetUserNames(string path = "Users\\")
+        public static List<string> GetUserNames(string path = "users\\")
         {
             List<string> userNames = new List<string>();
             string[] fileNames = Directory.GetFiles(path, "*.xml");
@@ -67,11 +67,18 @@ namespace PRIZ
 
             return userNames;
         }
-        public static List<User> GetListOfObjects(string path = "Users\\")
+        public static List<User> GetListOfObjects(string path = "users\\")
         {
             List<User> users = new List<User>();
-            string[] fileNames = Directory.GetFiles(path, "*.xml");
-
+            string[] fileNames = {};
+            try
+            {
+                fileNames = Directory.GetFiles(path, "*.xml");
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Directory.CreateDirectory("users");
+            }
 
             User tempUser;
             foreach (var fileName in fileNames)

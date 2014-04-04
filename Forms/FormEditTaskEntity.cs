@@ -30,6 +30,9 @@ namespace PRIZ
             pbTask.BackgroundImageLayout = ImageLayout.Stretch;
             lDescription.Text = currentTask._description;
             lName.Text = currentTask._name;
+
+            btnSaveChanges.Enabled = false;
+            btnSaveChanges.BackColor = Color.FromArgb(226, 226, 226);
         }
         
         private void pbTask_Click(object sender, EventArgs e)
@@ -120,6 +123,8 @@ namespace PRIZ
                 oldTaskName = lName.Text;
                 pnlEdited.Visible = true;
                 timer1.Enabled = true;
+                btnSaveChanges.Enabled = false;
+                btnSaveChanges.BackColor = Color.FromArgb(226, 226, 226);
             }
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -131,7 +136,7 @@ namespace PRIZ
         private void tb_KeyPress(object sender, KeyPressEventArgs e)
         {
             char l = e.KeyChar;
-            if ((l < 'А' || l > 'я') && l != '\b' && l != '.' && l != ' ')
+            if (l == '\\' || l == '/' || l == ':' || l == '*' || l == '?' || l == '"' || l == '<' || l == '>' || l == '|')
             {
                 e.Handled = true;
             }
@@ -202,6 +207,12 @@ namespace PRIZ
             Program.InitWindow(Forms.fMailSender);
             //this.Hide();
             Program.fMailSender.ShowDialog();
+        }
+
+        private void lName_TextChanged(object sender, EventArgs e)
+        {
+            btnSaveChanges.Enabled = true;
+            btnSaveChanges.BackColor = Color.FromArgb(103, 103, 103);
         }
     }
 }

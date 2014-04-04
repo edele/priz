@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
-using MSWord = Microsoft.Office.Interop.Word; // Сокращаем портянку
 
 namespace PRIZ
 {
@@ -102,6 +101,7 @@ namespace PRIZ
         }
         public void GenerateReport(Answer answer)
         {
+            /*
             this.answer = answer;
             // 1) Запускаем экземпляр MS Word
             MSWord.Application appWord;
@@ -153,7 +153,7 @@ namespace PRIZ
             para.Range.Text = string.Format
                 ("Задание, сформулированное учеником: {0}", answer._ToFindByUser);
             */
-
+            /*
             #region Table
 
             doc.Paragraphs.Add();
@@ -196,6 +196,7 @@ namespace PRIZ
             para = doc.Paragraphs[16];
 
             para.Range.Text = ListOfHypoToString(answer._hypothesises);
+            /**/
         }
         string ListOfHypoToString(List<string> list)
         {

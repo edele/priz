@@ -20,7 +20,16 @@ namespace PRIZ
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
-            tbForText.LoadFile(@"content/textAboutEducation.rtf", RichTextBoxStreamType.RichText);
+
+
+            try
+            {
+                tbForText.LoadFile(@"content/textAboutEducation.rtf", RichTextBoxStreamType.RichText);
+            }
+            catch (System.IO.DirectoryNotFoundException)
+            {
+                tbForText.Text = "Справочный файл удален или поврежден";
+            }
         }
 
         private void btnBack_MouseEnter(object sender, EventArgs e)

@@ -21,7 +21,6 @@ namespace PRIZ
         fMailSender,
         fShowAllIdeas,
         fEditIdea,
-        fModuleEditor,
         fEditModule,
         fNewModule,
         fNewTask,
@@ -55,7 +54,6 @@ namespace PRIZ
         static public FormMailSender fMailSender;
         static public FormShowAllIdeas fShowAllIdeas;
         static public FormEditOrAddIdea fEditIdea;
-        static public FormModuleEditor fModuleEditor;
         static public FormNewModule fNewModule;
         static public FormEditModule fEditModule;
         static public FormNewTask fNewTask;
@@ -80,14 +78,12 @@ namespace PRIZ
 
             p = new ProgramInstance();
             fLogin = new FormLogin();
-            //fModuleEditor = new FormModuleEditor();
             Application.Run(fLogin);
         }
 
-        static bool quitOnce = false;
         static public void ApplicationQuit(object sender, FormClosingEventArgs e)
         {                       
-               Application.Exit();            
+               Application.Exit();
         }
 
         static public void LogoMouseEnter(object sender, EventArgs e)
@@ -164,9 +160,6 @@ namespace PRIZ
                     break;
                 case Forms.fEditIdea:
                     fEditIdea = new FormEditOrAddIdea();
-                    break;
-                case Forms.fModuleEditor:
-                    fModuleEditor = new FormModuleEditor();
                     break;
                 case Forms.fNewModule:
                     fNewModule = new FormNewModule();

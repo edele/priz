@@ -98,7 +98,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lReally;
         private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lReallyModule;
