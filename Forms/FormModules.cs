@@ -258,8 +258,8 @@ namespace PRIZ
 
         private void btnAddTask_Click(object sender, EventArgs e)
         {
-            Program.InitWindow(Forms.fModuleEditor);
-            Program.fModuleEditor.Show();
+            Program.InitWindow(Forms.fEditModule);
+            Program.fEditModule.Show();
             this.Hide();
         }
 

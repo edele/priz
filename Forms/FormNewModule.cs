@@ -14,6 +14,13 @@ namespace PRIZ
 {
     public partial class FormNewModule : Form
     {
+        public void GetPlace(bool taskList)
+        {
+            if (taskList)
+            {
+                btnBackToTasks.Visible = true;
+            }
+        }
         bool error = false;
         bool def = true;
         public static string _currentModuleName;
@@ -24,6 +31,7 @@ namespace PRIZ
             InitializeComponent();
             this.FormClosing += Program.ApplicationQuit;
             pnlWhite.Visible = false;
+            label2.Text = Program.p.CurrentFullName;
             ofd.Title = "Выберите изображение";
             ofd.Filter = "Файлы изображения|*.jpg; *jpeg; *bmp; *png;";
             this.Size = Program.currentSize;
@@ -228,6 +236,14 @@ namespace PRIZ
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
             this.WindowState = Program.currentWindowState;
+        }
+
+        private void btnBackToTasks_Click(object sender, EventArgs e)
+        {
+            btnBackToTasks.Visible = false;
+            Program.InitWindow(Forms.fEditModule);
+            Program.fEditModule.Show();
+            this.Hide();
         }
     }
 }

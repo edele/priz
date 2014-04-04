@@ -21,6 +21,7 @@ namespace PRIZ
             InitializeComponent();
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
+            label2.Text = Program.p.CurrentFullName;
             this.FormClosing += Program.ApplicationQuit;
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.FormClosing += Program.ApplicationQuit;
@@ -35,7 +36,24 @@ namespace PRIZ
             }
             /* front end */
             int ypos = 10;
-
+            Panel addTask = new Panel();
+            addTask.Cursor = Cursors.Hand;
+            addTask.Size = new Size(786, 170);
+            addTask.Location = new Point(0, ypos + 20);
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
+            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
+            addTask.Click += new EventHandler(addTask_Click);
+            Label addTaskLabel = new Label();
+            addTaskLabel.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            addTaskLabel.Text = "Добавить модуль";
+            addTaskLabel.Size = new Size(345, 40);
+            addTaskLabel.Location = new Point(280, 65);
+            addTaskLabel.Click += new EventHandler(addTask_Click);
+            addTaskLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
+            addTask.Controls.Add(addTaskLabel);
+            panelForElements.Controls.Add(addTask);
+            ypos += 200;
             for (int i = 0; i < modules.Count; i++)
             {
                 Button btnDeleteModule = new Button();
@@ -106,6 +124,26 @@ namespace PRIZ
             panelForElements.Focus();
             }
 
+        void addTask_Click(object sender, EventArgs e)
+        {
+            Program.InitWindow(Forms.fNewModule);
+            Program.fNewModule.Show();
+            bool b = true;
+            Program.fNewModule.GetPlace(b);
+            this.Hide();
+        }
+
+        void addTask_MouseLeave(object sender, EventArgs e)
+        {
+            Panel addTask = sender as Panel;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+        }
+
+        void addTask_MouseEnter(object sender, EventArgs e)
+        {
+            Panel addTask = sender as Panel;
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
+        }
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
         {
             btnModules.Image = Properties.Resources.modules03;
@@ -178,11 +216,22 @@ namespace PRIZ
 
             void btnEditModule_Click(object sender, EventArgs e) 
             {
-                Button btnEditTask = sender as Button;
-                Program.p.currentModule = modules[int.Parse(btnEditTask.Tag.ToString())];
-                Program.InitWindow(Forms.fEditModuleEntity);
-                Program.fEditModuleEntity.Show();
-                this.Hide();
+                if (sender.GetType().ToString() == "System.Windows.Forms.Button")
+                {
+                    Button b = sender as Button;
+                    Program.p.currentModule = modules[int.Parse(b.Tag.ToString())];
+                    Program.InitWindow(Forms.fEditModuleEntity);
+                    Program.fEditModuleEntity.Show();
+                    this.Hide();
+                }
+                if (sender.GetType().ToString() == "System.Windows.Forms.Label")
+                {
+                    Label b = sender as Label;
+                    Program.p.currentModule = modules[int.Parse(b.Tag.ToString())];
+                    Program.InitWindow(Forms.fEditModuleEntity);
+                    Program.fEditModuleEntity.Show();
+                    this.Hide();
+                }
             }
             void btnDeleteTask_Click(object sender, EventArgs e)
             {

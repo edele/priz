@@ -42,6 +42,8 @@
             this.btnModules = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnBackToTasks = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlWhite.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +89,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlWhite.Controls.Add(this.btnAddTasks);
             this.pnlWhite.Controls.Add(this.btnAnotherModule);
-            this.pnlWhite.Location = new System.Drawing.Point(2, 0);
+            this.pnlWhite.Location = new System.Drawing.Point(-1, -2);
             this.pnlWhite.Margin = new System.Windows.Forms.Padding(0);
             this.pnlWhite.Name = "pnlWhite";
             this.pnlWhite.Size = new System.Drawing.Size(1007, 688);
@@ -271,12 +273,45 @@
             this.label3.Text = "Выход";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // btnBackToTasks
+            // 
+            this.btnBackToTasks.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBackToTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnBackToTasks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackToTasks.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnBackToTasks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackToTasks.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.btnBackToTasks.ForeColor = System.Drawing.Color.White;
+            this.btnBackToTasks.Location = new System.Drawing.Point(155, 413);
+            this.btnBackToTasks.Name = "btnBackToTasks";
+            this.btnBackToTasks.Size = new System.Drawing.Size(162, 31);
+            this.btnBackToTasks.TabIndex = 62;
+            this.btnBackToTasks.Text = "Вернуться к модулям";
+            this.btnBackToTasks.UseVisualStyleBackColor = false;
+            this.btnBackToTasks.Visible = false;
+            this.btnBackToTasks.Click += new System.EventHandler(this.btnBackToTasks_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label1.Location = new System.Drawing.Point(148, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 38);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "Новый модуль";
+            // 
             // FormNewModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 688);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBackToTasks);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnWriteToUs);
@@ -288,10 +323,11 @@
             this.Controls.Add(this.tbDescription);
             this.Controls.Add(this.pbImage);
             this.Controls.Add(this.pnlWhite);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "FormNewModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "FormNewModule";
+            this.Text = "ПРИЗ";
             this.pnlWhite.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
@@ -314,6 +350,8 @@
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBackToTasks;
+        private System.Windows.Forms.Label label1;
 
     }
 }

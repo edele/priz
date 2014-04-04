@@ -20,8 +20,8 @@ namespace PRIZ
             this.MouseWheel += new MouseEventHandler(tb_MouseWheel);
             this.Size = Program.currentSize;
             this.Location = Program.currentLocation;
+            label2.Text = Program.p.CurrentFullName;
             string[] modulePaths = Directory.GetDirectories(@"modules/" + Program.p.currentModule._filename + @"/");
-
             // read 
             tasks = new List<Task>();
             /*Task task01 = new Task("Космические шаттлы", "Есть шаттлы и космос", "Найдите ответ на все вопросы"); //(string name, string given, string toFind)
@@ -40,6 +40,24 @@ namespace PRIZ
             }
             int ypos = 10;
 
+            Panel addTask = new Panel();
+            addTask.Cursor = Cursors.Hand;
+            addTask.Size = new Size(786, 170);
+            addTask.Location = new Point(0, ypos + 20);
+            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
+            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
+            addTask.Click += new EventHandler(addTask_Click);
+            Label addTaskLabel = new Label();
+            addTaskLabel.Font = new System.Drawing.Font("Segoe UI Light", 21F);
+            addTaskLabel.Text = "Добавить задание";
+            addTaskLabel.Size = new Size(345, 40);
+            addTaskLabel.Location = new Point(290, 65);
+            addTaskLabel.Click += new EventHandler(addTask_Click);
+            addTaskLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
+            addTask.Controls.Add(addTaskLabel);
+            panelForElements.Controls.Add(addTask);
+            ypos += 200;
             for (int i = 0; i < tasks.Count; i++)
             {
                 Button btnDeleteTask = new Button();
@@ -108,23 +126,7 @@ namespace PRIZ
                 ypos += 300;
             }
             panelForElements.Focus();
-            Panel addTask = new Panel();
-            addTask.Cursor = Cursors.Hand;
-            addTask.Size = new Size(786, 170);
-            addTask.Location = new Point(0, ypos + 20);
-            addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            addTask.MouseEnter += new EventHandler(addTask_MouseEnter);
-            addTask.MouseLeave += new EventHandler(addTask_MouseLeave);
-            addTask.Click += new EventHandler(addTask_Click);
-            Label addTaskLabel = new Label();
-            addTaskLabel.Font = new System.Drawing.Font("Segoe UI Light", 21F);
-            addTaskLabel.Text = "Добавить задание";
-            addTaskLabel.Size = new Size(349, 40);
-            addTaskLabel.Location = new Point(300, 65);
-            addTaskLabel.Click += new EventHandler(addTask_Click);
-            addTaskLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
-            addTask.Controls.Add(addTaskLabel);
-            panelForElements.Controls.Add(addTask);
+            
         }
 
         private void btnModules_MouseDown(object sender, MouseEventArgs e)
