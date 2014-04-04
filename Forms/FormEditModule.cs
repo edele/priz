@@ -61,7 +61,6 @@ namespace PRIZ
                 pbox.ImageLocation = modules[i]._pic;
                 pbox.Click += btnEditModule_Click;
                 pbox.Cursor = Cursors.Hand;
-                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(437, ypos);
                 title.Text = modules[i]._name;

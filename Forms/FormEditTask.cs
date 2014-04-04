@@ -64,7 +64,6 @@ namespace PRIZ
                 pbox.Size = new Size(430, 270);
                 pbox.ImageLocation = tasks[i]._path + "mainpic.png";
                 pbox.Cursor = Cursors.Hand;
-                pbox.BorderStyle = BorderStyle.FixedSingle;
 
                 title.Location = new Point(440, ypos);
                 title.Text = tasks[i]._name;
