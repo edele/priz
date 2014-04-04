@@ -8,6 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Collections;
+using System.IO;
+using System.Windows;
+using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace PRIZ
 {
@@ -31,7 +35,20 @@ namespace PRIZ
             btnEditIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             btnRemoveIdea.Enabled = false;
             btnRemoveIdea.BackColor = Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+
+            try
+            {
+                Cursor myCursor = new Cursor("grab.cur");
+                lAllHypo.Cursor = myCursor;
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                lAllHypo.Cursor = Cursors.Hand;
+            }
         }
+
+
+
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
@@ -108,9 +125,6 @@ namespace PRIZ
             if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены.\r\n Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Program.InitWindow(Forms.fModules);
-                Program.fModules.WindowState = Program.fAllIdeas.WindowState;
-                Program.fModules.Size = Program.fAllIdeas.Size;
-                Program.fModules.Location = Program.fAllIdeas.Location;
                 answer._hypothesises.Clear();
                 answer._givenByUser = "";
                 answer._ToFindByUser = "";
@@ -141,9 +155,7 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                Program.fLogin.WindowState = Program.fAllIdeas.WindowState;
-                Program.fLogin.Size = Program.fAllIdeas.Size;
-                Program.fLogin.Location = Program.fAllIdeas.Location;
+                Program.InitWindow(Forms.fLogin);
                 answer._hypothesises.Clear();
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
@@ -305,12 +317,12 @@ namespace PRIZ
 
         private void lAllHypo_MouseDown(object sender, MouseEventArgs e)
         {
-            Cursor = Cursors.Hand;
+            //Cursor = Cursors.Hand;
         }
 
         private void lAllHypo_MouseUp(object sender, MouseEventArgs e)
         {
-            Cursor = Cursors.Default;
+            //Cursor = Cursors.Default;
         }
 
 

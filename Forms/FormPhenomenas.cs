@@ -285,6 +285,7 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Program.InitWindow(Forms.fLogin);
                 answer._hypothesises.Clear();
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);

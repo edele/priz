@@ -152,12 +152,12 @@ namespace PRIZ
             {
                 btnSubmit_Click((object)sender, (EventArgs)e);
             }
-            /*else if (e.KeyCode == Keys.Enter && e.Control) 
+            else if (e.KeyCode == Keys.Enter && e.Control) 
             {
                 Program.debug = true;
                 tbLogin.Text = "Назарова Александра";
                 btnSubmit_Click((object)sender, (EventArgs)e);
-            }*/
+            }
         }
 
         private void FormLogin_Load(object sender, EventArgs e)

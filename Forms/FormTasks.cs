@@ -277,11 +277,12 @@ namespace PRIZ
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Program.InitWindow(Forms.fLogin);
             Program.fLogin.tbLogin.Text = "Фамилия и имя";
-                Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-                Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-                Program.fLogin.Show();
-                this.Hide();
+            Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            Program.fLogin.Show();
+            this.Hide();
            
         }
 

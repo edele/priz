@@ -146,9 +146,7 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите сменить пользователя? Данные не будут сохранены." + Environment.NewLine + "Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                Program.fLogin.WindowState = Program.fAllIdeas.WindowState;
-                Program.fLogin.Size = Program.fAllIdeas.Size;
-                Program.fLogin.Location = Program.fAllIdeas.Location;
+                Program.InitWindow(Forms.fLogin);
                 Program.fLogin.tbLogin.Text = "Фамилия и имя";
                 Program.fLogin.tbLogin.Font = new System.Drawing.Font("Segoe UI", 10.75F);
                 Program.fLogin.tbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
@@ -186,9 +184,6 @@ namespace PRIZ
         {
             if (MessageBox.Show("Вы уверены, что хотите перейти в модули? Данные не будут сохранены." + Environment.NewLine + " Продолжить?", "Подтверждение", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                Program.fModules.WindowState = Program.fTask.WindowState;
-                Program.fModules.Size = Program.fTask.Size;
-                Program.fModules.Location = Program.fTask.Location;
                 Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
                 this.Hide();

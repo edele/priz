@@ -330,9 +330,6 @@ namespace PRIZ
 
             private void btnModules_Click(object sender, EventArgs e)
             {
-                Program.fModules.WindowState = Program.fTask.WindowState;
-                Program.fModules.Size = Program.fTask.Size;
-                Program.fModules.Location = Program.fTask.Location;
                 Program.InitWindow(Forms.fModules);
                 Program.fModules.Show();
                 this.Hide();
