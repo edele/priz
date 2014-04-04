@@ -97,6 +97,7 @@
             // pbImage
             // 
             this.pbImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbImage.BackColor = System.Drawing.Color.White;
             this.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbImage.Image = global::PRIZ.Properties.Resources.iconimage;

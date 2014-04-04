@@ -45,57 +45,70 @@ namespace PRIZ
 
             /* front end */
             int ypos = 10;
-            for (int i = 0; i < modules.Count; i++)
+            if (modules.Count == 0)
             {
-                Label title = new Label();
-                Label description = new Label();
-                PictureBox pbox = new PictureBox();
+                PictureBox addTask = new PictureBox();
+                addTask.Size = new Size(780, 170);
+                addTask.Location = new Point(0, ypos + 20);
+                addTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+                addTask.Image = Properties.Resources.nomodules;
+                addTask.SizeMode = PictureBoxSizeMode.CenterImage;
+                panelForElements.Controls.Add(addTask);
+            }
+            else
+            {
+                for (int i = 0; i < modules.Count; i++)
+                {
+                    Label title = new Label();
+                    Label description = new Label();
+                    PictureBox pbox = new PictureBox();
 
-                pbox.Location = new Point(0, ypos);
-                pbox.Size = new Size(430, 270);
-                pbox.ImageLocation = modules[i]._pic;
+                    pbox.Location = new Point(0, ypos);
+                    pbox.Size = new Size(430, 270);
+                    pbox.ImageLocation = modules[i]._pic;
 
-                title.AutoSize = true;
-                title.Location = new Point(440, ypos);
-                title.Text = modules[i]._name;
-                title.Font = new System.Drawing.Font("Segoe UI Light", 17F);
-                title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-                title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                title.MaximumSize = new System.Drawing.Size(373, 0);
-                title.Click += pbox_Click;
-                title.Cursor = System.Windows.Forms.Cursors.Hand;
-                title.Tag = i;
+                    title.AutoSize = true;
+                    title.Location = new Point(440, ypos);
+                    title.Text = modules[i]._name;
+                    title.Font = new System.Drawing.Font("Segoe UI Light", 17F);
+                    title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+                    title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    title.MaximumSize = new System.Drawing.Size(373, 0);
+                    title.Click += pbox_Click;
+                    title.Cursor = System.Windows.Forms.Cursors.Hand;
+                    title.Tag = i;
 
-                description.AutoSize = true;
-                description.Location = new Point(440, ypos + 30);
-                description.Text = modules[i]._annotation;
-                description.Font = new System.Drawing.Font("Segoe UI Light", 10F);
-                description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-                description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                description.MaximumSize = new System.Drawing.Size(340, 0);
-                description.Click += pbox_Click;
-                description.Cursor = System.Windows.Forms.Cursors.Hand;
-                description.Tag = i;
-                             
+                    description.AutoSize = true;
+                    description.Location = new Point(440, ypos + 30);
+                    description.Text = modules[i]._annotation;
+                    description.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+                    description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+                    description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    description.MaximumSize = new System.Drawing.Size(340, 0);
+                    description.Click += pbox_Click;
+                    description.Cursor = System.Windows.Forms.Cursors.Hand;
+                    description.Tag = i;
 
-                pbox.Click += pbox_Click;
-                pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-                pbox.Tag = i;
-               
 
-                Panel panel = new Panel();
-                panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-                panel.Size = new Size(355, 270);
-                panel.Location = new Point(430, ypos);
+                    pbox.Click += pbox_Click;
+                    pbox.Cursor = System.Windows.Forms.Cursors.Hand;
+                    pbox.Tag = i;
 
-                panelForElements.Controls.Add(title);
-                panelForElements.Controls.Add(description);
-                panelForElements.Controls.Add(pbox);
-                panelForElements.Controls.Add(panel);
 
-                // Если название не помещается в одну строку, то сдвигаем описание ниже
-                description.Location = new Point(description.Location.X, description.Location.Y + (title.Size.Height - 31));
-                ypos += 300;
+                    Panel panel = new Panel();
+                    panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                    panel.Size = new Size(355, 270);
+                    panel.Location = new Point(430, ypos);
+
+                    panelForElements.Controls.Add(title);
+                    panelForElements.Controls.Add(description);
+                    panelForElements.Controls.Add(pbox);
+                    panelForElements.Controls.Add(panel);
+
+                    // Если название не помещается в одну строку, то сдвигаем описание ниже
+                    description.Location = new Point(description.Location.X, description.Location.Y + (title.Size.Height - 31));
+                    ypos += 300;
+                }
             }
             panelForElements.Focus();
         }

@@ -223,4 +223,16 @@
   <data name="iconimage_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconimage_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add_module" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_module.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_task" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_task.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nomodules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nomodules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

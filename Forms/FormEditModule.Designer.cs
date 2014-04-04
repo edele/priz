@@ -46,7 +46,7 @@
             this.panelForElements.BackColor = System.Drawing.Color.Transparent;
             this.panelForElements.Location = new System.Drawing.Point(155, 111);
             this.panelForElements.Name = "panelForElements";
-            this.panelForElements.Size = new System.Drawing.Size(802, 604);
+            this.panelForElements.Size = new System.Drawing.Size(802, 564);
             this.panelForElements.TabIndex = 8;
             // 
             // label2
