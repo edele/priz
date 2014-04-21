@@ -43,6 +43,8 @@ namespace PRIZ
             var t = ofd.ShowDialog();
             if (t == DialogResult.OK)
             {
+                btnSaveChanges.Enabled = true;
+                btnSaveChanges.BackColor = Color.FromArgb(103, 103, 103);
                 pbModule.SizeMode = PictureBoxSizeMode.Zoom;
                 currentModule._filename = Program.p.currentModule._filename;
                 pbModule.Image = Image.FromFile(ofd.FileName);
