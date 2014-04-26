@@ -1,9 +1,4 @@
 [![Stories in Ready](https://badge.waffle.io/edele/priz.png?label=ready&title=Ready)](https://waffle.io/edele/priz)
-**Будте осторожны!** `Download ZIP` может выдать вам старую версию.
-
-Список задач удобнее смотреть в [Issues](https://github.com/edele/priz/issues?state=open).
-
-[Обычный чеклист](https://gist.github.com/edele/9342586)
 
 #ПРИЗ#
 *Практика решения исследовательских задач*
